@@ -106,5 +106,13 @@ section h2 {
   border: black 1px solid;
   margin: 20px;
 }
+#equipe .fit {
+  object-fit: cover;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  position: relative;
+  bottom: 50px;
+}
 
 /*# sourceMappingURL=style.css.map */

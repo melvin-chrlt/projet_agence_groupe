@@ -20,12 +20,20 @@ section{
 
 #equipe{ 
     
-
     article{
         height: auto;
         width: 500px;
         border: black 1px solid;
         margin: 20px;
+    }
+
+    .fit{
+        object-fit: cover;
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        position: relative;
+        bottom: 50px;
     }
 
 }
