@@ -82,4 +82,29 @@ header #headerTitle h2 {
   letter-spacing: 2px;
 }
 
+section {
+  background-color: dimgray;
+  color: white;
+}
+section h2 {
+  color: purple;
+  text-align: center;
+}
+
+#notrebut {
+  color: white;
+  background-color: black;
+}
+#notrebut h2 {
+  color: purple;
+  text-align: center;
+}
+
+#equipe article {
+  height: auto;
+  width: 500px;
+  border: black 1px solid;
+  margin: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
