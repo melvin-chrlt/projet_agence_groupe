@@ -1,0 +1,70 @@
+header{
+    padding: 3em;
+    background-image: url(../images/bakcHome.jpg);
+    background-size: cover;
+    @include flex;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img{
+            width: 50%;
+            height: auto;
+        }
+
+        #menu{
+
+            ul{
+                display: flex;
+                gap: 4em;
+
+                li{
+
+                    a{
+                        color: black;
+                        font-size: 24px;
+                        font-family: caviarDreamsBold;
+                        padding: 0 10px;
+                        padding-bottom: 10px;
+                        transition: all ease-in-out 0.2s;
+                    }
+
+                    a:hover{
+                        color: white;
+                        border-bottom: 2px solid white;
+                    }
+                }
+            }
+        }
+    }
+
+    #headerTitle{
+        text-align: center;
+        padding: 7em 0;
+
+        h1{
+            font-family: caviarDreamsBold;
+            font-size: 60px;
+
+            .cas{
+                font-family: binjay;
+                font-size: 64px;
+            }
+
+            .and{
+                font-family: caviarDreams;
+                font-size: 50px;
+                font-weight: 200;
+            }
+        }
+
+        h2{
+            font-family: caviarDreamsBold;
+            font-size: 30px;
+            padding-top: 0.5em;
+            letter-spacing: 2px;
+        }
+    }
+}
