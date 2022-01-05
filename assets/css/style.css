@@ -10,6 +10,10 @@ body {
   font-family: "roboto";
 }
 
+@font-face {
+  font-family: binjay;
+  src: url(../fonts/Binjay.otf);
+}
 /* headline font */
 @font-face {
   font-family: "raleway";
@@ -22,12 +26,12 @@ body {
 }
 /* subtitle font */
 @font-face {
-  font-family: "caviar";
+  font-family: "caviarDreams";
   src: url(../fonts/CaviarDreams.ttf);
 }
 /* bold */
 @font-face {
-  font-family: "caviarBold";
+  font-family: "caviarDreamsBold";
   src: url(../fonts/CaviarDreams_Bold.ttf);
 }
 /* paragraph text font */
@@ -48,6 +52,64 @@ body {
 .buttonCAS a:hover {
   color: #AD00FF;
   background-color: white;
+}
+
+header {
+  padding: 3em;
+  background-image: url(../images/bakcHome.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav img {
+  width: 50%;
+  height: auto;
+}
+header nav #menu ul {
+  display: flex;
+  gap: 4em;
+}
+header nav #menu ul li a {
+  color: black;
+  font-size: 24px;
+  font-family: caviarDreamsBold;
+  padding: 0 10px;
+  padding-bottom: 10px;
+  transition: all ease-in-out 0.2s;
+}
+header nav #menu ul li a:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+header #headerTitle {
+  text-align: center;
+  padding: 7em 0;
+}
+header #headerTitle h1 {
+  font-family: caviarDreamsBold;
+  font-size: 60px;
+}
+header #headerTitle h1 .cas {
+  font-family: binjay;
+  font-size: 64px;
+}
+header #headerTitle h1 .and {
+  font-family: caviarDreams;
+  font-size: 50px;
+  font-weight: 200;
+}
+header #headerTitle h2 {
+  font-family: caviarDreamsBold;
+  font-size: 30px;
+  padding-top: 0.5em;
+  letter-spacing: 2px;
 }
 
 footer {
@@ -78,7 +140,7 @@ footer #sectionFooter .locationCAS {
 }
 footer #sectionFooter .contactCas h2,
 footer #sectionFooter .locationCAS h2 {
-  font-family: "caviar";
+  font-family: "caviarDreams";
   font-size: 24px;
   text-transform: uppercase;
   color: #AD00FF;

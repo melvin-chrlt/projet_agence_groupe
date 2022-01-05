@@ -1,4 +1,10 @@
 // THE FONTS
+
+// title font
+@font-face {
+    font-family: binjay;
+    src: url(../fonts/Binjay.otf);
+}
 /* headline font */
 @font-face {
     font-family: 'raleway';
@@ -12,12 +18,12 @@
 
 /* subtitle font */
 @font-face {
-    font-family: 'caviar';
+    font-family: 'caviarDreams';
     src: url(../fonts/CaviarDreams.ttf);
 }
 /* bold */
 @font-face {
-    font-family: 'caviarBold';
+    font-family: 'caviarDreamsBold';
     src: url(../fonts/CaviarDreams_Bold.ttf);
 }
 
