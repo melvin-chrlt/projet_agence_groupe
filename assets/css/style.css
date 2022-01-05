@@ -10,6 +10,29 @@ body {
   font-family: "roboto";
 }
 
+.topPage {
+  background-color: black;
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.absolute {
+  position: absolute;
+  z-index: 1;
+}
+
+.purpleFrame {
+  border-top: 10px solid #AD00FF;
+  border-right: 10px solid #AD00FF;
+  position: relative;
+  top: -15px;
+  right: -50px;
+  height: 150px;
+  width: 150px;
+}
+
 @font-face {
   font-family: binjay;
   src: url(../fonts/Binjay.otf);
@@ -112,10 +135,29 @@ header #headerTitle h2 {
   letter-spacing: 2px;
 }
 
+h2 {
+  color: #AD00FF;
+  font-family: "ralewayBold";
+  text-transform: uppercase;
+  font-size: 30px;
+}
+h2 span {
+  color: black;
+  font-family: "caviarDreamsBold";
+  font-size: 24px;
+  text-transform: initial;
+}
+
+h3 {
+  color: #AD00FF;
+  font-family: "caviarDreamsBold";
+  font-size: 20px;
+}
+
 footer {
   text-align: center;
   padding: 30px;
-  background-color: #000000;
+  background-color: black;
   color: white;
 }
 footer #sectionFooter {
