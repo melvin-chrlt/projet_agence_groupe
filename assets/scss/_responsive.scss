@@ -5,6 +5,7 @@
         nav{
             padding-top: 5em;
 
+            //MENU STYLE WHEN MENU BURGER IS OPEN
             #menu{
                 display: none;
                 position: fixed;
@@ -50,6 +51,7 @@
                 }
             }
 
+            //SLIDE ANIMATION LEFT TO MIDDLE OF THE PAGE
             @keyframes menu{
                 from{
                     left: -200%;
@@ -59,11 +61,8 @@
                     right: 100%;
                 }
             }
-    
-            #menuBurger{
-                display: block;
-            }
-    
+            
+            //MENU BURGER VISIBLE
             #menuBurger{
                 display: flex;
             }

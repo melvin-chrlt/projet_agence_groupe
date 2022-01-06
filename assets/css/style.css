@@ -291,9 +291,6 @@ footer span a {
     }
   }
   header nav #menuBurger {
-    display: block;
-  }
-  header nav #menuBurger {
     display: flex;
   }
 }

@@ -6,12 +6,14 @@ header{
     flex-direction: column;
     align-items: center;
 
+    //NAV STYLE
     nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 10em;
 
+        //LOGO SIZE
         img{
             width: 20em;
             height: auto;
@@ -25,6 +27,7 @@ header{
 
                 li{
 
+                    //MENU TEXT STYLE
                     a{
                         color: black;
                         font-size: 24px;
@@ -42,6 +45,7 @@ header{
             }
         }
 
+        //MENU BURGER STYLE WHEN MAX-WIDTH (DISPLAY NONE)
         #menuBurger{
             width: 2.5em;
             display: none;
@@ -52,6 +56,7 @@ header{
             cursor: pointer;
             transition: ease-in-out all 0.2s;
 
+            //MENU BURGER BAR SIZES
             .bar{
                 border-radius: 5px;
                 height: 4px;
@@ -77,6 +82,7 @@ header{
             }
         }
 
+        //CLOSE ICON, POSITION FIXED ON TOP OF THE PAGE
         #close{
             position: fixed;
             top: 50px;
@@ -94,6 +100,7 @@ header{
             color: #ad00ff;
         }
 
+        //CLOSING ANIMATION
         @keyframes close{
             from{
                 opacity: 0%;
@@ -109,6 +116,7 @@ header{
         }
     }
 
+    //TITLE STYLE PART
     #headerTitle{
         text-align: center;
         padding: 7em 0;
