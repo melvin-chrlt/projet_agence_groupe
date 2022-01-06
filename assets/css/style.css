@@ -299,6 +299,9 @@ footer span a {
     flex-direction: column;
     gap: 2em;
   }
+  header nav #menu ul li a {
+    margin-left: 1.5em;
+  }
   header #headerTitle {
     padding-top: 4em;
   }

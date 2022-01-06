@@ -76,6 +76,16 @@
         nav{
             flex-direction: column;
             gap: 2em;
+
+            #menu{
+                ul{
+                    li{
+                        a{
+                            margin-left: 1.5em;
+                        }
+                    }
+                }
+            }
         }
 
         #headerTitle{
