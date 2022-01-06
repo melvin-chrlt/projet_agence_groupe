@@ -284,6 +284,47 @@ header #headerTitle h2 {
   background-position: center;
 }
 
+@media screen and (max-width: 1120px) {
+  #contactMain #contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 0;
+  }
+  #contactMain #contactContainer #contactContainerLeft {
+    width: 90%;
+  }
+  #contactMain #contactContainer #contactContainerLeft h3 {
+    width: 90%;
+  }
+  #contactMain #contactContainer #contactContainerLeft form input {
+    margin-bottom: 2em;
+  }
+  #contactMain #contactContainer #contactContainerRight {
+    width: 100%;
+  }
+  #contactMain #contactContainer #contactContainerRight #map {
+    box-shadow: none;
+  }
+  #contactMain #contactContainer #contactContainerRight p {
+    width: 90%;
+    text-align: center;
+    padding: 0 1em;
+  }
+}
+@media screen and (max-width: 530px) {
+  #contactMain #contactContainer #contactContainerLeft h3 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 440px) {
+  #contactMain #contactContainer #contactContainerLeft form input {
+    font-size: 20px;
+  }
+  #contactMain #contactContainer #contactContainerLeft form textarea {
+    font-size: 20px;
+  }
+}
 #expertiseMain {
   display: flex;
   justify-content: center;
