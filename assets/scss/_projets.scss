@@ -1,0 +1,18 @@
+#projetsMain{
+    background-color: black;
+
+    section{
+        display: flex;
+        justify-content: center;
+        padding: 3em 0;
+
+        .projetsCards{
+            width: 22%;
+            height: 20em;
+            background-image: url(../images/eyeGreen.jpg);
+            background-size: cover;
+            background-position: center;
+            box-shadow: #ad00ff 9px -9px 0px;
+        }
+    }
+}
