@@ -11,32 +11,17 @@ body {
 }
 
 .topPage {
+  text-align: center;
   background-color: black;
   height: 60px;
   width: 60px;
   border-radius: 50%;
   font-size: 40px;
   margin-left: 5%;
+  margin-bottom: 5%;
 }
 .topPage a {
   color: white;
-}
-
-.relative {
-  position: relative;
-  z-index: 1;
-}
-
-.purpleFrame {
-  background-color: #AD00FF;
-  position: absolute;
-  z-index: -1;
-}
-
-.purpleBlack {
-  background-color: black;
-  position: absolute;
-  z-index: -2;
 }
 
 @font-face {
@@ -263,7 +248,9 @@ header #headerTitle h2 {
   box-shadow: 3px 3px 8px -1px white;
 }
 #aboutCAS .teamCAS .eyeVisual {
+  position: relative;
   top: 6em;
+  z-index: 1;
 }
 #aboutCAS .teamCAS .eyeVisual img {
   width: 490px;
@@ -277,6 +264,9 @@ header #headerTitle h2 {
   border-radius: 2em;
   height: 244px;
   width: 492px;
+  background-color: #AD00FF;
+  position: absolute;
+  z-index: -1;
 }
 
 #expertiseCAS {
@@ -350,20 +340,14 @@ header #headerTitle h2 {
 #gallery .pictureGallery img {
   height: 300px;
   position: relative;
-  margin-right: 2em;
+  margin-right: 5em;
   border: 1px solid black;
 }
-#gallery .pictureGallery .purpleFrame {
-  top: -11px;
-  right: 20px;
-  height: 280px;
-  width: 280px;
+#gallery .pictureGallery .purpleShadow {
+  box-shadow: 12px -12px 0px -1px #AD00FF;
 }
-#gallery .pictureGallery .purpleBlack {
-  bottom: -11px;
-  left: 36px;
-  height: 280px;
-  width: 280px;
+#gallery .pictureGallery .blackShadow {
+  box-shadow: 12px -12px 0px -1px black;
 }
 #gallery .buttonCAS {
   margin-top: 7%;
@@ -371,65 +355,6 @@ header #headerTitle h2 {
 #gallery .buttonCAS a {
   border: 3px solid black;
   box-shadow: 2px 2px 10px 0px black;
-}
-
-@media screen and (max-width: 1340px) {
-  #aboutCAS {
-    justify-content: space-between;
-  }
-
-  #aboutCAS .teamCAS .eyeVisual img {
-    width: 390px;
-  }
-
-  #aboutCAS .teamCAS .purpleFrame {
-    right: 160px;
-    height: 198px;
-    width: 373px;
-  }
-
-  #expertiseCAS .serviceCAS .graphicCreation,
-#expertiseCAS .serviceCAS .internetSite,
-#expertiseCAS .serviceCAS .socialNetworks,
-#expertiseCAS .serviceCAS .consulting {
-    height: 200px;
-    width: 200px;
-  }
-
-  #expertiseCAS .serviceCAS .graphicCreation img,
-#expertiseCAS .serviceCAS .internetSite img,
-#expertiseCAS .serviceCAS .socialNetworks img,
-#expertiseCAS .serviceCAS .consulting img {
-    height: 50px;
-  }
-
-  #homepage h3 {
-    font-size: 15px;
-  }
-
-  #expertiseCAS .serviceCAS .graphicCreation p,
-#expertiseCAS .serviceCAS .internetSite p,
-#expertiseCAS .serviceCAS .socialNetworks p,
-#expertiseCAS .serviceCAS .consulting p {
-    font-size: 12px;
-    margin-top: -2em;
-  }
-
-  .buttonCAS a {
-    padding: 1em 3.5em;
-    font-size: 12px;
-    box-shadow: 1px 1px 4px 0px black;
-  }
-}
-#gallery .pictureGallery img {
-  height: 200px;
-  width: 200px;
-}
-
-#gallery .pictureGallery .purpleFrame,
-#gallery .pictureGallery .purpleBlack {
-  height: 180px;
-  width: 180px;
 }
 
 @media screen and (max-width: 390px) {
@@ -476,6 +401,34 @@ header #headerTitle h2 {
     font-size: 25px;
   }
 }
+#bodyGalerie {
+  background-color: black;
+}
+#bodyGalerie p {
+  text-align: center;
+  color: #A6A6A6;
+  margin-top: 4%;
+}
+#bodyGalerie #projetsMain {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 4% 5% 4% 10%;
+}
+#bodyGalerie #projetsMain div {
+  margin-right: 4%;
+  margin-bottom: 5%;
+}
+#bodyGalerie #projetsMain div img {
+  border: 1px solid black;
+  box-shadow: 12px -12px 0px -1px #AD00FF;
+}
+#bodyGalerie .purple {
+  background-color: #AD00FF;
+}
+
 footer {
   text-align: center;
   padding: 30px;

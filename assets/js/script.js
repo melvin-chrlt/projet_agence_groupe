@@ -13,3 +13,5 @@ closeBtn.addEventListener("click", function(){
     navMenu.style.display = "none";
     closeBtn.style.display = "none";
 })
+
+

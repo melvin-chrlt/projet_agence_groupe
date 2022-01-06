@@ -13,32 +13,16 @@ body {
 
 // --- ARROW TOP OF PAGE --- //
 .topPage {
+  text-align: center;
   background-color: black;
   height: 60px;
   width: 60px;
   border-radius: 50%;
   font-size: 40px;
   margin-left: 5%;
-  a{
+  margin-bottom: 5%;
+  a {
     color: white;
   }
 }
 
-// RELATIVE POSITION
-.relative {
-  position: relative;
-  z-index: 1;
-}
-// --- FRAME DECORATION --- //
-// purple :
-.purpleFrame {
-  background-color: $purple;
-  position: absolute;
-  z-index: -1;
-}
-// black :
-.purpleBlack {
-  background-color: black;
-  position: absolute;
-  z-index: -2;
-}

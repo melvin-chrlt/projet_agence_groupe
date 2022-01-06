@@ -1,0 +1,26 @@
+#bodyGalerie{
+    background-color: black;
+    p{
+        text-align: center;
+        color: $gray;
+        margin-top: 4%;
+    }
+    #projetsMain{
+        @include flex($just : flex-start);
+        flex-wrap: wrap;
+        margin: 4% 5% 4% 10%;
+    
+        div{
+            margin-right: 4%;
+            margin-bottom: 5%;
+            img{
+                border: 1px solid black;
+                box-shadow: 12px -12px 0px -1px $purple;
+            }
+        }
+    }
+    .purple{
+        background-color: $purple;
+    }
+}
+
