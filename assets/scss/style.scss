@@ -1,8 +1,13 @@
-@import "mixins";
-@import "general";
-@import "header";
-@import "main";
-@import "contact";
-@import "expertises";
-@import "footer";
-@import "responsive";
+@import 'mixins';
+@import 'vars';
+@import 'general';
+@import 'font';
+@import 'button';
+
+@import 'header';
+@import 'main';
+@import 'contact';
+@import 'expertises';
+@import 'footer';
+
+@import 'responsive';

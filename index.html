@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -16,11 +20,17 @@
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="#">À propos</a></li>
-                    <li><a href="#">Expertises</a></li>
+                    <li><a href="expertises.html">Expertises</a></li>
                     <li><a href="#">Nos projets</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
+            <div id="menuBurger" onclick="openBurger()">
+                <div class="bar"></div>
+                <div class="bar middle"></div>
+                <div class="bar"></div>
+            </div>
+            <i class="fas fa-times" id="close"></i>
         </nav>
         <div id="headerTitle">
             <h1><span class="cas">CAS</span><span class="and">&</span>compagnie</h1>
@@ -32,9 +42,48 @@
 
     </main>
 
+    <!-- THE FOOTER -->
     <footer>
+        <!-- logo and function info -->
+        <section id="sectionFooter">
+            <article class="infoCas">
+                <img src="assets/images/logoCAScieWhite.png" alt="Logo Cas & Compagnie" title="Logo Cas & Compagnie">
+                <p class="functionCAS">Agence de communication spécialisée dans la création de sites internet, le
+                    référencement SEO, la communication visuelle et digitale, les réseaux sociaux, le graphisme, le
+                    design.</p>
+            </article>
 
+            <!-- contact details -->
+            <article class="contactCas">
+                <h2>nous contacter</h2>
+                <p><i class="fas fa-phone-alt"></i> 05 53 45 53 77</p>
+                <p><i class="far fa-envelope"></i> contact@casetcompagnie.fr</p>
+                <div class="buttonCAS"><a href="#">Contactez-nous</a></div>
+            </article>
+
+            <!-- address -->
+            <article class="locationCAS">
+                <h2>nous trouver</h2>
+                <p><i class="fas fa-map-marker-alt"></i> 18 rue Ernest Guillier</p>
+                <p>&emsp; &ensp;24 000 PÉRIGUEUX</p>
+            </article>
+
+            <!-- social media icons -->
+            <article class="iconNetworks">
+                <p><i class="fab fa-facebook"></i></p>
+                <p><i class="fab fa-instagram"></i></p>
+                <p><i class="fab fa-linkedin"></i></p>
+                <p><i class="fab fa-twitter"></i></p>
+            </article>
+        </section>
+
+        <!-- copyright & notices -->
+        <p>© 2022 CAS & compagnie. Tous droits réservés. <span><a href="#">Mentions légales</a></span> - <span><a
+                    href="#">Contact</a></span></p>
     </footer>
+    <!-- END FOOTER -->
+
     <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
+
 </html>

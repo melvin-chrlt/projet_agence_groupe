@@ -1,0 +1,79 @@
+// THE FOOTER
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: $black;
+  color: white;
+
+  #sectionFooter {
+    @include flex(space-around, baseline);
+    margin-bottom: 40px;
+
+    // logo and function info
+    .infoCas {
+      img {
+        height: 125px;
+        margin-bottom: 20px;
+      }
+      .functionCAS {
+        text-align: justify;
+        width: 390px;
+      }
+    }
+
+    // contact details & address
+    .contactCas,
+    .locationCAS {
+      text-align: left;
+      margin-left: 10px;
+      h2 {
+        font-family: "caviarDreams";
+        font-size: 24px;
+        text-transform: uppercase;
+        color: $purple;
+        margin-bottom: 20px;
+      }
+      i {
+        color: $purple;
+        font-size: 25px;
+        padding-right: 5px;
+      }
+      p {
+        padding-bottom: 10px;
+      }
+      .buttonCAS {
+        margin-top: 45px;
+        a {
+          padding: 1em 3em;
+        }
+      }
+    }
+
+    // social media icons
+    .iconNetworks {
+      i {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+      .fa-facebook {
+        color: #3c579c;
+      }
+      .fa-instagram {
+        color: #d1218e;
+      }
+      .fa-linkedin {
+        color: #0079b4;
+      }
+      .fa-twitter {
+        color: #00adff;
+      }
+    }
+  }
+
+  // copyright & notices
+  span {
+    a {
+      color: $purple;
+    }
+  }
+}

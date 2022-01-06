@@ -1,32 +1,57 @@
-@font-face {
-  font-family: binjay;
-  src: url(../fonts/Binjay.otf);
-}
-@font-face {
-  font-family: caviarDreams;
-  src: url(../fonts/CaviarDreams.ttf);
-}
-@font-face {
-  font-family: caviarDreamsBold;
-  src: url(../fonts/CaviarDreams_Bold.ttf);
-}
-@font-face {
-  font-family: raleway;
-  src: url(../fonts/Raleway-Regular.ttf);
-}
-@font-face {
-  font-family: ralewayBold;
-  src: url(../fonts/Raleway-Bold.ttf);
-}
-@font-face {
-  font-family: roboto;
-  src: url(../fonts/Roboto-Regular.ttf);
-}
+/* headline color */
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
+}
+
+body {
+  font-family: "roboto";
+}
+
+@font-face {
+  font-family: binjay;
+  src: url(../fonts/Binjay.otf);
+}
+/* headline font */
+@font-face {
+  font-family: "raleway";
+  src: url(../fonts/Raleway-Regular.ttf);
+}
+/* bold */
+@font-face {
+  font-family: "ralewayBold";
+  src: url(../fonts/Raleway-Bold.ttf);
+}
+/* subtitle font */
+@font-face {
+  font-family: "caviarDreams";
+  src: url(../fonts/CaviarDreams.ttf);
+}
+/* bold */
+@font-face {
+  font-family: "caviarDreamsBold";
+  src: url(../fonts/CaviarDreams_Bold.ttf);
+}
+/* paragraph text font */
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+.buttonCAS a {
+  color: white;
+  font-size: 18px;
+  font-family: "caviarBold";
+  padding: 1em 4em;
+  background-color: #AD00FF;
+  border-radius: 25px;
+  transition: all ease-in-out 0.3s;
+  box-shadow: 2px 2px 10px 0px white;
+}
+.buttonCAS a:hover {
+  color: #AD00FF;
+  background-color: white;
 }
 
 header {
@@ -41,9 +66,10 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10em;
 }
 header nav img {
-  width: 50%;
+  width: 20em;
   height: auto;
 }
 header nav #menu ul {
@@ -61,6 +87,59 @@ header nav #menu ul li a {
 header nav #menu ul li a:hover {
   color: white;
   border-bottom: 2px solid white;
+}
+header nav #menuBurger {
+  width: 2.5em;
+  display: none;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 9px;
+  padding: 1em;
+  cursor: pointer;
+  transition: ease-in-out all 0.2s;
+}
+header nav #menuBurger .bar {
+  border-radius: 5px;
+  height: 4px;
+  width: 45px;
+  background-color: white;
+  transition: ease-in-out all 0.2s;
+}
+header nav #menuBurger .middle {
+  width: 30px;
+}
+header nav #menuBurger:hover .bar {
+  background-color: #ad00ff;
+  width: 40px;
+}
+header nav #menuBurger:hover .middle {
+  width: 45px;
+}
+header nav #close {
+  position: fixed;
+  top: 50px;
+  right: 50%;
+  display: none;
+  z-index: 99999;
+  color: white;
+  font-size: 3em;
+  transition: all ease-in-out 0.2s;
+  animation: close 3s;
+}
+header nav #close:hover {
+  cursor: pointer;
+  color: #ad00ff;
+}
+@keyframes close {
+  from {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 header #headerTitle {
   text-align: center;
@@ -258,6 +337,151 @@ header #headerTitle h2 {
   border-bottom: 1px solid black;
   width: 50%;
   margin: 8em 0;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #000000;
+  color: white;
+}
+footer #sectionFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+footer #sectionFooter .infoCas img {
+  height: 125px;
+  margin-bottom: 20px;
+}
+footer #sectionFooter .infoCas .functionCAS {
+  text-align: justify;
+  width: 390px;
+}
+footer #sectionFooter .contactCas,
+footer #sectionFooter .locationCAS {
+  text-align: left;
+  margin-left: 10px;
+}
+footer #sectionFooter .contactCas h2,
+footer #sectionFooter .locationCAS h2 {
+  font-family: "caviarDreams";
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #AD00FF;
+  margin-bottom: 20px;
+}
+footer #sectionFooter .contactCas i,
+footer #sectionFooter .locationCAS i {
+  color: #AD00FF;
+  font-size: 25px;
+  padding-right: 5px;
+}
+footer #sectionFooter .contactCas p,
+footer #sectionFooter .locationCAS p {
+  padding-bottom: 10px;
+}
+footer #sectionFooter .contactCas .buttonCAS,
+footer #sectionFooter .locationCAS .buttonCAS {
+  margin-top: 45px;
+}
+footer #sectionFooter .contactCas .buttonCAS a,
+footer #sectionFooter .locationCAS .buttonCAS a {
+  padding: 1em 3em;
+}
+footer #sectionFooter .iconNetworks i {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+footer #sectionFooter .iconNetworks .fa-facebook {
+  color: #3c579c;
+}
+footer #sectionFooter .iconNetworks .fa-instagram {
+  color: #d1218e;
+}
+footer #sectionFooter .iconNetworks .fa-linkedin {
+  color: #0079b4;
+}
+footer #sectionFooter .iconNetworks .fa-twitter {
+  color: #00adff;
+}
+footer span a {
+  color: #AD00FF;
+}
+
+@media screen and (max-width: 1295px) {
+  header {
+    padding: 0;
+  }
+  header nav {
+    padding-top: 5em;
+  }
+  header nav #menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    z-index: 100;
+    animation: menu 1s;
+  }
+  header nav #menu ul {
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+  }
+  header nav #menu ul li {
+    transition: all ease-in-out 0.2s;
+    padding: 1.5em 0;
+    cursor: pointer;
+  }
+  header nav #menu ul li a {
+    margin-left: 5em;
+    transition: all ease-in-out 0.2s;
+    color: white;
+  }
+  header nav #menu ul li a:hover {
+    border-bottom: 0;
+  }
+  header nav #menu ul li:hover {
+    background-color: #ad00ff;
+  }
+  header nav #menu ul li:hover a {
+    color: black;
+  }
+  @keyframes menu {
+    from {
+      left: -200%;
+    }
+    to {
+      right: 100%;
+    }
+  }
+  header nav #menuBurger {
+    display: flex;
+  }
+}
+@media screen and (max-width: 595px) {
+  header nav {
+    flex-direction: column;
+    gap: 2em;
+  }
+  header nav #menu ul li a {
+    margin-left: 1.5em;
+  }
+  header #headerTitle {
+    padding-top: 4em;
+  }
+  header #headerTitle h1 {
+    font-size: 40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
