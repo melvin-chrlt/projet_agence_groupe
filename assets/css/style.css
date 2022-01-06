@@ -16,21 +16,25 @@ body {
   height: 60px;
   width: 60px;
   border-radius: 50%;
+  font-size: 40px;
+  margin-left: 5%;
 }
 
-.absolute {
-  position: absolute;
+.relative {
+  position: relative;
   z-index: 1;
 }
 
 .purpleFrame {
-  border-top: 10px solid #AD00FF;
-  border-right: 10px solid #AD00FF;
-  position: relative;
-  top: -15px;
-  right: -50px;
-  height: 150px;
-  width: 150px;
+  background-color: #AD00FF;
+  position: absolute;
+  z-index: -1;
+}
+
+.purpleBlack {
+  background-color: black;
+  position: absolute;
+  z-index: -2;
 }
 
 @font-face {
@@ -65,7 +69,7 @@ body {
 .buttonCAS a {
   color: white;
   font-size: 18px;
-  font-family: "caviarBold";
+  font-family: "caviarDreamsBold";
   padding: 1em 4em;
   background-color: #AD00FF;
   border-radius: 25px;
@@ -135,23 +139,183 @@ header #headerTitle h2 {
   letter-spacing: 2px;
 }
 
-h2 {
+#homepage h2 {
+  text-align: left;
   color: #AD00FF;
   font-family: "ralewayBold";
   text-transform: uppercase;
   font-size: 30px;
+  padding-bottom: 30px;
 }
-h2 span {
+#homepage h2 span {
+  color: #A6A6A6;
+  font-family: "caviarDreamsBold";
+  font-size: 24px;
+  text-transform: initial;
+}
+#homepage h2 strong {
   color: black;
   font-family: "caviarDreamsBold";
   font-size: 24px;
   text-transform: initial;
 }
-
-h3 {
+#homepage h3 {
   color: #AD00FF;
   font-family: "caviarDreamsBold";
   font-size: 20px;
+  padding-bottom: 30px;
+}
+
+#aboutCAS {
+  padding: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: row;
+  color: #A6A6A6;
+  background-color: black;
+  height: 418px;
+}
+#aboutCAS .historyCAS {
+  width: 50%;
+}
+#aboutCAS .historyCAS p {
+  text-align: justify;
+  width: 526px;
+  line-height: 25px;
+  margin-bottom: 15%;
+}
+#aboutCAS .historyCAS .buttonCAS {
+  margin-left: 25%;
+  margin-top: 50px;
+}
+#aboutCAS .teamCAS {
+  padding-left: 8%;
+}
+#aboutCAS .teamCAS .teamAVATAR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#aboutCAS .teamCAS .teamAVATAR .avatar {
+  background-color: burlywood;
+  height: 100px;
+  width: 100px;
+  margin-top: 4%;
+  margin-right: 80px;
+  border: 5px solid #AD00FF;
+  box-shadow: 3px 3px 8px -1px white;
+}
+#aboutCAS .teamCAS .eyeVisual {
+  top: 6em;
+}
+#aboutCAS .teamCAS .eyeVisual img {
+  width: 490px;
+  border: 4px solid black;
+  border-radius: 2em;
+  box-shadow: 1px 1px 10px 0px black;
+}
+#aboutCAS .teamCAS .purpleFrame {
+  top: -10px;
+  right: 58px;
+  border-radius: 2em;
+  height: 244px;
+  width: 492px;
+}
+
+#expertiseCAS {
+  padding: 4%;
+}
+#expertiseCAS h2 {
+  margin-bottom: 2%;
+  margin-left: 28px;
+}
+#expertiseCAS .serviceCAS {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#expertiseCAS .serviceCAS .graphicCreation,
+#expertiseCAS .serviceCAS .internetSite,
+#expertiseCAS .serviceCAS .socialNetworks,
+#expertiseCAS .serviceCAS .consulting {
+  text-align: center;
+  background-color: #A6A6A6;
+  height: 300px;
+  width: 300px;
+  border: 3px solid black;
+  border-radius: 50%;
+  position: relative;
+}
+#expertiseCAS .serviceCAS .graphicCreation img,
+#expertiseCAS .serviceCAS .internetSite img,
+#expertiseCAS .serviceCAS .socialNetworks img,
+#expertiseCAS .serviceCAS .consulting img {
+  padding: 2% 0;
+}
+#expertiseCAS .serviceCAS .graphicCreation p,
+#expertiseCAS .serviceCAS .internetSite p,
+#expertiseCAS .serviceCAS .socialNetworks p,
+#expertiseCAS .serviceCAS .consulting p {
+  margin-top: -1em;
+  padding: 0 3em;
+}
+#expertiseCAS .serviceCAS .graphicCreation .buttonCAS a,
+#expertiseCAS .serviceCAS .internetSite .buttonCAS a,
+#expertiseCAS .serviceCAS .socialNetworks .buttonCAS a,
+#expertiseCAS .serviceCAS .consulting .buttonCAS a {
+  position: absolute;
+  top: 90%;
+  left: 12%;
+  border: 3px solid black;
+  box-shadow: 2px 2px 10px 0px black;
+}
+
+#gallery {
+  padding: 4%;
+  background-color: #A6A6A6;
+  text-align: center;
+}
+#gallery h2 {
+  margin-left: 28px;
+}
+#gallery p {
+  text-align: left;
+  margin-left: 28px;
+  margin-bottom: 5%;
+}
+#gallery .pictureGallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#gallery .pictureGallery img {
+  height: 300px;
+  position: relative;
+  margin-right: 2em;
+  border: 1px solid black;
+}
+#gallery .pictureGallery .purpleFrame {
+  top: -11px;
+  right: 20px;
+  height: 280px;
+  width: 280px;
+}
+#gallery .pictureGallery .purpleBlack {
+  bottom: -11px;
+  left: 36px;
+  height: 280px;
+  width: 280px;
+}
+#gallery .buttonCAS {
+  margin-top: 7%;
+}
+#gallery .buttonCAS a {
+  border: 3px solid black;
+  box-shadow: 2px 2px 10px 0px black;
 }
 
 footer {

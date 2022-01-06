@@ -1,25 +1,170 @@
 // HOMEPAGE
 
-// General
-h2 {
-  color: $purple;
-  font-family: "ralewayBold";
-  text-transform: uppercase;
-  font-size: 30px;
-  span {
-    color: black;
+// General homepage
+#homepage {
+  h2 {
+    text-align: left;
+    color: $purple;
+    font-family: "ralewayBold";
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-bottom: 30px;
+    span {
+      color: $gray;
+      font-family: "caviarDreamsBold";
+      font-size: 24px;
+      text-transform: initial;
+    }
+    strong {
+      color: black;
+      font-family: "caviarDreamsBold";
+      font-size: 24px;
+      text-transform: initial;
+    }
+  }
+
+  h3 {
+    color: $purple;
     font-family: "caviarDreamsBold";
-    font-size: 24px;
-    text-transform: initial;
+    font-size: 20px;
+    padding-bottom: 30px;
   }
 }
 
-h3{
-    color: $purple;
-    font-family: 'caviarDreamsBold';
-    font-size: 20px;
+// history and team part
+#aboutCAS {
+  padding: 4%;
+  @include flex($align: baseline);
+  color: $gray;
+  background-color: black;
+  height: 418px;
+  .historyCAS {
+    width: 50%;
+    p {
+      text-align: justify;
+      width: 526px;
+      line-height: 25px;
+      margin-bottom: 15%;
+    }
+    .buttonCAS {
+      margin-left: 25%;
+      margin-top: 50px;
+    }
+  }
+
+  .teamCAS {
+    padding-left: 8%;
+    .teamAVATAR {
+      @include flex;
+      .avatar {
+        background-color: burlywood;
+        height: 100px;
+        width: 100px;
+        margin-top: 4%;
+        margin-right: 80px;
+        border: 5px solid $purple;
+        box-shadow: 3px 3px 8px -1px white;
+      }
+    }
+
+    .eyeVisual {
+      img {
+        width: 490px;
+        border: 4px solid black;
+        border-radius: 2em;
+        box-shadow: 1px 1px 10px 0px black;
+      }
+      top: 6em;
+    }
+    .purpleFrame {
+      top: -10px;
+      right: 58px;
+      border-radius: 2em;
+      height: 244px;
+      width: 492px;
+    }
+  }
 }
 
-#aboutCAS {
-  // aboutCAS
+// know-how part
+#expertiseCAS {
+  padding: 4%;
+  h2 {
+    margin-bottom: 2%;
+    margin-left: 28px;
+  }
+  .serviceCAS {
+    @include flex($just: space-between);
+    .graphicCreation,
+    .internetSite,
+    .socialNetworks,
+    .consulting {
+      text-align: center;
+      background-color: $gray;
+      height: 300px;
+      width: 300px;
+      border: 3px solid black;
+      border-radius: 50%;
+      position: relative;
+      img {
+        padding: 2% 0;
+      }
+      p {
+        margin-top: -1em;
+        padding: 0 3em;
+      }
+      .buttonCAS {
+        a {
+          position: absolute;
+          top: 90%;
+          left: 12%;
+          border: 3px solid black;
+          box-shadow: 2px 2px 10px 0px black;
+        }
+      }
+    }
+  }
+}
+
+// project gallery part
+#gallery {
+  padding: 4%;
+  background-color: $gray;
+  text-align: center;
+  h2 {
+    margin-left: 28px;
+  }
+  p {
+    text-align: left;
+    margin-left: 28px;
+    margin-bottom: 5%;
+  }
+  .pictureGallery {
+    @include flex;
+    img {
+      height: 300px;
+      position: relative;
+      margin-right: 2em;
+      border: 1px solid black;
+    }
+    .purpleFrame {
+      top: -11px;
+      right: 20px;
+      height: 280px;
+      width: 280px;
+    }
+    .purpleBlack {
+      bottom: -11px;
+      left: 36px;
+      height: 280px;
+      width: 280px;
+    }
+  }
+  .buttonCAS {
+    margin-top: 7%;
+    a {
+      border: 3px solid black;
+      box-shadow: 2px 2px 10px 0px black;
+    }
+  }
 }

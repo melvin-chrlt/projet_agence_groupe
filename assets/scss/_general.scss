@@ -1,38 +1,42 @@
 // --- RESET --- //
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 // --- GENERAL --- //
-body{
-    font-family: 'roboto';
+body {
+  font-family: "roboto";
 }
 
 // --- ARROW TOP OF PAGE --- //
-.topPage{
-    background-color: black;
-    color: white;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
+.topPage {
+  background-color: black;
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  font-size: 40px;
+  margin-left: 5%;
 }
 
-// --- RELATIVE POSITION --- //
-.absolute{
-    position: absolute;
-    z-index: 1;
+// RELATIVE POSITION
+.relative {
+  position: relative;
+  z-index: 1;
 }
 // --- FRAME DECORATION --- //
 // purple :
-.purpleFrame{
-    border-top: 10px solid $purple;
-    border-right: 10px solid $purple;
-    position: relative;
-    top: -15px;
-    right: -50px;
-    height: 150px;
-    width: 150px;
+.purpleFrame {
+  background-color: $purple;
+  position: absolute;
+  z-index: -1;
+}
+// black :
+.purpleBlack {
+  background-color: black;
+  position: absolute;
+  z-index: -2;
 }
