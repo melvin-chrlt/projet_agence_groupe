@@ -14,12 +14,14 @@ body {
 // --- ARROW TOP OF PAGE --- //
 .topPage {
   background-color: black;
-  color: white;
   height: 60px;
   width: 60px;
   border-radius: 50%;
   font-size: 40px;
   margin-left: 5%;
+  a{
+    color: white;
+  }
 }
 
 // RELATIVE POSITION

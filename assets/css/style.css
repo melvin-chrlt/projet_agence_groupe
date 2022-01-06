@@ -12,12 +12,14 @@ body {
 
 .topPage {
   background-color: black;
-  color: white;
   height: 60px;
   width: 60px;
   border-radius: 50%;
   font-size: 40px;
   margin-left: 5%;
+}
+.topPage a {
+  color: white;
 }
 
 .relative {
@@ -371,6 +373,109 @@ header #headerTitle h2 {
   box-shadow: 2px 2px 10px 0px black;
 }
 
+@media screen and (max-width: 1340px) {
+  #aboutCAS {
+    justify-content: space-between;
+  }
+
+  #aboutCAS .teamCAS .eyeVisual img {
+    width: 390px;
+  }
+
+  #aboutCAS .teamCAS .purpleFrame {
+    right: 160px;
+    height: 198px;
+    width: 373px;
+  }
+
+  #expertiseCAS .serviceCAS .graphicCreation,
+#expertiseCAS .serviceCAS .internetSite,
+#expertiseCAS .serviceCAS .socialNetworks,
+#expertiseCAS .serviceCAS .consulting {
+    height: 200px;
+    width: 200px;
+  }
+
+  #expertiseCAS .serviceCAS .graphicCreation img,
+#expertiseCAS .serviceCAS .internetSite img,
+#expertiseCAS .serviceCAS .socialNetworks img,
+#expertiseCAS .serviceCAS .consulting img {
+    height: 50px;
+  }
+
+  #homepage h3 {
+    font-size: 15px;
+  }
+
+  #expertiseCAS .serviceCAS .graphicCreation p,
+#expertiseCAS .serviceCAS .internetSite p,
+#expertiseCAS .serviceCAS .socialNetworks p,
+#expertiseCAS .serviceCAS .consulting p {
+    font-size: 12px;
+    margin-top: -2em;
+  }
+
+  .buttonCAS a {
+    padding: 1em 3.5em;
+    font-size: 12px;
+    box-shadow: 1px 1px 4px 0px black;
+  }
+}
+#gallery .pictureGallery img {
+  height: 200px;
+  width: 200px;
+}
+
+#gallery .pictureGallery .purpleFrame,
+#gallery .pictureGallery .purpleBlack {
+  height: 180px;
+  width: 180px;
+}
+
+@media screen and (max-width: 390px) {
+  #aboutCAS,
+#expertiseCAS .serviceCAS,
+#gallery .pictureGallery {
+    display: block;
+  }
+
+  #homepage h2,
+#homepage h2 span {
+    font-size: 18px;
+  }
+
+  #aboutCAS .historyCAS p,
+#aboutCAS .historyCAS {
+    width: 100%;
+  }
+
+  .teamCAS {
+    display: none;
+  }
+
+  #expertiseCAS .serviceCAS {
+    text-align: center;
+  }
+
+  #expertiseCAS .serviceCAS .graphicCreation,
+#expertiseCAS .serviceCAS .internetSite,
+#expertiseCAS .serviceCAS .socialNetworks,
+#expertiseCAS .serviceCAS .consulting {
+    margin-bottom: 20%;
+  }
+
+  .topPage {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .topPage a {
+    font-size: 25px;
+  }
+}
 footer {
   text-align: center;
   padding: 30px;
@@ -443,6 +548,36 @@ footer span a {
   color: #AD00FF;
 }
 
+@media screen and (max-width: 390px) {
+  footer #sectionFooter {
+    display: block;
+  }
+  footer #sectionFooter .infoCas .functionCAS {
+    width: 100%;
+  }
+  footer #sectionFooter .contactCas,
+footer #sectionFooter .locationCAS {
+    margin-top: 14%;
+  }
+  footer #sectionFooter h2 {
+    display: none;
+  }
+  footer #sectionFooter .buttonCAS,
+footer #sectionFooter p {
+    text-align: center;
+  }
+
+  .iconNetworks {
+    margin-top: 14%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .iconNetworks p {
+    margin-right: 5%;
+  }
+}
 @media screen and (max-width: 1295px) {
   header {
     padding: 0;

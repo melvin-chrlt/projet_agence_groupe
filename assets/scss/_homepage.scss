@@ -168,3 +168,97 @@
     }
   }
 }
+
+// ------ @MEDIA QUERY ------ //
+@media screen and (max-width: 1340px) {
+  #aboutCAS {
+    justify-content: space-between;
+  }
+  //picture eyeVisual
+  #aboutCAS .teamCAS .eyeVisual img {
+    width: 390px;
+  }
+  #aboutCAS .teamCAS .purpleFrame {
+    right: 160px;
+    height: 198px;
+    width: 373px;
+  }
+
+  // expertise
+  #expertiseCAS .serviceCAS .graphicCreation,
+  #expertiseCAS .serviceCAS .internetSite,
+  #expertiseCAS .serviceCAS .socialNetworks,
+  #expertiseCAS .serviceCAS .consulting {
+    height: 200px;
+    width: 200px;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation img,
+  #expertiseCAS .serviceCAS .internetSite img,
+  #expertiseCAS .serviceCAS .socialNetworks img,
+  #expertiseCAS .serviceCAS .consulting img {
+    height: 50px;
+  }
+  #homepage h3 {
+    font-size: 15px;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation p,
+  #expertiseCAS .serviceCAS .internetSite p,
+  #expertiseCAS .serviceCAS .socialNetworks p,
+  #expertiseCAS .serviceCAS .consulting p {
+    font-size: 12px;
+    margin-top: -2em;
+  }
+  // button
+  .buttonCAS a {
+    padding: 1em 3.5em;
+    font-size: 12px;
+    box-shadow: 1px 1px 4px 0px black;
+  }
+}
+// pictures projects
+#gallery .pictureGallery img {
+  height: 200px;
+  width: 200px;
+}
+#gallery .pictureGallery .purpleFrame,
+#gallery .pictureGallery .purpleBlack {
+  height: 180px;
+  width: 180px;
+}
+
+// ------ @MEDIA QUERY ------ //
+@media screen and (max-width: 390px) {
+  #aboutCAS,
+  #expertiseCAS .serviceCAS,
+  #gallery .pictureGallery {
+    display: block;
+  }
+  #homepage h2,
+  #homepage h2 span {
+    font-size: 18px;
+  }
+  #aboutCAS .historyCAS p,
+  #aboutCAS .historyCAS {
+    width: 100%;
+  }
+  .teamCAS {
+    display: none;
+  }
+  #expertiseCAS .serviceCAS{
+    text-align: center;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation,
+  #expertiseCAS .serviceCAS .internetSite,
+  #expertiseCAS .serviceCAS .socialNetworks,
+  #expertiseCAS .serviceCAS .consulting {
+    margin-bottom: 20%;
+  }
+  .topPage{
+    height: 40px;
+    width: 40px;
+    @include flex;
+    a{
+      font-size: 25px;
+    }
+  }
+}

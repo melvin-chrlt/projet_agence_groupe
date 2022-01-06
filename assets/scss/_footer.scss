@@ -77,3 +77,33 @@ footer {
     }
   }
 }
+
+// ------ @MEDIA QUERY ------ //
+@media screen and (max-width: 390px) {
+  footer #sectionFooter {
+    display: block;
+    .infoCas {
+      .functionCAS {
+        width: 100%;
+      }
+    }
+    .contactCas,
+    .locationCAS {
+      margin-top: 14%;
+    }
+    h2 {
+      display: none;
+    }
+    .buttonCAS,
+    p {
+      text-align: center;
+    }
+  }
+  .iconNetworks {
+    margin-top: 14%;
+    @include flex;
+    p {
+      margin-right: 5%;
+    }
+  }
+}
