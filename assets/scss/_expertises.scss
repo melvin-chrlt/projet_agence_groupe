@@ -1,3 +1,58 @@
 #expertiseMain{
-    @include flex;
+    display: flex;
+    justify-content: center;
+    padding: 5em 0;
+
+    section{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3{
+                color: #ad00ff;
+                font-size: 36px;
+                font-family: "caviarDreamsBold";
+                padding: 1em 0;
+
+                span{
+                    font-family: ralewayBold;
+                }
+            }
+
+            p{
+                font-family: "roboto";
+                font-size: 18px;
+                line-height: 39px;
+                text-align: justify;
+
+                span{
+                    font-weight: bold;
+                }
+            }
+
+            div{
+                display: flex;
+                align-items: center;
+                gap: 5em;
+
+                .expertiseSecondText{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0;
+                }
+            }
+        }
+
+        .separator{
+            border-bottom: 1px solid black;
+            width: 50%;
+            margin: 8em 0;
+        }
+    }
 }

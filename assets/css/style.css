@@ -207,8 +207,52 @@ header #headerTitle h2 {
 
 #expertiseMain {
   display: flex;
+  justify-content: center;
+  padding: 5em 0;
+}
+#expertiseMain section {
+  width: 70%;
+  display: flex;
   flex-direction: column;
   align-items: center;
+}
+#expertiseMain section article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#expertiseMain section article h3 {
+  color: #ad00ff;
+  font-size: 36px;
+  font-family: "caviarDreamsBold";
+  padding: 1em 0;
+}
+#expertiseMain section article h3 span {
+  font-family: ralewayBold;
+}
+#expertiseMain section article p {
+  font-family: "roboto";
+  font-size: 18px;
+  line-height: 39px;
+  text-align: justify;
+}
+#expertiseMain section article p span {
+  font-weight: bold;
+}
+#expertiseMain section article div {
+  display: flex;
+  align-items: center;
+  gap: 5em;
+}
+#expertiseMain section article div .expertiseSecondText {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+#expertiseMain section .separator {
+  border-bottom: 1px solid black;
+  width: 50%;
+  margin: 8em 0;
 }
 
 /*# sourceMappingURL=style.css.map */
