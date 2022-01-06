@@ -243,6 +243,11 @@ header #headerTitle h2 {
   display: flex;
   align-items: center;
   gap: 5em;
+  padding-top: 3em;
+}
+#expertiseMain section article div img {
+  width: 50%;
+  height: auto;
 }
 #expertiseMain section article div .expertiseSecondText {
   display: flex;
