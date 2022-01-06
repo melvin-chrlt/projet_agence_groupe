@@ -380,6 +380,24 @@ header #headerTitle h2 {
   margin: 8em 0;
 }
 
+@media screen and (max-width: 1250px) {
+  #expertiseMain section {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 900px) {
+  #expertiseMain section article h3 {
+    text-align: center;
+  }
+  #expertiseMain section article div {
+    flex-direction: column;
+    align-items: center;
+  }
+  #expertiseMain section article div img {
+    width: 80%;
+    gap: 2.5em;
+  }
+}
 footer {
   text-align: center;
   padding: 30px;
