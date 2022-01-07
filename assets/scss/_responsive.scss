@@ -5,6 +5,9 @@
         nav{
             padding: 1em;
             gap: 10em;
+            width: 10%;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
 
             //MENU STYLE WHEN MENU BURGER IS OPEN
             #menu{
@@ -95,6 +98,20 @@
             
             h1{
                 font-size: 40px;
+            }
+
+            img{
+                width: 25em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 440px){
+    header{
+        #headerTitle{
+            img{
+                width: 15em;
             }
         }
     }

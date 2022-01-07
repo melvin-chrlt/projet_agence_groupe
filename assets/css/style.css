@@ -82,13 +82,8 @@ header nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20em;
   background-color: #2196F3;
-}
-header nav img {
-  width: 11em;
-  height: auto;
-  padding: 0.5em 0;
+  padding: 1.5em;
 }
 header nav #menu ul {
   display: flex;
@@ -181,21 +176,11 @@ header #headerTitle {
   text-align: center;
   padding: 13em 0;
 }
+header #headerTitle img {
+  width: 30em;
+  height: auto;
+}
 header #headerTitle h1 {
-  font-family: caviarDreamsBold;
-  font-size: 60px;
-  color: white;
-}
-header #headerTitle h1 .cas {
-  font-family: binjay;
-  font-size: 64px;
-}
-header #headerTitle h1 .and {
-  font-family: caviarDreams;
-  font-size: 50px;
-  font-weight: 200;
-}
-header #headerTitle h2 {
   font-family: caviarDreamsBold;
   font-size: 30px;
   padding-top: 1em;
@@ -610,6 +595,9 @@ footer #sectionFooter p {
   header nav {
     padding: 1em;
     gap: 10em;
+    width: 10%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
   header nav #menu {
     display: none;
@@ -675,6 +663,14 @@ footer #sectionFooter p {
   }
   header #headerTitle h1 {
     font-size: 40px;
+  }
+  header #headerTitle img {
+    width: 25em;
+  }
+}
+@media screen and (max-width: 440px) {
+  header #headerTitle img {
+    width: 15em;
   }
 }
 
