@@ -80,13 +80,31 @@ header nav #menu ul li a {
   color: black;
   font-size: 24px;
   font-family: caviarDreamsBold;
-  padding: 0 10px;
-  padding-bottom: 10px;
+  padding: 0.3em 0;
+  position: relative;
   transition: all ease-in-out 0.2s;
 }
-header nav #menu ul li a:hover {
+header nav #menu ul li a:before, header nav #menu ul li a:after {
+  height: 3px;
+  position: absolute;
+  content: "";
+  transition: all 0.35s ease;
+  background-color: black;
+  width: 0;
+}
+header nav #menu ul li a:before {
+  top: 0;
+  left: 0;
+}
+header nav #menu ul li a:after {
+  bottom: 0;
+  right: 0;
+}
+header nav #menu ul li a:hover, header nav #menu ul li .current a {
   color: white;
-  border-bottom: 2px solid white;
+}
+header nav #menu ul li a:hover:before, header nav #menu ul li .current a:before, header nav #menu ul li a:hover:after, header nav #menu ul li .current a:after {
+  width: 100%;
 }
 header nav #menuBurger {
   width: 2.5em;
@@ -277,8 +295,8 @@ footer span a {
     transition: all ease-in-out 0.2s;
     color: white;
   }
-  header nav #menu ul li a:hover {
-    border-bottom: 0;
+  header nav #menu ul li a:before, header nav #menu ul li a:after {
+    height: 0;
   }
   header nav #menu ul li:hover {
     background-color: #ad00ff;
