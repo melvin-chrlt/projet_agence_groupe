@@ -374,6 +374,15 @@ header #headerTitle h2 {
   flex-direction: column;
   gap: 0;
 }
+#expertiseMain section .anim {
+  transform: translateY(20%);
+  opacity: 0;
+  transition: all ease-in-out 0.4s;
+}
+#expertiseMain section .active {
+  transform: translateX(0%);
+  opacity: 1;
+}
 #expertiseMain section .separator {
   border-bottom: 1px solid black;
   width: 50%;
