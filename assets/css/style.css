@@ -58,49 +58,71 @@ body {
   font-size: 18px;
   font-family: "caviarDreamsBold";
   padding: 1em 4em;
-  background-color: #2196f3;
+  background-color: #2196F3;
   border-radius: 25px;
   transition: all ease-in-out 0.3s;
   box-shadow: 2px 2px 10px 0px white;
 }
 .buttonCAS a:hover {
-  color: #2196f3;
+  color: #2196F3;
   background-color: white;
 }
 
 header {
-  padding: 3em;
+  padding-bottom: 3em;
   background-image: url(../images/bakcHome.jpg);
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 header nav {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 10em;
+  gap: 20em;
+  background-color: #2196F3;
 }
 header nav img {
-  width: 20em;
+  width: 11em;
   height: auto;
+  padding: 0.5em 0;
 }
 header nav #menu ul {
   display: flex;
   gap: 4em;
 }
 header nav #menu ul li a {
-  color: black;
+  color: white;
   font-size: 24px;
   font-family: caviarDreamsBold;
-  padding: 0 10px;
-  padding-bottom: 10px;
+  padding: 0.3em 0;
+  position: relative;
   transition: all ease-in-out 0.2s;
+}
+header nav #menu ul li a:before, header nav #menu ul li a:after {
+  height: 3px;
+  position: absolute;
+  content: "";
+  transition: all 0.35s ease;
+  background-color: black;
+  width: 0;
+}
+header nav #menu ul li a:before {
+  top: 0;
+  left: 0;
+}
+header nav #menu ul li a:after {
+  bottom: 0;
+  right: 0;
 }
 header nav #menu ul li a:hover {
   color: white;
-  border-bottom: 2px solid white;
+}
+header nav #menu ul li a:hover:before, header nav #menu ul li a:hover:after {
+  width: 100%;
 }
 header nav #menuBurger {
   width: 2.5em;
@@ -123,7 +145,7 @@ header nav #menuBurger .middle {
   width: 30px;
 }
 header nav #menuBurger:hover .bar {
-  background-color: #ad00ff;
+  background-color: black;
   width: 40px;
 }
 header nav #menuBurger:hover .middle {
@@ -142,7 +164,7 @@ header nav #close {
 }
 header nav #close:hover {
   cursor: pointer;
-  color: #ad00ff;
+  color: #2196F3;
 }
 @keyframes close {
   from {
@@ -157,11 +179,12 @@ header nav #close:hover {
 }
 header #headerTitle {
   text-align: center;
-  padding: 7em 0;
+  padding: 13em 0;
 }
 header #headerTitle h1 {
   font-family: caviarDreamsBold;
   font-size: 60px;
+  color: white;
 }
 header #headerTitle h1 .cas {
   font-family: binjay;
@@ -175,13 +198,14 @@ header #headerTitle h1 .and {
 header #headerTitle h2 {
   font-family: caviarDreamsBold;
   font-size: 30px;
-  padding-top: 0.5em;
+  padding-top: 1em;
   letter-spacing: 2px;
+  color: white;
 }
 
 #homepage h2 {
   text-align: left;
-  color: #2196f3;
+  color: #2196F3;
   font-family: "ralewayBold";
   text-transform: uppercase;
   font-size: 30px;
@@ -200,7 +224,7 @@ header #headerTitle h2 {
   text-transform: initial;
 }
 #homepage h3 {
-  color: #2196f3;
+  color: #2196F3;
   font-family: "caviarDreamsBold";
   font-size: 20px;
   padding-bottom: 30px;
@@ -248,7 +272,7 @@ header #headerTitle h2 {
   width: 150px;
   margin-top: 4%;
   margin-right: 80px;
-  border: 5px solid #2196f3;
+  border: 5px solid #2196F3;
   box-shadow: 3px 3px 8px -1px white;
 }
 #aboutCAS .teamCAS .eyeVisual {
@@ -266,7 +290,7 @@ header #headerTitle h2 {
   border-radius: 2em;
   height: 244px;
   width: 492px;
-  background-color: #2196f3;
+  background-color: #2196F3;
   position: absolute;
   z-index: -1;
 }
@@ -346,7 +370,7 @@ header #headerTitle h2 {
   border: 1px solid black;
 }
 #gallery .pictureGallery .purpleShadow {
-  box-shadow: 12px -12px 0px -1px #2196f3;
+  box-shadow: 12px -12px 0px -1px #2196F3;
 }
 #gallery .pictureGallery .blackShadow {
   box-shadow: 12px -12px 0px -1px black;
@@ -441,10 +465,10 @@ header #headerTitle h2 {
 }
 #bodyGalerie #projetsMain div img {
   border: 1px solid black;
-  box-shadow: 12px -12px 0px -1px #2196f3;
+  box-shadow: 12px -12px 0px -1px #2196F3;
 }
 #bodyGalerie #projetsMain div h2 {
-  background-color: #2196f3;
+  background-color: #2196F3;
   color: black;
   font-family: "caviarDreamsBold";
   font-size: 2em;
@@ -465,7 +489,7 @@ header #headerTitle h2 {
   opacity: 1;
 }
 #bodyGalerie .purple {
-  background-color: #2196f3;
+  background-color: #2196F3;
 }
 
 footer {
@@ -499,12 +523,12 @@ footer #sectionFooter .locationCAS h2 {
   font-family: "caviarDreams";
   font-size: 24px;
   text-transform: uppercase;
-  color: #2196f3;
+  color: #2196F3;
   margin-bottom: 20px;
 }
 footer #sectionFooter .contactCas i,
 footer #sectionFooter .locationCAS i {
-  color: #2196f3;
+  color: #2196F3;
   font-size: 25px;
   padding-right: 5px;
 }
@@ -520,6 +544,10 @@ footer #sectionFooter .contactCas .buttonCAS a,
 footer #sectionFooter .locationCAS .buttonCAS a {
   padding: 1em 3em;
   border: 1px solid black;
+}
+footer #sectionFooter .iconNetworks {
+  display: flex;
+  flex-direction: column;
 }
 footer #sectionFooter .iconNetworks i {
   font-size: 40px;
@@ -538,7 +566,7 @@ footer #sectionFooter .iconNetworks .fa-twitter {
   color: #00adff;
 }
 footer span a {
-  color: #2196f3;
+  color: #2196F3;
 }
 
 @media screen and (max-width: 390px) {
@@ -580,7 +608,8 @@ footer #sectionFooter p {
     padding: 0;
   }
   header nav {
-    padding-top: 5em;
+    padding: 1em;
+    gap: 10em;
   }
   header nav #menu {
     display: none;
@@ -611,11 +640,11 @@ footer #sectionFooter p {
     transition: all ease-in-out 0.2s;
     color: white;
   }
-  header nav #menu ul li a:hover {
-    border-bottom: 0;
+  header nav #menu ul li a:before, header nav #menu ul li a:after {
+    height: 0;
   }
   header nav #menu ul li:hover {
-    background-color: #ad00ff;
+    background-color: #2196F3;
   }
   header nav #menu ul li:hover a {
     color: black;
@@ -635,7 +664,8 @@ footer #sectionFooter p {
 @media screen and (max-width: 595px) {
   header nav {
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
+    padding: 1.5em;
   }
   header nav #menu ul li a {
     margin-left: 1.5em;

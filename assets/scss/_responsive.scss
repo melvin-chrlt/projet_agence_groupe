@@ -3,7 +3,8 @@
         padding: 0;
 
         nav{
-            padding-top: 5em;
+            padding: 1em;
+            gap: 10em;
 
             //MENU STYLE WHEN MENU BURGER IS OPEN
             #menu{
@@ -36,13 +37,13 @@
                             color: white;
                         }
 
-                        a:hover{
-                            border-bottom: 0;
+                        a:before, a:after{
+                            height: 0;
                         }
                     }
 
                     li:hover{
-                        background-color: #ad00ff;
+                        background-color: #2196F3;
 
                         a{
                             color: black;
@@ -75,7 +76,8 @@
 
         nav{
             flex-direction: column;
-            gap: 2em;
+            gap: 1em;
+            padding: 1.5em;
 
             #menu{
                 ul{
