@@ -401,9 +401,6 @@ header #headerTitle h2 {
     font-size: 25px;
   }
 }
-#bodyGalerie {
-  background-color: black;
-}
 #bodyGalerie p {
   text-align: center;
   color: #A6A6A6;
@@ -418,12 +415,35 @@ header #headerTitle h2 {
   margin: 4% 5% 4% 10%;
 }
 #bodyGalerie #projetsMain div {
+  text-align: center;
   margin-right: 4%;
   margin-bottom: 5%;
+  position: relative;
 }
 #bodyGalerie #projetsMain div img {
   border: 1px solid black;
   box-shadow: 12px -12px 0px -1px #AD00FF;
+}
+#bodyGalerie #projetsMain div h2 {
+  background-color: #AD00FF;
+  color: black;
+  font-family: "caviarDreamsBold";
+  font-size: 2em;
+  box-shadow: -12px 12px 8px -8px black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2%;
+}
+#bodyGalerie #projetsMain div h2 span {
+  color: #A6A6A6;
+  font-size: 0.6em;
+}
+#bodyGalerie #projetsMain div .mouseSurvol {
+  opacity: 0;
+}
+#bodyGalerie #projetsMain div .mouseSurvol:hover {
+  opacity: 1;
 }
 #bodyGalerie .purple {
   background-color: #AD00FF;

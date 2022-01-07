@@ -1,4 +1,4 @@
-
+// projects table
 const projects = [
     {name: 'Projet 1', photo: "<img src='assets/images/projets/projet.jpg'>", description: 'Lorem, ipsum dolor sit amet elit.'},
     {name: 'Projet 2', photo: "<img src='assets/images/projets/projet.jpg'>", description: 'Lorem, ipsum dolor sit amet elit.'},
@@ -11,13 +11,19 @@ const projects = [
     {name: 'Projet 9', photo: "<img src='assets/images/projets/projet.jpg'>", description: 'Lorem, ipsum dolor sit amet elit.'},
 ];
 
+// variable declaration
 let length = projects.length;
 let i;
-
 let projectCard = document.getElementById('projetsMain');
+
+// loop which for each element of the array creates a div, insert the photo, after the parent element.
 for (i = 0; i < length; i++){
 
     let itemProject = document.createElement('div');
-    itemProject.innerHTML = projects[i].photo;
+    itemProject.innerHTML = 
+    projects[i].photo
+    + '<h2 ' + 'class="mouseSurvol">' + projects[i].name + '<br>'
+    + '<span> ' + projects[i].description + '</span>'
+    + '</h2>';
     projectCard.appendChild(itemProject);
 }
