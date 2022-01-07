@@ -100,10 +100,10 @@ header nav #menu ul li a:after {
   bottom: 0;
   right: 0;
 }
-header nav #menu ul li a:hover, header nav #menu ul li .current a {
+header nav #menu ul li a:hover {
   color: white;
 }
-header nav #menu ul li a:hover:before, header nav #menu ul li .current a:before, header nav #menu ul li a:hover:after, header nav #menu ul li .current a:after {
+header nav #menu ul li a:hover:before, header nav #menu ul li a:hover:after {
   width: 100%;
 }
 header nav #menuBurger {

@@ -57,11 +57,11 @@ header{
                         right: 0;
                     }
 
-                    a:hover, .current a{
+                    a:hover{
                         color: white;
                     }
 
-                    a:hover:before, .current a:before, a:hover:after, .current a:after {
+                    a:hover:before, a:hover:after{
                         width: 100%;
                     }
                 }
