@@ -13,15 +13,8 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20em;
         background-color: #2196F3;
-
-        //LOGO SIZE
-        img{
-            width: 11em;
-            height: auto;
-            padding: 0.5em 0;
-        }
+        padding: 1.5em;
 
         #menu{
 
@@ -148,24 +141,13 @@ header{
         text-align: center;
         padding: 13em 0;
 
-        h1{
-            font-family: caviarDreamsBold;
-            font-size: 60px;
-            color: white;
-
-            .cas{
-                font-family: binjay;
-                font-size: 64px;
-            }
-
-            .and{
-                font-family: caviarDreams;
-                font-size: 50px;
-                font-weight: 200;
-            }
+        //LOGO SIZE
+        img{
+            width: 30em;
+            height: auto;
         }
 
-        h2{
+        h1{
             font-family: caviarDreamsBold;
             font-size: 30px;
             padding-top: 1em;
