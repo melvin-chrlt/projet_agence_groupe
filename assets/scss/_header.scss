@@ -11,9 +11,9 @@ header{
     nav{
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        gap: 10em;
+        gap: 20em;
         background-color: #2196F3;
 
         //LOGO SIZE
@@ -100,7 +100,7 @@ header{
         #menuBurger:hover{
 
             .bar{
-                background-color: #2196F3;
+                background-color: black;
                 width: 40px;
             }
 
