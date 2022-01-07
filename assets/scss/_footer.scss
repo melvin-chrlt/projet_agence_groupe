@@ -45,6 +45,7 @@ footer {
         margin-top: 45px;
         a {
           padding: 1em 3em;
+          border: 1px solid black;
         }
       }
     }
@@ -78,11 +79,16 @@ footer {
   }
 }
 
-// ------ @MEDIA QUERY ------ //
+// ---------- RESPONSIVE ---------- //
+// ------ @MEDIA QUERY 390px------ //
 @media screen and (max-width: 390px) {
   footer #sectionFooter {
     display: block;
     .infoCas {
+      img{
+        width: 100%;
+        height: auto;
+      }
       .functionCAS {
         width: 100%;
       }
