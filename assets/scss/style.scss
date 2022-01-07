@@ -1,7 +1,10 @@
-@import "mixins";
-@import "general";
-@import "header";
-@import "main";
-@import "footer";
-@import "responsive";
-@import "apropos.scss";
+@import 'mixins';
+@import 'vars';
+@import 'general';
+@import 'font';
+@import 'button';
+@import 'header';
+@import 'main';
+@import "apropos";
+@import 'footer';
+@import 'responsive';
