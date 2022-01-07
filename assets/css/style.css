@@ -369,6 +369,9 @@ header #headerTitle h2 {
   width: 50%;
   height: auto;
 }
+#expertiseMain section article div #eye {
+  width: 25%;
+}
 #expertiseMain section article div .expertiseSecondText {
   display: flex;
   flex-direction: column;

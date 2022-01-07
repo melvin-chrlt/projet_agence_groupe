@@ -23,7 +23,7 @@ function slide(){
     for(let i = 0; i < slidingExpertise.length; i++){
         //hauteur de la fenêtre
         let windowHeight = window.innerHeight;
-        //pour savoir la position du haut de mon élément (toFixed = sans les virgules)
+        //pour savoir la position du haut de mon élément
         let topEl = slidingExpertise[i].getBoundingClientRect().top;
         //hauteur à laquelle l'élément sera visible
         let elementVisible = 150;
