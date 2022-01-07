@@ -55,29 +55,33 @@ body {
 }
 
 header {
-  padding: 3em;
+  padding-bottom: 3em;
   background-image: url(../images/bakcHome.jpg);
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 header nav {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 10em;
+  background-color: #2196F3;
 }
 header nav img {
-  width: 20em;
+  width: 11em;
   height: auto;
+  padding: 0.5em 0;
 }
 header nav #menu ul {
   display: flex;
   gap: 4em;
 }
 header nav #menu ul li a {
-  color: black;
+  color: white;
   font-size: 24px;
   font-family: caviarDreamsBold;
   padding: 0.3em 0;
@@ -161,11 +165,12 @@ header nav #close:hover {
 }
 header #headerTitle {
   text-align: center;
-  padding: 7em 0;
+  padding: 13em 0;
 }
 header #headerTitle h1 {
   font-family: caviarDreamsBold;
   font-size: 60px;
+  color: white;
 }
 header #headerTitle h1 .cas {
   font-family: binjay;
@@ -179,8 +184,9 @@ header #headerTitle h1 .and {
 header #headerTitle h2 {
   font-family: caviarDreamsBold;
   font-size: 30px;
-  padding-top: 0.5em;
+  padding-top: 1em;
   letter-spacing: 2px;
+  color: white;
 }
 
 #contactMain {
@@ -561,7 +567,7 @@ footer span a {
     height: 0;
   }
   header nav #menu ul li:hover {
-    background-color: #ad00ff;
+    background-color: #2196F3;
   }
   header nav #menu ul li:hover a {
     color: black;
