@@ -32,14 +32,37 @@ header{
                         color: black;
                         font-size: 24px;
                         font-family: caviarDreamsBold;
-                        padding: 0 10px;
-                        padding-bottom: 10px;
+                        padding: 0.3em 0;
+                        position: relative;
                         transition: all ease-in-out 0.2s;
                     }
 
-                    a:hover{
+                    //ANIMATION HOVER
+                    a:before, a:after{
+                        height: 3px;
+                        position: absolute;
+                        content: '';
+                        transition: all 0.35s ease;
+                        background-color: black;
+                        width: 0;
+                    }
+
+                    a:before{
+                        top: 0;
+                        left: 0;
+                    }
+
+                    a:after{
+                        bottom: 0;
+                        right: 0;
+                    }
+
+                    a:hover, .current a{
                         color: white;
-                        border-bottom: 2px solid white;
+                    }
+
+                    a:hover:before, .current a:before, a:hover:after, .current a:after {
+                        width: 100%;
                     }
                 }
             }

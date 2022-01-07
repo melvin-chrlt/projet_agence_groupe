@@ -37,8 +37,8 @@
                             color: white;
                         }
 
-                        a:hover{
-                            border-bottom: 0;
+                        a:before, a:after{
+                            height: 0;
                         }
                     }
 
