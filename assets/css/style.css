@@ -337,27 +337,29 @@ header #headerTitle h1 {
 #expertiseMain {
   display: flex;
   justify-content: center;
-  padding: 5em 0;
+  padding: 10em 0;
+  position: relative;
 }
 #expertiseMain section {
-  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 #expertiseMain section article {
+  width: 72%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 #expertiseMain section article h3 {
-  color: #2196f3;
+  color: black;
   font-size: 36px;
-  font-family: "caviarDreamsBold";
+  font-family: ralewayBold;
   padding: 1em 0;
 }
 #expertiseMain section article h3 span {
-  font-family: ralewayBold;
+  color: #2196f3;
+  font-family: caviarDreamsBold;
 }
 #expertiseMain section article p {
   font-family: "roboto";
@@ -371,17 +373,16 @@ header #headerTitle h1 {
 #expertiseMain section article div {
   display: flex;
   align-items: center;
-  gap: 5em;
-  padding-top: 3em;
+  gap: 10em;
+  padding-top: 1em;
 }
 #expertiseMain section article div img {
-  width: 50%;
+  width: 30%;
   height: auto;
-}
-#expertiseMain section article div #eye {
-  width: 25%;
+  transform: translateY(25%);
 }
 #expertiseMain section article div .expertiseSecondText {
+  width: 75%;
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -395,14 +396,41 @@ header #headerTitle h1 {
   transform: translateX(0%);
   opacity: 1;
 }
-#expertiseMain section .separator {
-  border-bottom: 1px solid black;
-  width: 50%;
+#expertiseMain .blueSeparatorTop {
+  width: 40%;
+  height: 3.5em;
+  position: absolute;
+  background-color: #2196f3;
+  transform: translateY(-50%);
+  top: 0;
+  left: 0;
+}
+#expertiseMain .blueSeparatorRight {
   margin: 8em 0;
+  width: 40%;
+  height: 3.5em;
+  background-color: #2196f3;
+  align-self: flex-end;
+}
+#expertiseMain .blueSeparatorLeft {
+  margin: 8em 0;
+  width: 40%;
+  height: 3.5em;
+  background-color: #2196f3;
+  align-self: flex-start;
+}
+#expertiseMain .blueSeparatorBot {
+  width: 40%;
+  height: 3.5em;
+  position: absolute;
+  background-color: #2196f3;
+  transform: translateY(50%);
+  bottom: 0;
+  right: 0;
 }
 
 @media screen and (max-width: 1250px) {
-  #expertiseMain section {
+  #expertiseMain section article {
     width: 90%;
   }
 }
@@ -416,7 +444,11 @@ header #headerTitle h1 {
   }
   #expertiseMain section article div img {
     width: 80%;
-    gap: 2.5em;
+    transform: translateY(0);
+  }
+  #expertiseMain .blueSeparatorBot, #expertiseMain .blueSeparatorLeft, #expertiseMain .blueSeparatorRight, #expertiseMain .blueSeparatorTop {
+    height: 2em;
+    width: 60%;
   }
 }
 #projetsMain {

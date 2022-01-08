@@ -1,27 +1,29 @@
 #expertiseMain{
     display: flex;
     justify-content: center;
-    padding: 5em 0;
+    padding: 10em 0;
+    position: relative;
 
     section{
-        width: 70%;
         display: flex;
         flex-direction: column;
         align-items: center;
         
         article{
+            width: 72%;
             display: flex;
             flex-direction: column;
             align-items: center;
 
             h3{
-                color: #2196f3;
+                color: black;
                 font-size: 36px;
-                font-family: "caviarDreamsBold";
+                font-family: ralewayBold;
                 padding: 1em 0;
 
                 span{
-                    font-family: ralewayBold;
+                    color: #2196f3;
+                    font-family: caviarDreamsBold;
                 }
             }
 
@@ -39,19 +41,17 @@
             div{
                 display: flex;
                 align-items: center;
-                gap: 5em;
-                padding-top: 3em;
+                gap: 10em;
+                padding-top: 1em;
 
                 img{
-                    width: 50%;
+                    width: 30%;
                     height: auto;
-                }
-
-                #eye{
-                    width: 25%;
+                    transform: translateY(25%);
                 }
 
                 .expertiseSecondText{
+                    width: 75%;
                     display: flex;
                     flex-direction: column;
                     gap: 0;
@@ -69,12 +69,42 @@
             transform: translateX(0%);
             opacity: 1;
         }
+    }
 
-        .separator{
-            border-bottom: 1px solid black;
-            width: 50%;
-            margin: 8em 0;
-        }
+    .blueSeparatorTop{
+        width: 40%;
+        height: 3.5em;
+        position: absolute;
+        background-color: #2196f3;
+        transform: translateY(-50%);
+        top: 0;
+        left: 0;
+    }
+
+    .blueSeparatorRight{
+        margin: 8em 0;
+        width: 40%;
+        height: 3.5em;
+        background-color: #2196f3;
+        align-self: flex-end;
+    }
+
+    .blueSeparatorLeft{
+        margin: 8em 0;
+        width: 40%;
+        height: 3.5em;
+        background-color: #2196f3;
+        align-self: flex-start;
+    }
+
+    .blueSeparatorBot{
+        width: 40%;
+        height: 3.5em;
+        position: absolute;
+        background-color: #2196f3;
+        transform: translateY(50%);
+        bottom: 0;
+        right: 0;
     }
 }
 
@@ -82,7 +112,9 @@
 @media screen and (max-width: 1250px){
     #expertiseMain{
         section{
-            width: 90%;
+            article{
+                width: 90%;
+            }
         }
     }
 }
@@ -101,10 +133,15 @@
 
                     img{
                         width: 80%;
-                        gap: 2.5em;
+                        transform: translateY(0);
                     }
                 }
             }
+        }
+
+        .blueSeparatorBot, .blueSeparatorLeft, .blueSeparatorRight, .blueSeparatorTop{
+            height: 2em;
+            width: 60%;
         }
     }
 }
