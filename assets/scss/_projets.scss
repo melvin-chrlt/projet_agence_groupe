@@ -1,8 +1,8 @@
 #bodyGalerie {
   background-color: black;
-  p {
+  .textGalerie {
     text-align: center;
-    color: $gray;
+    color: white;
     margin-top: 4%;
   }
   #projetsMain {
@@ -46,5 +46,7 @@
   }
   .purple {
     background-color: $purple;
+    margin-left: 50%;
+    margin-bottom: 2%;
   }
 }

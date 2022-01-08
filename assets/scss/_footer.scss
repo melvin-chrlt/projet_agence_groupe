@@ -1,9 +1,12 @@
 // THE FOOTER
 footer {
   text-align: center;
-  padding: 30px;
+  padding-top: 5%;
+  padding-bottom: 2%;
   background-color: black;
   color: white;
+  border-top: 1px solid $purple;
+  position: relative;
 
   #sectionFooter {
     @include flex(space-around, baseline);
@@ -79,6 +82,16 @@ footer {
       color: $purple;
     }
   }
+}
+
+footer::before{
+  content: '';
+  height: 50px;
+  width: 575px;
+  background-color: $purple;
+  position: absolute;
+  top: -5%;
+  right: 0;
 }
 
 // ---------- RESPONSIVE ---------- //

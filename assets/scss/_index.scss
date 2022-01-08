@@ -34,7 +34,8 @@
 
 // history and team part
 #aboutCAS {
-  padding: 4%;
+  padding-top: 4%;
+  padding-bottom: 6%;
   @include flex($align: baseline);
   color: $gray;
   background-color: black;
@@ -50,7 +51,7 @@
     .buttonCAS {
       margin-left: 25%;
       margin-top: 50px;
-      a{
+      a {
         border: 1px solid black;
       }
     }
@@ -70,38 +71,20 @@
         box-shadow: 3px 3px 8px -1px white;
       }
     }
-
-    .eyeVisual {
-      position: relative;
-      top: 6em;
-      z-index: 1;
-      img {
-        width: 610px;
-        padding-top: 4%;
-      }
-    }
-    .purpleFrame {
-      top: -10px;
-      right: 58px;
-      border-radius: 2em;
-      height: 244px;
-      width: 492px;
-      background-color: $purple;
-      position: absolute;
-      z-index: -1;
-    }
   }
 }
 
 // know-how part
 #expertiseCAS {
-  padding: 4%;
+  padding-top: 4%;
+  padding-bottom: 6%;
+  position: relative;
   h2 {
     margin-bottom: 2%;
     margin-left: 28px;
   }
   .serviceCAS {
-    @include flex($just: space-between);
+    @include flex($just: space-evenly);
     .graphicCreation,
     .internetSite,
     .socialNetworks,
@@ -132,12 +115,23 @@
     }
   }
 }
+#expertiseCAS::before{
+  content: '';
+  height: 50px;
+  width: 575px;
+  background-color: $purple;
+  position: absolute;
+  top: -4%;
+  right: 0;
+}
 
 // project gallery part
 #gallery {
-  padding: 4%;
+  padding-top: 4%;
+  padding-bottom: 6%;
   background-color: $gray;
   text-align: center;
+  position: relative;
   h2 {
     margin-left: 28px;
   }
@@ -168,6 +162,15 @@
       box-shadow: 2px 2px 10px 0px black;
     }
   }
+}
+#gallery::before{
+  content: '';
+  height: 50px;
+  width: 575px;
+  background-color: $purple;
+  position: absolute;
+  top: -2%;
+  left: 0;
 }
 
 // ---------- RESPONSIVE ---------- //
@@ -229,7 +232,7 @@
 
 // ------ @MEDIA QUERY 1200px------ //
 @media screen and (max-width: 1200px) {
-  #aboutCAS{
+  #aboutCAS {
     justify-content: initial;
   }
 }
