@@ -6,16 +6,16 @@ let openMenu = document.querySelector("#menuBurger");
 function openBurger(){
     navMenu.style.display = "flex";
     closeBtn.style.display = "block";
+    openMenu.style.display = "none";
 }
 
 // Fermer le menu burger
 closeBtn.addEventListener("click", function(){
     navMenu.style.display = "none";
     closeBtn.style.display = "none";
+    openMenu.style.display = "flex";
 })
 
-<<<<<<< HEAD
-=======
 //ANIMATION JS SLIDE
 function slide(){
     //déclaration de la variable pour tous les éléments ayant une classe anim
@@ -41,7 +41,6 @@ function slide(){
 window.addEventListener('scroll', slide);
 
 
->>>>>>> melvin
 
 //ANIMATION NAVBAR
 window.onscroll = function() {scrollFunction()};
@@ -50,7 +49,7 @@ function scrollFunction() {
     let textNav = document.querySelector("#navText");
     let navBar = document.getElementById("navBar");
 
-  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700 || document.body.window.innerWidth > 1295) {
+  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
     navBar.style.padding = "0.5em 0";
     textNav.style.fontSize = "18px";
   } else {

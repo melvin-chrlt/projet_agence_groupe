@@ -1,18 +1,1392 @@
-/* Error: expected "{".
- *    ,
- * 73 | >>>>>>> melvin
- *    |               ^
- *    '
- *   scss\_projets.scss 73:15  @import
- *   scss\style.scss 9:9       root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 73 \2502  >>>>>>> melvin\d\a    \2502                ^\a    \2575 \a   scss\\_projets.scss 73:15  @import\a   scss\\style.scss 9:9       root stylesheet';
+/* headline color */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
+
+body {
+  font-family: "roboto";
+}
+
+.topPage {
+  text-align: center;
+  background-color: black;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  font-size: 40px;
+  margin-left: 5%;
+}
+.topPage a {
+  color: white;
+}
+
+@font-face {
+  font-family: binjay;
+  src: url(../fonts/Binjay.otf);
+}
+/* headline font */
+@font-face {
+  font-family: "raleway";
+  src: url(../fonts/Raleway-Regular.ttf);
+}
+/* bold */
+@font-face {
+  font-family: "ralewayBold";
+  src: url(../fonts/Raleway-Bold.ttf);
+}
+/* subtitle font */
+@font-face {
+  font-family: "caviarDreams";
+  src: url(../fonts/CaviarDreams.ttf);
+}
+/* bold */
+@font-face {
+  font-family: "caviarDreamsBold";
+  src: url(../fonts/CaviarDreams_Bold.ttf);
+}
+/* paragraph text font */
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+.buttonCAS a {
+  color: white;
+  font-size: 18px;
+  font-family: "caviarDreamsBold";
+  padding: 1em 4em;
+  background-color: #2196F3;
+  border-radius: 25px;
+  transition: all ease-in-out 0.3s;
+  box-shadow: 2px 2px 10px 0px white;
+}
+.buttonCAS a:hover {
+  color: #2196F3;
+  background-color: white;
+}
+
+header {
+  padding-bottom: 3em;
+  background-image: url(../images/bakcHome.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+header #navBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2196F3;
+  padding: 1.5em 0;
+  position: fixed;
+  z-index: 99;
+}
+header #navBar #menu #navText {
+  display: flex;
+  gap: 4em;
+  font-size: 24px;
+}
+header #navBar #menu #navText li a {
+  color: white;
+  font-family: caviarDreamsBold;
+  padding: 0.3em 0;
+  position: relative;
+  transition: all ease-in-out 0.2s;
+}
+header #navBar #menu #navText li a:before, header #navBar #menu #navText li a:after {
+  height: 3px;
+  position: absolute;
+  content: "";
+  transition: all 0.35s ease;
+  background-color: black;
+  width: 0;
+}
+header #navBar #menu #navText li a:before {
+  top: 0;
+  left: 0;
+}
+header #navBar #menu #navText li a:after {
+  bottom: 0;
+  right: 0;
+}
+header #navBar #menu #navText li a:hover {
+  color: white;
+}
+header #navBar #menu #navText li a:hover:before, header #navBar #menu #navText li a:hover:after {
+  width: 100%;
+}
+header #navBar #menuBurger {
+  width: 2.5em;
+  display: none;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 9px;
+  padding: 1em;
+  cursor: pointer;
+  transition: ease-in-out all 0.2s;
+}
+header #navBar #menuBurger .bar {
+  border-radius: 5px;
+  height: 4px;
+  width: 45px;
+  background-color: white;
+  transition: ease-in-out all 0.2s;
+}
+header #navBar #menuBurger .middle {
+  width: 30px;
+}
+header #navBar #menuBurger:hover .bar {
+  background-color: black;
+  width: 40px;
+}
+header #navBar #menuBurger:hover .middle {
+  width: 45px;
+}
+header #navBar #close {
+  position: fixed;
+  top: 50px;
+  right: 50%;
+  display: none;
+  z-index: 99999;
+  color: white;
+  font-size: 3em;
+  transition: all ease-in-out 0.2s;
+  animation: close 3s;
+}
+header #navBar #close:hover {
+  cursor: pointer;
+  color: #2196F3;
+}
+@keyframes close {
+  from {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+header #headerTitle {
+  text-align: center;
+  padding: 13em 0;
+}
+header #headerTitle img {
+  width: 30em;
+  height: auto;
+}
+header #headerTitle h1 {
+  font-family: caviarDreamsBold;
+  font-size: 30px;
+  padding-top: 1em;
+  letter-spacing: 2px;
+  color: white;
+}
+
+#homepage h2 {
+  text-align: left;
+  color: #2196F3;
+  font-family: "ralewayBold";
+  text-transform: uppercase;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+#homepage h2 span {
+  color: #A6A6A6;
+  font-family: "caviarDreamsBold";
+  font-size: 24px;
+  text-transform: initial;
+}
+#homepage h2 strong {
+  color: black;
+  font-family: "caviarDreamsBold";
+  font-size: 24px;
+  text-transform: initial;
+}
+#homepage h3 {
+  color: #2196F3;
+  font-family: "caviarDreamsBold";
+  font-size: 20px;
+  padding-bottom: 30px;
+  text-shadow: 1px 1px black;
+}
+
+#aboutCAS {
+  padding-top: 4%;
+  padding-bottom: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: row;
+  color: #A6A6A6;
+  background-color: black;
+  height: 418px;
+  position: relative;
+}
+#aboutCAS .historyCAS {
+  padding-left: 2%;
+  width: 50%;
+}
+#aboutCAS .historyCAS p {
+  text-align: justify;
+  width: 526px;
+  line-height: 25px;
+  margin-bottom: 15%;
+}
+#aboutCAS .historyCAS .buttonCAS {
+  margin-left: 25%;
+  margin-top: 50px;
+}
+#aboutCAS .historyCAS .buttonCAS a {
+  border: 1px solid black;
+}
+#aboutCAS .teamCAS .teamAVATAR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#aboutCAS .teamCAS .teamAVATAR .avatar {
+  background-color: burlywood;
+  height: 150px;
+  width: 150px;
+  margin-top: 4%;
+  margin-right: 80px;
+  border: 5px solid #2196F3;
+  box-shadow: 3px 3px 8px -1px white;
+}
+
+#aboutCAS::before {
+  content: "";
+  height: 50px;
+  width: 575px;
+  background-color: #2196F3;
+  position: absolute;
+  top: -4%;
+  left: 0;
+}
+
+#expertiseCAS {
+  padding-top: 4%;
+  padding-bottom: 6%;
+  position: relative;
+}
+#expertiseCAS h2 {
+  margin-bottom: 2%;
+  margin-left: 28px;
+}
+#expertiseCAS .serviceCAS {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+#expertiseCAS .serviceCAS .graphicCreation,
+#expertiseCAS .serviceCAS .internetSite,
+#expertiseCAS .serviceCAS .socialNetworks,
+#expertiseCAS .serviceCAS .consulting {
+  text-align: center;
+  background-color: #A6A6A6;
+  height: 300px;
+  width: 300px;
+  border: 3px solid black;
+  border-radius: 50%;
+  position: relative;
+}
+#expertiseCAS .serviceCAS .graphicCreation img,
+#expertiseCAS .serviceCAS .internetSite img,
+#expertiseCAS .serviceCAS .socialNetworks img,
+#expertiseCAS .serviceCAS .consulting img {
+  padding: 2% 0;
+}
+#expertiseCAS .serviceCAS .graphicCreation p,
+#expertiseCAS .serviceCAS .internetSite p,
+#expertiseCAS .serviceCAS .socialNetworks p,
+#expertiseCAS .serviceCAS .consulting p {
+  margin-top: -1em;
+  padding: 0 3em;
+}
+#expertiseCAS .serviceCAS .graphicCreation .buttonCAS a,
+#expertiseCAS .serviceCAS .internetSite .buttonCAS a,
+#expertiseCAS .serviceCAS .socialNetworks .buttonCAS a,
+#expertiseCAS .serviceCAS .consulting .buttonCAS a {
+  position: absolute;
+  top: 90%;
+  left: 12%;
+  border: 1px solid black;
+  box-shadow: 2px 2px 10px 0px black;
+}
+
+#expertiseCAS::before {
+  content: "";
+  height: 50px;
+  width: 575px;
+  background-color: #2196F3;
+  position: absolute;
+  top: -4%;
+  right: 0;
+}
+
+#gallery {
+  padding-top: 4%;
+  padding-bottom: 6%;
+  background-color: #A6A6A6;
+  text-align: center;
+  position: relative;
+}
+#gallery h2 {
+  margin-left: 28px;
+}
+#gallery p {
+  text-align: left;
+  margin-left: 28px;
+  margin-bottom: 5%;
+}
+#gallery .pictureGallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#gallery .pictureGallery img {
+  height: 300px;
+  position: relative;
+  margin-right: 5em;
+  border: 1px solid black;
+}
+#gallery .pictureGallery .purpleShadow {
+  box-shadow: 12px -12px 0px -1px #2196F3;
+}
+#gallery .pictureGallery .blackShadow {
+  box-shadow: 12px -12px 0px -1px black;
+}
+#gallery .buttonCAS {
+  margin-top: 7%;
+}
+#gallery .buttonCAS a {
+  border: 1px solid black;
+  box-shadow: 2px 2px 10px 0px black;
+}
+
+#gallery::before {
+  content: "";
+  height: 50px;
+  width: 575px;
+  background-color: #2196F3;
+  position: absolute;
+  top: -2%;
+  left: 0;
+}
+
+@media screen and (max-width: 1530px) {
+  #gallery .pictureGallery img {
+    height: 250px;
+    width: 250px;
+  }
+}
+@media screen and (max-width: 1325px) {
+  #aboutCAS .teamCAS .eyeVisual img {
+    width: 400px;
+  }
+  #aboutCAS .teamCAS .purpleFrame {
+    right: 146px;
+    width: 400px;
+    height: 200px;
+  }
+
+  #expertiseCAS .serviceCAS .graphicCreation,
+#expertiseCAS .serviceCAS .internetSite,
+#expertiseCAS .serviceCAS .socialNetworks,
+#expertiseCAS .serviceCAS .consulting {
+    height: 250px;
+    width: 250px;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation .buttonCAS a,
+#expertiseCAS .serviceCAS .internetSite .buttonCAS a,
+#expertiseCAS .serviceCAS .socialNetworks .buttonCAS a,
+#expertiseCAS .serviceCAS .consulting .buttonCAS a {
+    padding: 0.5em 3em;
+    left: 7%;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation img,
+#expertiseCAS .serviceCAS .internetSite img,
+#expertiseCAS .serviceCAS .socialNetworks img,
+#expertiseCAS .serviceCAS .consulting img {
+    height: 50px;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation h3,
+#expertiseCAS .serviceCAS .internetSite h3,
+#expertiseCAS .serviceCAS .socialNetworks h3,
+#expertiseCAS .serviceCAS .consulting h3 {
+    font-size: 17px;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation p,
+#expertiseCAS .serviceCAS .internetSite p,
+#expertiseCAS .serviceCAS .socialNetworks p,
+#expertiseCAS .serviceCAS .consulting p {
+    font-size: 14px;
+  }
+
+  #gallery .pictureGallery img {
+    margin-right: 3em;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #aboutCAS .teamCAS .teamAVATAR .avatar {
+    width: 110px;
+    height: 110px;
+  }
+
+  #gallery .pictureGallery img {
+    height: 180px;
+    width: 180px;
+  }
+}
+@media screen and (max-width: 1170px) {
+  #aboutCAS {
+    display: block;
+    padding-bottom: 24%;
+  }
+  #aboutCAS .historyCAS {
+    margin: auto;
+  }
+  #aboutCAS .teamCAS {
+    margin: auto;
+  }
+  #aboutCAS .teamCAS h2 {
+    padding-top: 5%;
+    text-align: center;
+  }
+
+  #gallery {
+    padding-top: 10%;
+  }
+}
+@media screen and (max-width: 920px) {
+  #aboutCAS {
+    padding-bottom: 55%;
+  }
+  #aboutCAS .historyCAS p {
+    width: 100%;
+  }
+  #aboutCAS .historyCAS .buttonCAS a {
+    padding: 0.5em 1em;
+  }
+  #aboutCAS .teamCAS h2 {
+    padding-top: 15%;
+  }
+
+  #expertiseCAS {
+    padding-top: 15%;
+    padding-bottom: 25%;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation,
+#expertiseCAS .serviceCAS .internetSite,
+#expertiseCAS .serviceCAS .socialNetworks,
+#expertiseCAS .serviceCAS .consulting {
+    height: 150px;
+    width: 150px;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation .buttonCAS a,
+#expertiseCAS .serviceCAS .internetSite .buttonCAS a,
+#expertiseCAS .serviceCAS .socialNetworks .buttonCAS a,
+#expertiseCAS .serviceCAS .consulting .buttonCAS a {
+    font-size: 14px;
+    padding: 0.5em 2em;
+    left: 7%;
+    top: 150%;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation img,
+#expertiseCAS .serviceCAS .internetSite img,
+#expertiseCAS .serviceCAS .socialNetworks img,
+#expertiseCAS .serviceCAS .consulting img {
+    height: 50px;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation h3,
+#expertiseCAS .serviceCAS .internetSite h3,
+#expertiseCAS .serviceCAS .socialNetworks h3,
+#expertiseCAS .serviceCAS .consulting h3 {
+    font-size: 15px;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation p,
+#expertiseCAS .serviceCAS .internetSite p,
+#expertiseCAS .serviceCAS .socialNetworks p,
+#expertiseCAS .serviceCAS .consulting p {
+    margin-top: 1em;
+    padding: 0;
+    width: 150px;
+    font-size: 12px;
+  }
+
+  #gallery .pictureGallery img {
+    height: 100px;
+    width: 100px;
+  }
+
+  #expertiseCAS::before,
+#gallery::before, #aboutCAS::before {
+    width: 60%;
+    height: 2em;
+  }
+}
+@media screen and (max-width: 750px) {
+  #aboutCAS {
+    padding-bottom: 16%;
+  }
+  #aboutCAS .teamCAS {
+    display: none;
+  }
+
+  .topPage {
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+  }
+
+  #gallery .buttonCAS a {
+    font-size: 16px;
+    padding: 0.5em 2em;
+  }
+}
+@media screen and (max-width: 650px) {
+  #aboutCAS {
+    padding-top: 10%;
+    padding-bottom: 20%;
+  }
+  #aboutCAS .buttonCAS a {
+    font-size: 16px;
+  }
+
+  #homepage h2 span, #homepage h2 strong {
+    font-size: 22px;
+  }
+
+  #expertiseCAS {
+    padding-bottom: 6%;
+  }
+  #expertiseCAS .serviceCAS {
+    display: block;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation,
+#expertiseCAS .serviceCAS .internetSite,
+#expertiseCAS .serviceCAS .socialNetworks,
+#expertiseCAS .serviceCAS .consulting {
+    margin: 5% 25% 15% 25%;
+    height: 280px;
+    width: 280px;
+    padding: 2%;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation .buttonCAS a,
+#expertiseCAS .serviceCAS .internetSite .buttonCAS a,
+#expertiseCAS .serviceCAS .socialNetworks .buttonCAS a,
+#expertiseCAS .serviceCAS .consulting .buttonCAS a {
+    font-size: 18px;
+    padding: 1em 3em;
+    left: 18%;
+    top: 93%;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation img,
+#expertiseCAS .serviceCAS .internetSite img,
+#expertiseCAS .serviceCAS .socialNetworks img,
+#expertiseCAS .serviceCAS .consulting img {
+    height: 80px;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation h3,
+#expertiseCAS .serviceCAS .internetSite h3,
+#expertiseCAS .serviceCAS .socialNetworks h3,
+#expertiseCAS .serviceCAS .consulting h3 {
+    font-size: 18px;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation p,
+#expertiseCAS .serviceCAS .internetSite p,
+#expertiseCAS .serviceCAS .socialNetworks p,
+#expertiseCAS .serviceCAS .consulting p {
+    margin-top: 0.2em;
+    padding: 0;
+    font-size: 16px;
+    width: auto;
+  }
+
+  #expertiseCAS::before {
+    top: -1%;
+  }
+
+  #gallery .pictureGallery {
+    display: block;
+  }
+  #gallery .pictureGallery img {
+    height: 250px;
+    width: 250px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+
+  #gallery::before {
+    top: -1%;
+  }
+}
+@media screen and (max-width: 570px) {
+  #aboutCAS {
+    padding-bottom: 30%;
+  }
+}
+@media screen and (max-width: 515px) {
+  #aboutCAS {
+    padding-bottom: 45%;
+  }
+}
+@media screen and (max-width: 460px) {
+  #expertiseCAS {
+    padding-top: 15%;
+    padding-bottom: 25%;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation,
+#expertiseCAS .serviceCAS .internetSite,
+#expertiseCAS .serviceCAS .socialNetworks,
+#expertiseCAS .serviceCAS .consulting {
+    height: 150px;
+    width: 150px;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation .buttonCAS a,
+#expertiseCAS .serviceCAS .internetSite .buttonCAS a,
+#expertiseCAS .serviceCAS .socialNetworks .buttonCAS a,
+#expertiseCAS .serviceCAS .consulting .buttonCAS a {
+    font-size: 14px;
+    padding: 0.5em 2em;
+    left: 7%;
+    top: 150%;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation img,
+#expertiseCAS .serviceCAS .internetSite img,
+#expertiseCAS .serviceCAS .socialNetworks img,
+#expertiseCAS .serviceCAS .consulting img {
+    height: 50px;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation h3,
+#expertiseCAS .serviceCAS .internetSite h3,
+#expertiseCAS .serviceCAS .socialNetworks h3,
+#expertiseCAS .serviceCAS .consulting h3 {
+    font-size: 15px;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation p,
+#expertiseCAS .serviceCAS .internetSite p,
+#expertiseCAS .serviceCAS .socialNetworks p,
+#expertiseCAS .serviceCAS .consulting p {
+    margin-top: 1em;
+    padding: 0;
+    width: 150px;
+    font-size: 12px;
+  }
+
+  #aboutCAS {
+    padding-bottom: 150%;
+  }
+  #aboutCAS .buttonCAS a {
+    font-size: 14px;
+  }
+
+  #expertiseCAS .serviceCAS .graphicCreation,
+#expertiseCAS .serviceCAS .internetSite,
+#expertiseCAS .serviceCAS .socialNetworks,
+#expertiseCAS .serviceCAS .consulting {
+    margin: 5% 0 15% 12%;
+    height: 250px;
+    width: 250px;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation img,
+#expertiseCAS .serviceCAS .internetSite img,
+#expertiseCAS .serviceCAS .socialNetworks img,
+#expertiseCAS .serviceCAS .consulting img {
+    height: 80px;
+    width: 80px;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation h3,
+#expertiseCAS .serviceCAS .internetSite h3,
+#expertiseCAS .serviceCAS .socialNetworks h3,
+#expertiseCAS .serviceCAS .consulting h3 {
+    font-size: 20px;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation p,
+#expertiseCAS .serviceCAS .internetSite p,
+#expertiseCAS .serviceCAS .socialNetworks p,
+#expertiseCAS .serviceCAS .consulting p {
+    margin-top: -1em;
+    font-size: 16px;
+    width: auto;
+    padding: 0 8% 0 8%;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation .buttonCAS a,
+#expertiseCAS .serviceCAS .internetSite .buttonCAS a,
+#expertiseCAS .serviceCAS .socialNetworks .buttonCAS a,
+#expertiseCAS .serviceCAS .consulting .buttonCAS a {
+    font-size: 16px;
+    top: 97%;
+    left: 22%;
+  }
+
+  #gallery p {
+    padding-right: 4%;
+  }
+  #gallery .pictureGallery img {
+    height: 150px;
+    width: 150px;
+  }
+}
+#bodyGalerie {
+  background-color: black;
+}
+#bodyGalerie .textGalerie {
+  text-align: center;
+  color: white;
+  margin-top: 4%;
+}
+#bodyGalerie #projetsMain {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 4% 5% 4% 10%;
+}
+#bodyGalerie #projetsMain div {
+  text-align: center;
+  margin-right: 4%;
+  margin-bottom: 5%;
+  position: relative;
+}
+#bodyGalerie #projetsMain div img {
+  border: 1px solid black;
+  box-shadow: 12px -12px 0px -1px #2196F3;
+}
+#bodyGalerie #projetsMain div h2 {
+  background-color: #2196F3;
+  color: black;
+  font-family: "caviarDreamsBold";
+  font-size: 2em;
+  box-shadow: -12px 12px 8px -8px black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2%;
+}
+#bodyGalerie #projetsMain div h2 span {
+  color: #A6A6A6;
+  font-size: 0.6em;
+}
+#bodyGalerie #projetsMain div .mouseSurvol {
+  opacity: 0;
+}
+#bodyGalerie #projetsMain div .mouseSurvol:hover {
+  opacity: 1;
+}
+#bodyGalerie .purple {
+  background-color: #2196F3;
+  margin-left: 50%;
+  margin-bottom: 2%;
+}
+
+.card {
+  width: 300px;
+  height: 150px;
+  background-color: indigo;
+  perspective: 1000px;
+  margin: auto;
+}
+
+.card_interieure1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+}
+
+.return {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-color: #11c598;
+  color: #111111;
+}
+
+.back {
+  background-color: #c7203c;
+  color: #eeeeee;
+  transform: rotateY(180deg);
+}
+
+.card_interieure2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+}
+
+.none {
+  display: none;
+}
+
+.back1 {
+  background-color: green;
+  height: 100%;
+  width: 100%;
+}
+
+.back2 {
+  background-color: hotpink;
+  height: 100%;
+  width: 100%;
+}
+
+#contactMain {
+  background-color: black;
+  color: white;
+  position: relative;
+}
+#contactMain #contactContainer {
+  padding: 8em;
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+}
+#contactMain #contactContainer #contactContainerLeft {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contactMain #contactContainer #contactContainerLeft h3 {
+  width: 85%;
+  font-family: raleway;
+  font-size: 48px;
+  text-align: center;
+}
+#contactMain #contactContainer #contactContainerLeft h3 #contactez {
+  color: #2196f3;
+  font-weight: 700;
+}
+#contactMain #contactContainer #contactContainerLeft h3 #apostrophe {
+  color: #2196f3;
+}
+#contactMain #contactContainer #contactContainerLeft h3 #cas {
+  font-family: caviarDreamsBold;
+}
+#contactMain #contactContainer #contactContainerLeft p {
+  text-align: center;
+  width: 85%;
+  font-family: roboto;
+  font-size: 24px;
+  padding: 2em 0;
+  line-height: 1.3;
+}
+#contactMain #contactContainer #contactContainerLeft form {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+#contactMain #contactContainer #contactContainerLeft form label {
+  font-family: caviarDreams;
+  font-size: 25px;
+  padding-bottom: 0.2em;
+}
+#contactMain #contactContainer #contactContainerLeft form label span {
+  color: #2196f3;
+}
+#contactMain #contactContainer #contactContainerLeft form input {
+  border: 0;
+  font-size: 25px;
+  font-family: caviarDreamsBold;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+#contactMain #contactContainer #contactContainerLeft form textarea {
+  border: 0;
+  font-size: 25px;
+  font-family: caviarDreamsBold;
+  padding: 0.5em;
+}
+#contactMain #contactContainer #contactContainerLeft div {
+  display: flex;
+  justify-content: flex-end;
+  width: 85%;
+  margin: 2em 0;
+}
+#contactMain #contactContainer #contactContainerLeft div a {
+  color: white;
+  font-size: 18px;
+  font-family: caviarDreamsBold;
+  padding: 1em 4em;
+  background-color: #2196f3;
+  border-radius: 25px;
+  transition: all ease-in-out 0.3s;
+}
+#contactMain #contactContainer #contactContainerLeft div a:hover {
+  color: #2196f3;
+  background-color: white;
+}
+#contactMain #contactContainer #contactContainerRight {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5em;
+  gap: 2em;
+}
+#contactMain #contactContainer #contactContainerRight #map {
+  box-shadow: #2196f3 12px -12px 0px;
+}
+#contactMain #contactContainer #contactContainerRight p {
+  font-family: roboto;
+  font-size: 25px;
+  line-height: 1.3;
+  text-align: justify;
+}
+#contactMain #contactContainer #contactContainerRight #address {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+#contactMain #contactContainer #contactContainerRight #address div p span {
+  color: #2196f3;
+  padding-bottom: 0.5em;
+  font-family: caviarDreamsBold;
+}
+#contactMain #contactContainer .anim {
+  transform: translateX(-20%);
+  opacity: 0;
+  transition: all ease-in-out 0.4s;
+}
+#contactMain #contactContainer .active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+#contactMain .blueSeparatorTop {
+  width: 40%;
+  height: 3.5em;
+  position: absolute;
+  background-color: #2196f3;
+  transform: translateY(-50%);
+  top: 0;
+  left: 0;
+}
+#contactMain .blueSeparatorBot {
+  width: 40%;
+  height: 3.5em;
+  position: absolute;
+  background-color: #2196f3;
+  transform: translateY(50%);
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 1120px) {
+  #contactMain #contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 0;
+  }
+  #contactMain #contactContainer #contactContainerLeft {
+    width: 90%;
+  }
+  #contactMain #contactContainer #contactContainerLeft h3 {
+    width: 90%;
+  }
+  #contactMain #contactContainer #contactContainerLeft form input {
+    margin-bottom: 2em;
+  }
+  #contactMain #contactContainer #contactContainerRight {
+    width: 100%;
+  }
+  #contactMain #contactContainer #contactContainerRight #map {
+    box-shadow: none;
+  }
+  #contactMain #contactContainer #contactContainerRight p {
+    width: 90%;
+    text-align: center;
+    padding: 0 1em;
+  }
+  #contactMain .blueSeparatorBot, #contactMain .blueSeparatorTop {
+    height: 2em;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 530px) {
+  #contactMain #contactContainer #contactContainerLeft h3 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 440px) {
+  #contactMain #contactContainer #contactContainerLeft form input {
+    font-size: 20px;
+  }
+  #contactMain #contactContainer #contactContainerLeft form textarea {
+    font-size: 20px;
+  }
+}
+#expertiseMain {
+  display: flex;
+  justify-content: center;
+  padding: 10em 0;
+  position: relative;
+}
+#expertiseMain section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#expertiseMain section article {
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#expertiseMain section article h3 {
+  color: black;
+  font-size: 36px;
+  font-family: ralewayBold;
+  padding: 1em 0;
+}
+#expertiseMain section article h3 span {
+  color: #2196f3;
+  font-family: caviarDreamsBold;
+}
+#expertiseMain section article p {
+  font-family: "roboto";
+  font-size: 18px;
+  line-height: 39px;
+  text-align: justify;
+}
+#expertiseMain section article p span {
+  font-weight: bold;
+}
+#expertiseMain section article div {
+  display: flex;
+  align-items: center;
+  gap: 10em;
+  padding-top: 1em;
+}
+#expertiseMain section article div img {
+  width: 30%;
+  height: auto;
+  transform: translateY(25%);
+}
+#expertiseMain section article div .expertiseSecondText {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+#expertiseMain section .anim {
+  transform: translateY(20%);
+  opacity: 0;
+  transition: all ease-in-out 0.4s;
+}
+#expertiseMain section .active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+#expertiseMain .blueSeparatorTop {
+  width: 40%;
+  height: 3.5em;
+  position: absolute;
+  background-color: #2196f3;
+  transform: translateY(-50%);
+  top: 0;
+  left: 0;
+}
+#expertiseMain .blueSeparatorRight {
+  margin: 8em 0;
+  width: 40%;
+  height: 3.5em;
+  background-color: #2196f3;
+  align-self: flex-end;
+}
+#expertiseMain .blueSeparatorLeft {
+  margin: 8em 0;
+  width: 40%;
+  height: 3.5em;
+  background-color: #2196f3;
+  align-self: flex-start;
+}
+#expertiseMain .blueSeparatorBot {
+  width: 40%;
+  height: 3.5em;
+  position: absolute;
+  background-color: #2196f3;
+  transform: translateY(50%);
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 1250px) {
+  #expertiseMain section article {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 900px) {
+  #expertiseMain section article h3 {
+    text-align: center;
+  }
+  #expertiseMain section article div {
+    flex-direction: column;
+    align-items: center;
+  }
+  #expertiseMain section article div img {
+    width: 80%;
+    transform: translateY(0);
+  }
+  #expertiseMain .blueSeparatorBot, #expertiseMain .blueSeparatorLeft, #expertiseMain .blueSeparatorRight, #expertiseMain .blueSeparatorTop {
+    height: 2em;
+    width: 60%;
+  }
+}
+footer {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  background-color: black;
+  color: white;
+  border-top: 1px solid #2196F3;
+  position: relative;
+}
+footer #sectionFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+footer #sectionFooter .infoCas {
+  width: 50%;
+}
+footer #sectionFooter .infoCas img {
+  height: 125px;
+  margin-bottom: 20px;
+}
+footer #sectionFooter .infoCas .functionCAS {
+  text-align: justify;
+  width: 50%;
+  margin: auto;
+}
+footer #sectionFooter .contactCas,
+footer #sectionFooter .locationCAS {
+  text-align: left;
+  margin-left: 10px;
+}
+footer #sectionFooter .contactCas h2,
+footer #sectionFooter .locationCAS h2 {
+  font-family: "caviarDreams";
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #2196F3;
+  margin-bottom: 20px;
+}
+footer #sectionFooter .contactCas i,
+footer #sectionFooter .locationCAS i {
+  color: #2196F3;
+  font-size: 25px;
+  padding-right: 5px;
+}
+footer #sectionFooter .contactCas p,
+footer #sectionFooter .locationCAS p {
+  padding-bottom: 10px;
+}
+footer #sectionFooter .contactCas .buttonCAS,
+footer #sectionFooter .locationCAS .buttonCAS {
+  margin-top: 45px;
+}
+footer #sectionFooter .contactCas .buttonCAS a,
+footer #sectionFooter .locationCAS .buttonCAS a {
+  padding: 1em 3em;
+  border: 1px solid black;
+}
+footer #sectionFooter .iconNetworks {
+  display: flex;
+  flex-direction: column;
+}
+footer #sectionFooter .iconNetworks i {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+footer #sectionFooter .iconNetworks .fa-facebook {
+  color: #3c579c;
+}
+footer #sectionFooter .iconNetworks .fa-instagram {
+  color: #d1218e;
+}
+footer #sectionFooter .iconNetworks .fa-linkedin {
+  color: #0079b4;
+}
+footer #sectionFooter .iconNetworks .fa-twitter {
+  color: #00adff;
+}
+footer span a {
+  color: #2196F3;
+}
+
+footer::before {
+  content: "";
+  height: 50px;
+  width: 575px;
+  background-color: #2196F3;
+  position: absolute;
+  top: -5%;
+  right: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  footer #sectionFooter .contactCas .buttonCAS a,
+footer #sectionFooter .locationCAS .buttonCAS a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 950px) {
+  footer #sectionFooter {
+    display: block;
+  }
+  footer #sectionFooter .contactCas,
+footer #sectionFooter .locationCAS {
+    text-align: center;
+    margin-top: 5%;
+  }
+  footer #sectionFooter .iconNetworks {
+    display: block;
+  }
+  footer #sectionFooter .iconNetworks i {
+    margin-right: 5%;
+    margin-top: 5%;
+  }
+  footer #sectionFooter .locationCAS h2 {
+    display: none;
+  }
+  footer #sectionFooter .infoCas {
+    width: 100%;
+  }
+  footer .infoCas .functionCAS {
+    text-align: center;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  footer #sectionFooter {
+    padding: 5%;
+    margin: auto;
+    width: auto;
+  }
+  footer #sectionFooter .infoCas img {
+    width: 250px;
+    height: auto;
+  }
+  footer #sectionFooter .functionCAS {
+    font-size: 14px;
+  }
+  footer #sectionFooter .contactCas .buttonCAS,
+footer #sectionFooter .locationCAS .buttonCAS {
+    margin-bottom: 18%;
+  }
+}
+@media screen and (max-width: 1295px) {
+  header {
+    padding: 0;
+  }
+  header #navBar {
+    padding: 1em;
+    gap: 10em;
+    width: 10%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  header #navBar #menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    z-index: 100;
+    animation: menu 1s;
+  }
+  header #navBar #menu #navText {
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+  }
+  header #navBar #menu #navText li {
+    transition: all ease-in-out 0.2s;
+    padding: 1.5em 0;
+    cursor: pointer;
+  }
+  header #navBar #menu #navText li a {
+    margin-left: 5em;
+    transition: all ease-in-out 0.2s;
+    color: white;
+  }
+  header #navBar #menu #navText li a:before, header #navBar #menu #navText li a:after {
+    height: 0;
+  }
+  header #navBar #menu #navText li:hover {
+    background-color: #2196F3;
+  }
+  header #navBar #menu #navText li:hover a {
+    color: black;
+  }
+  @keyframes menu {
+    from {
+      left: -200%;
+    }
+    to {
+      right: 100%;
+    }
+  }
+  header #navBar #menuBurger {
+    display: flex;
+  }
+}
+@media screen and (max-width: 595px) {
+  header #navBar {
+    flex-direction: column;
+    gap: 1em;
+    padding: 1.5em;
+  }
+  header #navBar #menu #navText li a {
+    margin-left: 1.5em;
+  }
+  header #headerTitle {
+    padding-top: 4em;
+  }
+  header #headerTitle h1 {
+    font-size: 40px;
+  }
+  header #headerTitle img {
+    width: 25em;
+  }
+}
+@media screen and (max-width: 440px) {
+  header #headerTitle img {
+    width: 15em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
