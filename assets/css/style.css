@@ -71,20 +71,22 @@ header nav {
   align-items: center;
   background-color: #2196F3;
   padding: 1.5em 0;
+  position: fixed;
+  z-index: 99;
 }
-header nav #menu ul {
+header nav #menu #navText {
   display: flex;
   gap: 4em;
-}
-header nav #menu ul li a {
-  color: white;
   font-size: 24px;
+}
+header nav #menu #navText li a {
+  color: white;
   font-family: caviarDreamsBold;
   padding: 0.3em 0;
   position: relative;
   transition: all ease-in-out 0.2s;
 }
-header nav #menu ul li a:before, header nav #menu ul li a:after {
+header nav #menu #navText li a:before, header nav #menu #navText li a:after {
   height: 3px;
   position: absolute;
   content: "";
@@ -92,18 +94,18 @@ header nav #menu ul li a:before, header nav #menu ul li a:after {
   background-color: black;
   width: 0;
 }
-header nav #menu ul li a:before {
+header nav #menu #navText li a:before {
   top: 0;
   left: 0;
 }
-header nav #menu ul li a:after {
+header nav #menu #navText li a:after {
   bottom: 0;
   right: 0;
 }
-header nav #menu ul li a:hover {
+header nav #menu #navText li a:hover {
   color: white;
 }
-header nav #menu ul li a:hover:before, header nav #menu ul li a:hover:after {
+header nav #menu #navText li a:hover:before, header nav #menu #navText li a:hover:after {
   width: 100%;
 }
 header nav #menuBurger {
