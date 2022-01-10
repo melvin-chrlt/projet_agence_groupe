@@ -6,6 +6,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
     //NAV STYLE
     nav{
@@ -14,20 +15,22 @@ header{
         justify-content: center;
         align-items: center;
         background-color: #2196F3;
-        padding: 1.5em;
+        padding: 1.5em 0;
+        position: fixed;
+        z-index: 99;
 
         #menu{
 
-            ul{
+            #navText{
                 display: flex;
                 gap: 4em;
+                font-size: 24px;
 
                 li{
 
                     //MENU TEXT STYLE
                     a{
                         color: white;
-                        font-size: 24px;
                         font-family: caviarDreamsBold;
                         padding: 0.3em 0;
                         position: relative;
