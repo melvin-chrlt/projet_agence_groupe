@@ -40,6 +40,7 @@
   color: $gray;
   background-color: black;
   height: 418px;
+  position: relative;
   .historyCAS {
     padding-left: 2%;
     width: 50%;
@@ -73,6 +74,15 @@
       }
     }
   }
+}
+#aboutCAS::before {
+  content: "";
+  height: 50px;
+  width: 575px;
+  background-color: $purple;
+  position: absolute;
+  top: -4%;
+  left: 0;
 }
 
 // know-how part
@@ -323,14 +333,193 @@
     height: 100px;
     width: 100px;
   }
+
+  #expertiseCAS::before,
+  #gallery::before, #aboutCAS::before {
+    width: 60%;
+    height: 2em;
+  }
 }
 
-// ------ @MEDIA QUERY 724px------ //
-@media screen and (max-width: 724px) {
+// ------ @MEDIA QUERY 750px------ //
+@media screen and (max-width: 750px) {
   #aboutCAS {
     padding-bottom: 16%;
     .teamCAS {
       display: none;
     }
   }
+  .topPage {
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+  }
+  #gallery .buttonCAS a {
+    font-size: 16px;
+    padding: 0.5em 2em;
+  }
+}
+
+// ------ @MEDIA QUERY 650px------ //
+@media screen and (max-width: 650px) {
+  #aboutCAS {
+    padding-top: 10%;
+    padding-bottom: 20%;
+    .buttonCAS a {
+      font-size: 16px;
+    }
+  }
+  #homepage h2{
+    span, strong {
+      font-size: 22px;
+    }
+  } 
+  
+  #expertiseCAS{
+    padding-bottom: 6%;
+    .serviceCAS {
+      display: block;
+      .graphicCreation,
+      .internetSite,
+      .socialNetworks,
+      .consulting {
+        margin: 5% 25% 15% 25%;
+        height: 280px;
+        width: 280px;
+        padding: 2%;
+        .buttonCAS a {
+          font-size: 18px;
+          padding: 1em 3em;
+          left: 18%;
+          top: 93%;
+        }
+        img {
+          height: 80px;
+        }
+        h3 {
+          font-size: 18px;
+        }
+        p {
+          margin-top: 0.2em;
+          padding: 0;
+          font-size: 16px;
+          width: auto;
+        }
+      }
+    }
+  } 
+  #expertiseCAS::before{
+    top: -1%;
+  } 
+
+  #gallery{
+    .pictureGallery{
+      display: block;
+      img{
+        height: 250px;
+        width: 250px;
+        margin-top: 5%;
+        margin-bottom: 10%;
+      }
+    }
+  }
+  #gallery::before{
+    top: -1%;
+  }
+}
+
+// ------ @MEDIA QUERY 570px------ //
+@media screen and (max-width: 570px){
+  #aboutCAS{
+    padding-bottom: 30%;
+  }
+}
+
+// ------ @MEDIA QUERY 515px------ //
+@media screen and (max-width: 515px){
+  #aboutCAS{
+    padding-bottom: 45%;
+  }
+}
+
+// ------ @MEDIA QUERY 460px------ //
+@media screen and (max-width: 460px){
+  #expertiseCAS {
+    padding-top: 15%;
+    padding-bottom: 25%;
+    .serviceCAS {
+      .graphicCreation,
+      .internetSite,
+      .socialNetworks,
+      .consulting {
+        height: 150px;
+        width: 150px;
+        .buttonCAS a {
+          font-size: 14px;
+          padding: 0.5em 2em;
+          left: 7%;
+          top: 150%;
+        }
+        img {
+          height: 50px;
+        }
+        h3 {
+          font-size: 15px;
+        }
+        p {
+          margin-top: 1em;
+          padding: 0;
+          width: 150px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  // images from the projects gallery
+  #aboutCAS{
+    padding-bottom: 150%;
+    .buttonCAS a{
+      font-size: 14px;
+    }
+  }
+  #expertiseCAS {
+    .serviceCAS {
+      .graphicCreation,
+      .internetSite,
+      .socialNetworks,
+      .consulting{
+        margin: 5% 0 15% 12%;
+        height: 250px;
+        width: 250px;
+        img{
+          height: 80px;
+          width: 80px;
+        }
+        h3{
+          font-size: 20px;
+        }
+        p{
+          margin-top: -1em;
+          font-size: 16px;
+          width: auto;
+          padding: 0 8% 0 8%;
+        }
+        .buttonCAS a{
+          font-size: 16px;
+          top: 97%;
+          left: 22%;
+        }
+      }
+    }
+   
+  }
+  #gallery{
+    p{
+      padding-right: 4%;
+    }
+    .pictureGallery img {
+    height: 150px;
+    width: 150px;
+  }
+  } 
 }

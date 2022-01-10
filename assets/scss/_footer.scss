@@ -14,13 +14,15 @@ footer {
 
     // logo and function info
     .infoCas {
+      width: 50%;
       img {
         height: 125px;
         margin-bottom: 20px;
       }
       .functionCAS {
         text-align: justify;
-        width: 390px;
+        width: 50%;
+        margin: auto;
       }
     }
 
@@ -94,6 +96,9 @@ footer::before {
   right: 0;
 }
 
+
+
+
 // ---------- RESPONSIVE ---------- //
 // ------ @MEDIA QUERY 1000px------ //
 @media screen and (max-width: 1000px) {
@@ -103,8 +108,9 @@ footer::before {
   }
 }
 
-// ------ @MEDIA QUERY 900px------ //
-@media screen and (max-width: 900px) {
+// ------ @MEDIA QUERY 950px------ //
+@media screen and (max-width: 950px) {
+
   footer {
     #sectionFooter {
       display: block;
@@ -123,11 +129,14 @@ footer::before {
       .locationCAS h2 {
         display: none;
       }
+      .infoCas{
+        width: 100%;
+      }
     }
+    
     .infoCas .functionCAS {
       text-align: center;
       margin: auto;
-      width: auto;
     }
   }
 }
@@ -151,8 +160,6 @@ footer::before {
     .locationCAS .buttonCAS {
       margin-bottom: 18%;
     }
-    .infoCas .functionCAS {
-      width: auto;
-    }
+
   }
 }
