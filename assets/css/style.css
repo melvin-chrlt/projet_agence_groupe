@@ -287,6 +287,15 @@ header #headerTitle h1 {
   padding-bottom: 0.5em;
   font-family: caviarDreamsBold;
 }
+#contactMain #contactContainer .anim {
+  transform: translateX(-20%);
+  opacity: 0;
+  transition: all ease-in-out 0.4s;
+}
+#contactMain #contactContainer .active {
+  transform: translateX(0%);
+  opacity: 1;
+}
 #contactMain .blueSeparatorTop {
   width: 40%;
   height: 3.5em;

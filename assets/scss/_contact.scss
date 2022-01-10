@@ -134,6 +134,17 @@
                 }
             }
         }
+
+        .anim{
+            transform: translateX(-20%);
+            opacity: 0;
+            transition: all ease-in-out 0.4s;
+        }
+
+        .active{
+            transform: translateX(0%);
+            opacity: 1;
+        }
     }
 
     .blueSeparatorTop{
