@@ -214,6 +214,7 @@ header #headerTitle h1 {
   color: #2196F3;
   font-size: 36px;
   text-align: center;
+  font-family: ralewayBold;
 }
 #aproposmain #teams .présentation {
   display: flex;
@@ -226,14 +227,17 @@ header #headerTitle h1 {
 #aproposmain #teams .melvin p {
   font-size: 18px;
   color: white;
+  font-family: "roboto";
 }
 #aproposmain #teams .melvin h2 {
   color: #2196F3;
   font-size: 36px;
+  font-family: ralewayBold;
 }
 #aproposmain #teams .melvin h3 {
   color: white;
   font-size: 36px;
+  font-family: ralewayBold;
 }
 #aproposmain #teams .sofian {
   padding: 25px;
@@ -241,14 +245,17 @@ header #headerTitle h1 {
 #aproposmain #teams .sofian p {
   font-size: 18px;
   color: white;
+  font-family: "roboto";
 }
 #aproposmain #teams .sofian h2 {
   color: #2196F3;
   font-size: 36px;
+  font-family: ralewayBold;
 }
 #aproposmain #teams .sofian h3 {
   color: white;
   font-size: 36px;
+  font-family: ralewayBold;
 }
 #aproposmain #teams .aurelie {
   padding-bottom: 120px;
@@ -256,14 +263,17 @@ header #headerTitle h1 {
 #aproposmain #teams .aurelie p {
   font-size: 18px;
   color: white;
+  font-family: "roboto";
 }
 #aproposmain #teams .aurelie h2 {
   color: #2196F3;
   font-size: 36px;
+  font-family: ralewayBold;
 }
 #aproposmain #teams .aurelie h3 {
   color: white;
   font-size: 36px;
+  font-family: ralewayBold;
 }
 #aproposmain #teams .fit {
   object-fit: cover;
