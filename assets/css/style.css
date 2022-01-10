@@ -190,13 +190,35 @@ body p {
 
 #info h2 {
   font-size: 36px;
+  text-align: center;
+  padding: 1em;
+  color: #2196F3;
 }
 #info p {
   font-size: 24px;
+  text-align: center;
+  padding: 1em;
+}
+#info strong {
+  color: #2196F3;
+}
+
+.trait {
+  background-color: #2196F3;
+  width: 250px;
+  height: 15px;
+  border: 3px solid #2196F3;
 }
 
 #teams {
   background-color: black;
+}
+#teams .trait2 {
+  background-color: #2196F3;
+  width: 250px;
+  height: 2px;
+  border: 3px solid #2196F3;
+  align-items: center;
 }
 #teams h2 {
   color: #2196F3;
@@ -257,6 +279,14 @@ body p {
   object-fit: cover;
   height: auto;
   width: 300px;
+}
+
+.trait3 {
+  background-color: #2196F3;
+  width: 250px;
+  height: 15px;
+  border: 3px solid #2196F3;
+  left: 500px;
 }
 
 footer {
