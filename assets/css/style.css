@@ -204,9 +204,20 @@ body p {
   color: blue;
   font-size: 36px;
 }
-#teams article {
-  width: 600px;
-  height: auto;
+#teams .melvin {
+  padding: 10px;
+}
+#teams .melvin p {
+  font-size: 24px;
+  color: white;
+}
+#teams .melvin h2 {
+  color: blue;
+  font-size: 36px;
+}
+#teams .melvin h3 {
+  color: white;
+  font-size: 36px;
 }
 #teams .fit {
   object-fit: cover;
