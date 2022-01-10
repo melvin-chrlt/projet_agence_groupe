@@ -183,126 +183,37 @@ header #headerTitle h2 {
   letter-spacing: 2px;
 }
 
-body h2 {
-  color: purple;
-  text-align: center;
+body p {
+  font-family: robotoregulars;
+}
+
+#info h2 {
+  font-size: 36px;
+}
+#info p {
   font-size: 24px;
 }
-body p {
-  font-size: 18px;
-}
 
-#notrehistoire {
-  background-color: dimgray;
-  color: white;
-  padding: 36px;
-}
-#notrehistoire p {
-  text-align: center;
-  padding: 6px;
-}
-
-#notrebut {
-  color: white;
+#teams {
   background-color: black;
-  padding: 36px;
-}
-#notrebut p {
-  text-align: center;
-  padding: 6px;
-}
-
-#equipe {
-  flex-wrap: wrap;
-  padding: 4rem;
+  display: flex;
   align-items: center;
-  background-color: dimgray;
+  justify-content: center;
 }
-#equipe article {
+#teams h2 {
+  color: blue;
+  font-size: 36px;
+}
+#teams article {
+  width: 600px;
   height: auto;
-  width: 700px;
-  border: black 1px solid;
-  margin: 20px;
-  background-color: white;
-  color: black;
-  padding: 40px;
-  margin: 80px;
-  box-shadow: 10px 5px 5px purple;
-  margin-left: auto;
-  margin-right: auto;
 }
-#equipe h3 {
-  color: purple;
-  text-align: center;
-  margin-top: -75px;
-}
-#equipe p {
-  text-align: left;
-}
-#equipe .fit {
+#teams .fit {
   object-fit: cover;
-  height: 100px;
-  width: 100px;
-  text-align: center;
-  position: relative;
-  bottom: 96px;
-  left: 286px;
+  height: auto;
+  width: 300px;
 }
 
-@media screen and (max-width: 1184px) {
-  #equipe {
-    font-size: 22px;
-  }
-  #equipe article {
-    width: 400px;
-  }
-}
-@media screen and (max-width: 832px) {
-  #equipe {
-    font-size: 22px;
-  }
-  #equipe article {
-    width: 400px;
-  }
-}
-@media screen and (max-width: 825px) {
-  #equipe .fit {
-    left: 150px;
-  }
-  #equipe article {
-    width: 300px;
-  }
-}
-@media screen and (max-width: 731px) {
-  #equipe article {
-    width: 280px;
-    font-size: 18px;
-  }
-
-  #notrebut p {
-    font-size: 15px;
-  }
-
-  #notrehistoire p {
-    font-size: 15px;
-  }
-}
-@media screen and (max-width: 558px) {
-  #equipe article {
-    width: 250px;
-  }
-  #equipe .fit {
-    left: 70px;
-  }
-}
-@media screen and (max-width: 402px) {
-  #equipe article {
-    width: 150px;
-  }
-  #equipe .fit {
-    left: 10px;
-  }
-}
 footer {
   text-align: center;
   padding: 30px;

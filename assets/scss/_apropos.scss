@@ -1,3 +1,40 @@
+body{
+    p{
+        font-family: robotoregulars;
+    }
+}
 
 
+#info{
+    h2{
+        font-size: 36px;
+    }
 
+    p{
+        font-size: 24px;
+    }
+}
+
+#teams{
+   background-color: black;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2{
+        color: blue;
+        font-size: 36px;
+   }
+   
+    article{
+       width: 600px;
+       height: auto;
+   }
+   
+   .fit{
+    object-fit: cover;
+    height: auto;
+    width: 300px;
+}
+    
+}
