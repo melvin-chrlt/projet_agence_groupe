@@ -38,6 +38,8 @@ function slide(){
 //appelle l'évènement du scroll de la fenêtre, appelle de la function slide
 window.addEventListener('scroll', slide);
 
+
+
 //ANIMATION NAVBAR
 window.onscroll = function() {scrollFunction()};
 
