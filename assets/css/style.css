@@ -634,12 +634,12 @@ footer span a {
   }
 }
 @media screen and (max-width: 595px) {
-  header nav {
+  header #navBar {
     flex-direction: column;
     gap: 1em;
     padding: 1.5em;
   }
-  header nav #menu ul li a {
+  header #navBar #menu #navText li a {
     margin-left: 1.5em;
   }
   header #headerTitle {

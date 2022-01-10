@@ -47,7 +47,7 @@ function scrollFunction() {
     let textNav = document.querySelector("#navText");
     let navBar = document.getElementById("navBar");
 
-  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700 || document.body.window.innerWidth > 1295) {
     navBar.style.padding = "0.5em 0";
     textNav.style.fontSize = "18px";
   } else {
