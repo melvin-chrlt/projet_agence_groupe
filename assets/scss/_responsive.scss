@@ -3,7 +3,7 @@
     header{
         padding: 0;
 
-        nav{
+        #navBar{
             padding: 1em;
             gap: 10em;
             width: 10%;
@@ -25,7 +25,7 @@
                 z-index: 100;
                 animation: menu 1s;
     
-                ul{
+                #navText{
                     flex-direction: column;
                     gap: 2em;
                     width: 100%;
