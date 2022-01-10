@@ -257,14 +257,14 @@ footer span a {
   header {
     padding: 0;
   }
-  header nav {
+  header #navBar {
     padding: 1em;
     gap: 10em;
     width: 10%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
-  header nav #menu {
+  header #navBar #menu {
     display: none;
     position: fixed;
     top: 0;
@@ -278,28 +278,28 @@ footer span a {
     z-index: 100;
     animation: menu 1s;
   }
-  header nav #menu ul {
+  header #navBar #menu #navText {
     flex-direction: column;
     gap: 2em;
     width: 100%;
   }
-  header nav #menu ul li {
+  header #navBar #menu #navText li {
     transition: all ease-in-out 0.2s;
     padding: 1.5em 0;
     cursor: pointer;
   }
-  header nav #menu ul li a {
+  header #navBar #menu #navText li a {
     margin-left: 5em;
     transition: all ease-in-out 0.2s;
     color: white;
   }
-  header nav #menu ul li a:before, header nav #menu ul li a:after {
+  header #navBar #menu #navText li a:before, header #navBar #menu #navText li a:after {
     height: 0;
   }
-  header nav #menu ul li:hover {
+  header #navBar #menu #navText li:hover {
     background-color: #2196F3;
   }
-  header nav #menu ul li:hover a {
+  header #navBar #menu #navText li:hover a {
     color: black;
   }
   @keyframes menu {
@@ -310,7 +310,7 @@ footer span a {
       right: 100%;
     }
   }
-  header nav #menuBurger {
+  header #navBar #menuBurger {
     display: flex;
   }
 }
