@@ -1,4 +1,5 @@
 @media screen and (max-width: 1295px){
+    //HEADER RESPONSIVE
     header{
         padding: 0;
 
@@ -75,15 +76,16 @@
 }
 
 @media screen and (max-width: 595px){
+    //HEADER RESPONSIVE
     header{
 
-        nav{
+        #navBar{
             flex-direction: column;
             gap: 1em;
             padding: 1.5em;
 
             #menu{
-                ul{
+                #navText{
                     li{
                         a{
                             margin-left: 1.5em;
