@@ -37,3 +37,19 @@ function slide(){
 }
 //appelle l'évènement du scroll de la fenêtre, appelle de la function slide
 window.addEventListener('scroll', slide);
+
+//ANIMATION NAVBAR
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    let textNav = document.querySelector("#navText");
+    let navBar = document.getElementById("navBar");
+
+  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    navBar.style.padding = "0.5em 0";
+    textNav.style.fontSize = "18px";
+  } else {
+    navBar.style.padding = "1.5em 0";
+    textNav.style.fontSize = "24px";
+  }
+}

@@ -64,27 +64,29 @@ header {
   align-items: center;
   width: 100%;
 }
-header nav {
+header #navBar {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #2196F3;
   padding: 1.5em 0;
+  position: fixed;
+  z-index: 99;
 }
-header nav #menu ul {
+header #navBar #menu #navText {
   display: flex;
   gap: 4em;
-}
-header nav #menu ul li a {
-  color: white;
   font-size: 24px;
+}
+header #navBar #menu #navText li a {
+  color: white;
   font-family: caviarDreamsBold;
   padding: 0.3em 0;
   position: relative;
   transition: all ease-in-out 0.2s;
 }
-header nav #menu ul li a:before, header nav #menu ul li a:after {
+header #navBar #menu #navText li a:before, header #navBar #menu #navText li a:after {
   height: 3px;
   position: absolute;
   content: "";
@@ -92,21 +94,21 @@ header nav #menu ul li a:before, header nav #menu ul li a:after {
   background-color: black;
   width: 0;
 }
-header nav #menu ul li a:before {
+header #navBar #menu #navText li a:before {
   top: 0;
   left: 0;
 }
-header nav #menu ul li a:after {
+header #navBar #menu #navText li a:after {
   bottom: 0;
   right: 0;
 }
-header nav #menu ul li a:hover {
+header #navBar #menu #navText li a:hover {
   color: white;
 }
-header nav #menu ul li a:hover:before, header nav #menu ul li a:hover:after {
+header #navBar #menu #navText li a:hover:before, header #navBar #menu #navText li a:hover:after {
   width: 100%;
 }
-header nav #menuBurger {
+header #navBar #menuBurger {
   width: 2.5em;
   display: none;
   align-items: flex-start;
@@ -116,24 +118,24 @@ header nav #menuBurger {
   cursor: pointer;
   transition: ease-in-out all 0.2s;
 }
-header nav #menuBurger .bar {
+header #navBar #menuBurger .bar {
   border-radius: 5px;
   height: 4px;
   width: 45px;
   background-color: white;
   transition: ease-in-out all 0.2s;
 }
-header nav #menuBurger .middle {
+header #navBar #menuBurger .middle {
   width: 30px;
 }
-header nav #menuBurger:hover .bar {
+header #navBar #menuBurger:hover .bar {
   background-color: black;
   width: 40px;
 }
-header nav #menuBurger:hover .middle {
+header #navBar #menuBurger:hover .middle {
   width: 45px;
 }
-header nav #close {
+header #navBar #close {
   position: fixed;
   top: 50px;
   right: 50%;
@@ -144,7 +146,7 @@ header nav #close {
   transition: all ease-in-out 0.2s;
   animation: close 3s;
 }
-header nav #close:hover {
+header #navBar #close:hover {
   cursor: pointer;
   color: #2196F3;
 }
