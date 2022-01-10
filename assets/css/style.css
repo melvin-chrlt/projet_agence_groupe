@@ -1062,76 +1062,76 @@ header #headerTitle h1 {
     font-size: 20px;
   }
 }
-#expertiseMain {
+.expertiseMain {
   display: flex;
   justify-content: center;
   padding: 10em 0;
   position: relative;
 }
-#expertiseMain section {
+.expertiseMain section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#expertiseMain section article {
+.expertiseMain section article {
   width: 72%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#expertiseMain section article h3 {
+.expertiseMain section article h3 {
   color: black;
   font-size: 36px;
   font-family: ralewayBold;
   padding: 1em 0;
 }
-#expertiseMain section article h3 span {
+.expertiseMain section article h3 span {
   color: #2196f3;
   font-family: caviarDreamsBold;
 }
-#expertiseMain section article p {
+.expertiseMain section article p {
   font-family: "roboto";
   font-size: 18px;
   line-height: 39px;
   text-align: justify;
 }
-#expertiseMain section article p span {
+.expertiseMain section article p span {
   font-weight: bold;
 }
-#expertiseMain section article div {
+.expertiseMain section article div {
   display: flex;
   align-items: center;
   gap: 10em;
   padding-top: 1em;
 }
-#expertiseMain section article div img {
+.expertiseMain section article div img {
   width: 30%;
   height: auto;
   transform: translateY(25%);
 }
-#expertiseMain section article div .expertiseSecondText {
+.expertiseMain section article div .expertiseSecondText {
   width: 75%;
   display: flex;
   flex-direction: column;
   gap: 0;
 }
-#expertiseMain section .anim {
+.expertiseMain section .anim {
   transform: translateY(20%);
   opacity: 0;
   transition: all ease-in-out 0.4s;
 }
-#expertiseMain section .active {
+.expertiseMain section .active {
   transform: translateX(0%);
   opacity: 1;
 }
-#expertiseMain .blueSeparatorRight {
+.expertiseMain .blueSeparatorRight {
   margin: 8em 0;
   width: 40%;
   height: 3.5em;
   background-color: #2196f3;
   align-self: flex-end;
 }
-#expertiseMain .blueSeparatorLeft {
+.expertiseMain .blueSeparatorLeft {
   margin: 8em 0;
   width: 40%;
   height: 3.5em;
@@ -1140,23 +1140,23 @@ header #headerTitle h1 {
 }
 
 @media screen and (max-width: 1250px) {
-  #expertiseMain section article {
+  .expertiseMain section article {
     width: 90%;
   }
 }
 @media screen and (max-width: 900px) {
-  #expertiseMain section article h3 {
+  .expertiseMain section article h3 {
     text-align: center;
   }
-  #expertiseMain section article div {
+  .expertiseMain section article div {
     flex-direction: column;
     align-items: center;
   }
-  #expertiseMain section article div img {
+  .expertiseMain section article div img {
     width: 80%;
     transform: translateY(0);
   }
-  #expertiseMain .blueSeparatorBot, #expertiseMain .blueSeparatorLeft, #expertiseMain .blueSeparatorRight, #expertiseMain .blueSeparatorTop {
+  .expertiseMain .blueSeparatorBot, .expertiseMain .blueSeparatorLeft, .expertiseMain .blueSeparatorRight, .expertiseMain .blueSeparatorTop {
     height: 2em;
     width: 60%;
   }

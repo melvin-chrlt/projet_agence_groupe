@@ -1,4 +1,4 @@
-#expertiseMain{
+.expertiseMain{
     display: flex;
     justify-content: center;
     padding: 10em 0;
@@ -90,7 +90,7 @@
 
 //RESPONSIVE
 @media screen and (max-width: 1250px){
-    #expertiseMain{
+    .expertiseMain{
         section{
             article{
                 width: 90%;
@@ -100,7 +100,7 @@
 }
 
 @media screen and (max-width: 900px){
-    #expertiseMain{
+    .expertiseMain{
         section{
             article{
                 h3{
