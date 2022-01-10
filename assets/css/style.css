@@ -227,6 +227,7 @@ header #headerTitle h1 {
   height: 418px;
 }
 #aboutCAS .historyCAS {
+  padding-left: 2%;
   width: 50%;
 }
 #aboutCAS .historyCAS p {
@@ -241,9 +242,6 @@ header #headerTitle h1 {
 }
 #aboutCAS .historyCAS .buttonCAS a {
   border: 1px solid black;
-}
-#aboutCAS .teamCAS {
-  padding-left: 8%;
 }
 #aboutCAS .teamCAS .teamAVATAR {
   display: flex;
@@ -427,8 +425,103 @@ header #headerTitle h1 {
   }
 }
 @media screen and (max-width: 1200px) {
+  #aboutCAS .teamCAS .teamAVATAR .avatar {
+    width: 110px;
+    height: 110px;
+  }
+
+  #gallery .pictureGallery img {
+    height: 180px;
+    width: 180px;
+  }
+}
+@media screen and (max-width: 1170px) {
   #aboutCAS {
-    justify-content: initial;
+    display: block;
+    padding-bottom: 24%;
+  }
+  #aboutCAS .historyCAS {
+    margin: auto;
+  }
+  #aboutCAS .teamCAS {
+    margin: auto;
+  }
+  #aboutCAS .teamCAS h2 {
+    padding-top: 5%;
+    text-align: center;
+  }
+
+  #gallery {
+    padding-top: 10%;
+  }
+}
+@media screen and (max-width: 920px) {
+  #aboutCAS {
+    padding-bottom: 55%;
+  }
+  #aboutCAS .historyCAS p {
+    width: 100%;
+  }
+  #aboutCAS .historyCAS .buttonCAS a {
+    padding: 0.5em 1em;
+  }
+  #aboutCAS .teamCAS h2 {
+    padding-top: 15%;
+  }
+
+  #expertiseCAS {
+    padding-top: 15%;
+    padding-bottom: 25%;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation,
+#expertiseCAS .serviceCAS .internetSite,
+#expertiseCAS .serviceCAS .socialNetworks,
+#expertiseCAS .serviceCAS .consulting {
+    height: 150px;
+    width: 150px;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation .buttonCAS a,
+#expertiseCAS .serviceCAS .internetSite .buttonCAS a,
+#expertiseCAS .serviceCAS .socialNetworks .buttonCAS a,
+#expertiseCAS .serviceCAS .consulting .buttonCAS a {
+    font-size: 14px;
+    padding: 0.5em 2em;
+    left: 7%;
+    top: 150%;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation img,
+#expertiseCAS .serviceCAS .internetSite img,
+#expertiseCAS .serviceCAS .socialNetworks img,
+#expertiseCAS .serviceCAS .consulting img {
+    height: 50px;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation h3,
+#expertiseCAS .serviceCAS .internetSite h3,
+#expertiseCAS .serviceCAS .socialNetworks h3,
+#expertiseCAS .serviceCAS .consulting h3 {
+    font-size: 15px;
+  }
+  #expertiseCAS .serviceCAS .graphicCreation p,
+#expertiseCAS .serviceCAS .internetSite p,
+#expertiseCAS .serviceCAS .socialNetworks p,
+#expertiseCAS .serviceCAS .consulting p {
+    margin-top: 1em;
+    padding: 0;
+    width: 150px;
+    font-size: 12px;
+  }
+
+  #gallery .pictureGallery img {
+    height: 100px;
+    width: 100px;
+  }
+}
+@media screen and (max-width: 724px) {
+  #aboutCAS {
+    padding-bottom: 16%;
+  }
+  #aboutCAS .teamCAS {
+    display: none;
   }
 }
 #bodyGalerie {
@@ -482,6 +575,70 @@ header #headerTitle h1 {
   background-color: #2196F3;
   margin-left: 50%;
   margin-bottom: 2%;
+}
+
+.card {
+  width: 300px;
+  height: 150px;
+  background-color: indigo;
+  perspective: 1000px;
+  margin: auto;
+}
+
+.card_interieure1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+}
+
+.return {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-color: #11c598;
+  color: #111111;
+}
+
+.back {
+  background-color: #c7203c;
+  color: #eeeeee;
+  transform: rotateY(180deg);
+}
+
+.card_interieure2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+}
+
+.none {
+  display: none;
+}
+
+.back1 {
+  background-color: green;
+  height: 100%;
+  width: 100%;
+}
+
+.back2 {
+  background-color: hotpink;
+  height: 100%;
+  width: 100%;
 }
 
 footer {
@@ -574,38 +731,56 @@ footer::before {
   right: 0;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 1000px) {
+  footer #sectionFooter .contactCas .buttonCAS a,
+footer #sectionFooter .locationCAS .buttonCAS a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 900px) {
   footer #sectionFooter {
     display: block;
   }
-  footer #sectionFooter .infoCas img {
-    width: 100%;
-    height: auto;
-  }
-  footer #sectionFooter .infoCas .functionCAS {
-    width: 100%;
-  }
   footer #sectionFooter .contactCas,
 footer #sectionFooter .locationCAS {
-    margin-top: 14%;
+    text-align: center;
+    margin-top: 5%;
   }
-  footer #sectionFooter h2 {
+  footer #sectionFooter .iconNetworks {
+    display: block;
+  }
+  footer #sectionFooter .iconNetworks i {
+    margin-right: 5%;
+    margin-top: 5%;
+  }
+  footer #sectionFooter .locationCAS h2 {
     display: none;
   }
-  footer #sectionFooter .buttonCAS,
-footer #sectionFooter p {
+  footer .infoCas .functionCAS {
     text-align: center;
+    margin: auto;
+    width: auto;
   }
-
-  .iconNetworks {
-    margin-top: 14%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+}
+@media screen and (max-width: 450px) {
+  footer #sectionFooter {
+    padding: 5%;
+    margin: auto;
+    width: auto;
   }
-  .iconNetworks p {
-    margin-right: 5%;
+  footer #sectionFooter .infoCas img {
+    width: 250px;
+    height: auto;
+  }
+  footer #sectionFooter .functionCAS {
+    font-size: 14px;
+  }
+  footer #sectionFooter .contactCas .buttonCAS,
+footer #sectionFooter .locationCAS .buttonCAS {
+    margin-bottom: 18%;
+  }
+  footer #sectionFooter .infoCas .functionCAS {
+    width: auto;
   }
 }
 @media screen and (max-width: 1295px) {

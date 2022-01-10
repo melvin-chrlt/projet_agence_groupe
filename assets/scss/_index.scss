@@ -41,6 +41,7 @@
   background-color: black;
   height: 418px;
   .historyCAS {
+    padding-left: 2%;
     width: 50%;
     p {
       text-align: justify;
@@ -58,7 +59,7 @@
   }
 
   .teamCAS {
-    padding-left: 8%;
+    //padding-left: 8%;
     .teamAVATAR {
       @include flex;
       .avatar {
@@ -115,8 +116,8 @@
     }
   }
 }
-#expertiseCAS::before{
-  content: '';
+#expertiseCAS::before {
+  content: "";
   height: 50px;
   width: 575px;
   background-color: $purple;
@@ -163,8 +164,8 @@
     }
   }
 }
-#gallery::before{
-  content: '';
+#gallery::before {
+  content: "";
   height: 50px;
   width: 575px;
   background-color: $purple;
@@ -232,7 +233,104 @@
 
 // ------ @MEDIA QUERY 1200px------ //
 @media screen and (max-width: 1200px) {
+  // pictures team avatar
+  #aboutCAS .teamCAS .teamAVATAR .avatar {
+    width: 110px;
+    height: 110px;
+  }
+  // images from the projects gallery
+  #gallery .pictureGallery img {
+    height: 180px;
+    width: 180px;
+  }
+}
+
+// ------ @MEDIA QUERY 1170px------ //
+@media screen and (max-width: 1170px) {
+  // part about CAS
   #aboutCAS {
-    justify-content: initial;
+    display: block;
+    padding-bottom: 24%;
+    .historyCAS {
+      margin: auto;
+    }
+    .teamCAS {
+      margin: auto;
+      h2 {
+        padding-top: 5%;
+        text-align: center;
+      }
+    }
+  }
+  #gallery {
+    padding-top: 10%;
+  }
+}
+
+// ------ @MEDIA QUERY 920px------ //
+// part about CAS
+@media screen and (max-width: 920px) {
+  #aboutCAS {
+    padding-bottom: 55%;
+    .historyCAS {
+      p {
+        width: 100%;
+      }
+      .buttonCAS a {
+        padding: 0.5em 1em;
+      }
+    }
+    .teamCAS {
+      h2 {
+        padding-top: 15%;
+      }
+    }
+  }
+  //  rounds of the services part
+  #expertiseCAS {
+    padding-top: 15%;
+    padding-bottom: 25%;
+    .serviceCAS {
+      .graphicCreation,
+      .internetSite,
+      .socialNetworks,
+      .consulting {
+        height: 150px;
+        width: 150px;
+        .buttonCAS a {
+          font-size: 14px;
+          padding: 0.5em 2em;
+          left: 7%;
+          top: 150%;
+        }
+        img {
+          height: 50px;
+        }
+        h3 {
+          font-size: 15px;
+        }
+        p {
+          margin-top: 1em;
+          padding: 0;
+          width: 150px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  // images from the projects gallery
+  #gallery .pictureGallery img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+// ------ @MEDIA QUERY 724px------ //
+@media screen and (max-width: 724px) {
+  #aboutCAS {
+    padding-bottom: 16%;
+    .teamCAS {
+      display: none;
+    }
   }
 }

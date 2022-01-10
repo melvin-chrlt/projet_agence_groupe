@@ -84,8 +84,8 @@ footer {
   }
 }
 
-footer::before{
-  content: '';
+footer::before {
+  content: "";
   height: 50px;
   width: 575px;
   background-color: $purple;
@@ -95,36 +95,64 @@ footer::before{
 }
 
 // ---------- RESPONSIVE ---------- //
-// ------ @MEDIA QUERY 390px------ //
-@media screen and (max-width: 390px) {
-  footer #sectionFooter {
-    display: block;
-    .infoCas {
-      img{
-        width: 100%;
-        height: auto;
+// ------ @MEDIA QUERY 1000px------ //
+@media screen and (max-width: 1000px) {
+  footer #sectionFooter .contactCas .buttonCAS a,
+  footer #sectionFooter .locationCAS .buttonCAS a {
+    font-size: 14px;
+  }
+}
+
+// ------ @MEDIA QUERY 900px------ //
+@media screen and (max-width: 900px) {
+  footer {
+    #sectionFooter {
+      display: block;
+      .contactCas,
+      .locationCAS {
+        text-align: center;
+        margin-top: 5%;
       }
-      .functionCAS {
-        width: 100%;
+      .iconNetworks {
+        display: block;
+        i {
+          margin-right: 5%;
+          margin-top: 5%;
+        }
+      }
+      .locationCAS h2 {
+        display: none;
       }
     }
-    .contactCas,
-    .locationCAS {
-      margin-top: 14%;
-    }
-    h2 {
-      display: none;
-    }
-    .buttonCAS,
-    p {
+    .infoCas .functionCAS {
       text-align: center;
+      margin: auto;
+      width: auto;
     }
   }
-  .iconNetworks {
-    margin-top: 14%;
-    @include flex;
-    p {
-      margin-right: 5%;
+}
+
+// ------ @MEDIA QUERY 450px------ //
+@media screen and (max-width: 450px) {
+  footer #sectionFooter {
+    padding: 5%;
+    margin: auto;
+    width: auto;
+    .infoCas {
+      img {
+        width: 250px;
+        height: auto;
+      }
+    }
+    .functionCAS {
+      font-size: 14px;
+    }
+    .contactCas .buttonCAS,
+    .locationCAS .buttonCAS {
+      margin-bottom: 18%;
+    }
+    .infoCas .functionCAS {
+      width: auto;
     }
   }
 }
