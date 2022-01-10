@@ -201,7 +201,6 @@ header #headerTitle h1 {
 #aproposmain #info p {
   font-size: 18px;
   text-align: center;
-  padding: 1em;
   font-family: "roboto";
 }
 #aproposmain #info strong {
@@ -223,6 +222,9 @@ header #headerTitle h1 {
 }
 #aproposmain #teams .melvin {
   padding: 60px;
+  border: 1px solid black;
+  width: 296px;
+  height: auto;
 }
 #aproposmain #teams .melvin p {
   font-size: 18px;
@@ -241,6 +243,9 @@ header #headerTitle h1 {
 }
 #aproposmain #teams .sofian {
   padding: 25px;
+  border: 1px solid black;
+  height: auto;
+  width: 318px;
 }
 #aproposmain #teams .sofian p {
   font-size: 18px;
@@ -259,6 +264,9 @@ header #headerTitle h1 {
 }
 #aproposmain #teams .aurelie {
   padding-bottom: 120px;
+  border: 1px solid black;
+  height: auto;
+  width: 324px;
 }
 #aproposmain #teams .aurelie p {
   font-size: 18px;

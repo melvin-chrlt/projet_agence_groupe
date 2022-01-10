@@ -11,7 +11,6 @@
         p{
             font-size: 18px;
             text-align: center;
-            padding: 1em;
             font-family: "roboto";
         }
     
@@ -38,6 +37,9 @@
     
        .melvin{
           padding: 60px;
+          border: 1px solid black;
+          width: 296px;
+          height: auto;
     
             p{
                 font-size: 18px;
@@ -62,6 +64,10 @@
        
        .sofian{
            padding: 25px;
+           border: 1px solid black;
+           height: auto;
+           width: 318px;
+     
             p{
                 font-size: 18px;
                 color:white;
@@ -82,7 +88,10 @@
        }
     
        .aurelie{
-        padding-bottom: 120px;
+            padding-bottom: 120px;
+           border: 1px solid black;
+           height: auto;
+           width: 324px;
           p{
               font-size: 18px;
               color:white;
