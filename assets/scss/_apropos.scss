@@ -17,17 +17,58 @@ body{
 
 #teams{
    background-color: black;
-   display: flex;
-    align-items: center;
-    justify-content: center;
+  h2{
+    color: #2196F3;
+    font-size: 36px;
+    text-align: center;
+}
+    
+    .présentation{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-    h2{
-        color: blue;
-        font-size: 36px;
+   .melvin{
+      padding: 60px;
+
+        p{
+            font-size: 24px;
+            color:white
+        }
+
+        h2{
+            color: #2196F3;
+            font-size: 36px;
+            } 
+
+        h3{
+            color: white;
+            font-size: 36px;
+        }
+
    }
    
-   .melvin{
-      padding: 10px;
+   .sofian{
+       padding: 25px;
+        p{
+            font-size: 24px;
+            color:white
+        }
+
+        h2{
+        color: #2196F3;
+        font-size: 36px;
+    } 
+
+        h3{
+            color: white;
+            font-size: 36px;
+        }
+   }
+
+   .aurelie{
+    padding-bottom: 120px;
 
       p{
           font-size: 24px;
@@ -35,17 +76,17 @@ body{
       }
 
       h2{
-        color: blue;
-        font-size: 36px;
-   } 
+          color: #2196F3;
+          font-size: 36px;
+          } 
 
-    h3{
-        color: white;
-        font-size: 36px;
-    }
+      h3{
+          color: white;
+          font-size: 36px;
+      }
 
-   }
-   
+ }
+  
    .fit{
     object-fit: cover;
     height: auto;

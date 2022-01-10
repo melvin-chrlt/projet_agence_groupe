@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* headline color */
 * {
   margin: 0;
@@ -196,26 +197,59 @@ body p {
 
 #teams {
   background-color: black;
+}
+#teams h2 {
+  color: #2196F3;
+  font-size: 36px;
+  text-align: center;
+}
+#teams .présentation {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#teams h2 {
-  color: blue;
-  font-size: 36px;
-}
 #teams .melvin {
-  padding: 10px;
+  padding: 60px;
 }
 #teams .melvin p {
   font-size: 24px;
   color: white;
 }
 #teams .melvin h2 {
-  color: blue;
+  color: #2196F3;
   font-size: 36px;
 }
 #teams .melvin h3 {
+  color: white;
+  font-size: 36px;
+}
+#teams .sofian {
+  padding: 25px;
+}
+#teams .sofian p {
+  font-size: 24px;
+  color: white;
+}
+#teams .sofian h2 {
+  color: #2196F3;
+  font-size: 36px;
+}
+#teams .sofian h3 {
+  color: white;
+  font-size: 36px;
+}
+#teams .aurelie {
+  padding-bottom: 120px;
+}
+#teams .aurelie p {
+  font-size: 24px;
+  color: white;
+}
+#teams .aurelie h2 {
+  color: #2196F3;
+  font-size: 36px;
+}
+#teams .aurelie h3 {
   color: white;
   font-size: 36px;
 }
