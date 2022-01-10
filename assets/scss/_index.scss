@@ -370,6 +370,7 @@
     }
   }
   #homepage h2{
+    text-align: center;
     span, strong {
       font-size: 22px;
     }
@@ -378,7 +379,9 @@
   #expertiseCAS{
     padding-bottom: 6%;
     .serviceCAS {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       .graphicCreation,
       .internetSite,
       .socialNetworks,
@@ -413,6 +416,12 @@
   } 
 
   #gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      width: 80%;
+    }
     .pictureGallery{
       display: block;
       img{
