@@ -1,0 +1,225 @@
+#contactMain{
+    background-color: black;
+    color: white;
+    position: relative;
+
+    #contactContainer{
+        padding: 8em;
+        display: flex;
+        justify-content: center;
+        gap: 3em;
+
+        #contactContainerLeft{
+            width: 47%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3{
+                width: 85%;
+                font-family: raleway;
+                font-size: 48px;
+                text-align: center;
+
+                #contactez{
+                    color: #2196f3;
+                    font-weight: 700;
+                }
+
+                #apostrophe{
+                    color: #2196f3;
+                }
+
+                #cas{
+                    font-family: caviarDreamsBold;
+                }
+            }
+
+            p{
+                text-align: center;
+                width: 85%;
+                font-family: roboto;
+                font-size: 24px;
+                padding: 2em 0;
+                line-height: 1.3;
+            }
+
+            form{
+                display: flex;
+                flex-direction: column;
+                width: 85%;
+
+                label{
+                    font-family: caviarDreams;
+                    font-size: 25px;
+                    padding-bottom: 0.2em;
+
+                    span{
+                        color: #2196f3;
+                    }
+                }
+
+                input{
+                    border: 0;
+                    font-size: 25px;
+                    font-family: caviarDreamsBold;
+                    padding: 0.5em;
+                    margin-bottom: 1em;
+                }
+                
+                textarea{
+                    border: 0;
+                    font-size: 25px;
+                    font-family: caviarDreamsBold;
+                    padding: 0.5em;
+                }
+            }
+
+            div{
+                display: flex;
+                justify-content: flex-end;
+                width: 85%;
+                margin: 2em 0;
+
+                a{
+                    color: white;
+                    font-size: 18px;
+                    font-family: caviarDreamsBold;
+                    padding: 1em 4em;
+                    background-color: #2196f3;
+                    border-radius: 25px;
+                    transition: all ease-in-out 0.3s;
+                }
+
+                a:hover{
+                    color: #2196f3;
+                    background-color: white;
+                }
+            }
+        }
+
+        #contactContainerRight{
+            width: 47%;
+            display: flex;
+            flex-direction: column;
+            padding-top: 2.5em;
+            gap: 2em;
+
+            #map{
+                box-shadow: #2196f3 12px -12px 0px;
+            }
+
+            p{
+                font-family: roboto;
+                font-size: 25px;
+                line-height: 1.3;
+                text-align: justify;
+            }
+
+            #address{
+                display: flex;
+                flex-direction: column;
+                gap: 2.5em;
+
+                div{
+                    
+                    p{
+
+                        span{
+                            color: #2196f3;
+                            padding-bottom: 0.5em;
+                            font-family: caviarDreamsBold;
+                        }
+                    }
+                }
+            }
+        }
+
+        .anim{
+            transform: translateX(-20%);
+            opacity: 0;
+            transition: all ease-in-out 0.4s;
+        }
+
+        .active{
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+}
+
+//RESPONSIVE
+@media screen and (max-width: 1120px){
+    #contactMain{
+        #contactContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3em 0;
+
+            #contactContainerLeft{
+                width: 90%;
+
+                h3{
+                    width: 90%;
+                }
+
+                form{
+                
+                    input{
+                        margin-bottom: 2em;
+                    }
+                }
+            }
+
+            #contactContainerRight{
+                width: 100%;
+
+                #map{
+                    box-shadow: none;
+                }
+
+                p{
+                    width: 90%;
+                    text-align: center;
+                    padding: 0 1em;
+                }
+            }
+        }
+
+        .blueSeparatorBot, .blueSeparatorTop{
+            height: 2em;
+            width: 60%;
+        }
+    }
+}
+
+@media screen and (max-width: 530px){
+    #contactMain{
+        #contactContainer{
+            #contactContainerLeft{
+                h3{
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 440px){
+    #contactMain{
+        #contactContainer{
+            #contactContainerLeft{
+                form{
+                    input{
+                        font-size: 20px;
+                    }
+
+                    textarea{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

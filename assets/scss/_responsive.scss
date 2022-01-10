@@ -1,9 +1,14 @@
 @media screen and (max-width: 1295px){
+    //HEADER RESPONSIVE
     header{
         padding: 0;
 
-        nav{
-            padding-top: 5em;
+        #navBar{
+            padding: 1em;
+            gap: 10em;
+            width: 10%;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
 
             //MENU STYLE WHEN MENU BURGER IS OPEN
             #menu{
@@ -20,7 +25,7 @@
                 z-index: 100;
                 animation: menu 1s;
     
-                ul{
+                #navText{
                     flex-direction: column;
                     gap: 2em;
                     width: 100%;
@@ -42,7 +47,7 @@
                     }
 
                     li:hover{
-                        background-color: #ad00ff;
+                        background-color: #2196F3;
 
                         a{
                             color: black;
@@ -71,14 +76,16 @@
 }
 
 @media screen and (max-width: 595px){
+    //HEADER RESPONSIVE
     header{
 
-        nav{
+        #navBar{
             flex-direction: column;
-            gap: 2em;
+            gap: 1em;
+            padding: 1.5em;
 
             #menu{
-                ul{
+                #navText{
                     li{
                         a{
                             margin-left: 1.5em;
@@ -93,6 +100,20 @@
             
             h1{
                 font-size: 40px;
+            }
+
+            img{
+                width: 25em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 440px){
+    header{
+        #headerTitle{
+            img{
+                width: 15em;
             }
         }
     }

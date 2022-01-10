@@ -1,9 +1,12 @@
 // THE FOOTER
 footer {
   text-align: center;
-  padding: 30px;
-  background-color: $black;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  background-color: black;
   color: white;
+  border-top: 1px solid $purple;
+  position: relative;
 
   #sectionFooter {
     @include flex(space-around, baseline);
@@ -11,13 +14,15 @@ footer {
 
     // logo and function info
     .infoCas {
+      width: 50%;
       img {
         height: 125px;
         margin-bottom: 20px;
       }
       .functionCAS {
         text-align: justify;
-        width: 390px;
+        width: 50%;
+        margin: auto;
       }
     }
 
@@ -45,6 +50,7 @@ footer {
         margin-top: 45px;
         a {
           padding: 1em 3em;
+          border: 1px solid black;
         }
       }
     }
@@ -77,5 +83,83 @@ footer {
     a {
       color: $purple;
     }
+  }
+}
+
+footer::before {
+  content: "";
+  height: 50px;
+  width: 575px;
+  background-color: $purple;
+  position: absolute;
+  top: -5%;
+  right: 0;
+}
+
+
+
+
+// ---------- RESPONSIVE ---------- //
+// ------ @MEDIA QUERY 1000px------ //
+@media screen and (max-width: 1000px) {
+  footer #sectionFooter .contactCas .buttonCAS a,
+  footer #sectionFooter .locationCAS .buttonCAS a {
+    font-size: 14px;
+  }
+}
+
+// ------ @MEDIA QUERY 950px------ //
+@media screen and (max-width: 950px) {
+
+  footer {
+    #sectionFooter {
+      display: block;
+      .contactCas,
+      .locationCAS {
+        text-align: center;
+        margin-top: 5%;
+      }
+      .iconNetworks {
+        display: block;
+        i {
+          margin-right: 5%;
+          margin-top: 5%;
+        }
+      }
+      .locationCAS h2 {
+        display: none;
+      }
+      .infoCas{
+        width: 100%;
+      }
+    }
+    
+    .infoCas .functionCAS {
+      text-align: center;
+      margin: auto;
+    }
+  }
+}
+
+// ------ @MEDIA QUERY 450px------ //
+@media screen and (max-width: 450px) {
+  footer #sectionFooter {
+    padding: 5%;
+    margin: auto;
+    width: auto;
+    .infoCas {
+      img {
+        width: 250px;
+        height: auto;
+      }
+    }
+    .functionCAS {
+      font-size: 14px;
+    }
+    .contactCas .buttonCAS,
+    .locationCAS .buttonCAS {
+      margin-bottom: 18%;
+    }
+
   }
 }

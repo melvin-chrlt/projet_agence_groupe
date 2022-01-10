@@ -1,106 +1,105 @@
-body{
-    p{
-        font-family: robotoregulars;
+#aproposmain{
+    #info{
+        h2{
+            font-size: 36px;
+            text-align: center;
+            padding: 1em;
+            color: #2196F3;
+            font-family: ralewayBold;
+        }
+    
+        p{
+            font-size: 18px;
+            text-align: center;
+            padding: 1em;
+            font-family: "roboto";
+        }
+    
+        strong{
+            color: #2196F3;
+        }
+    
     }
-}
-
-
-#info{
-    h2{
+    
+    #teams{
+       background-color: black;
+       h2{
+        color: #2196F3;
         font-size: 36px;
         text-align: center;
-        padding: 1em;
-        color: #2196F3;
     }
-
-    p{
-        font-size: 24px;
-        text-align: center;
-        padding: 1em;
-    }
-
-    strong{
-        color: #2196F3;
-    }
-
-}
-
-#teams{
-   background-color: black;
-   h2{
-    color: #2196F3;
-    font-size: 36px;
-    text-align: center;
-}
-    
-    .présentation{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-   .melvin{
-      padding: 60px;
-
-        p{
-            font-size: 24px;
-            color:white
+        
+        .présentation{
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-
-        h2{
+    
+       .melvin{
+          padding: 60px;
+    
+            p{
+                font-size: 18px;
+                color:white
+            }
+    
+            h2{
+                color: #2196F3;
+                font-size: 36px;
+                } 
+    
+            h3{
+                color: white;
+                font-size: 36px;
+            }
+    
+       }
+       
+       .sofian{
+           padding: 25px;
+            p{
+                font-size: 18px;
+                color:white
+            }
+    
+            h2{
             color: #2196F3;
             font-size: 36px;
-            } 
-
-        h3{
-            color: white;
-            font-size: 36px;
-        }
-
-   }
-   
-   .sofian{
-       padding: 25px;
-        p{
-            font-size: 24px;
-            color:white
-        }
-
-        h2{
-        color: #2196F3;
-        font-size: 36px;
-    } 
-
-        h3{
-            color: white;
-            font-size: 36px;
-        }
-   }
-
-   .aurelie{
-    padding-bottom: 120px;
-
-      p{
-          font-size: 24px;
-          color:white
-      }
-
-      h2{
-          color: #2196F3;
-          font-size: 36px;
-          } 
-
-      h3{
-          color: white;
-          font-size: 36px;
-      }
-
- }
-  
-   .fit{
-    object-fit: cover;
-    height: auto;
-    width: 300px;
-}
+        } 
     
+            h3{
+                color: white;
+                font-size: 36px;
+            }
+       }
+    
+       .aurelie{
+        padding-bottom: 120px;
+    
+          p{
+              font-size: 18px;
+              color:white
+          }
+    
+          h2{
+              color: #2196F3;
+              font-size: 36px;
+              } 
+    
+          h3{
+              color: white;
+              font-size: 36px;
+          }
+    
+     }
+      
+       .fit{
+        object-fit: cover;
+        height: auto;
+        width: 300px;
+    }
+        
+    }
 }
+
+

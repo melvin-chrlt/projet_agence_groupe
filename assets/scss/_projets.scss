@@ -1,0 +1,52 @@
+#bodyGalerie {
+  background-color: black;
+  .textGalerie {
+    text-align: center;
+    color: white;
+    margin-top: 4%;
+  }
+  #projetsMain {
+    @include flex($just: flex-start);
+    flex-wrap: wrap;
+    margin: 4% 5% 4% 10%;
+
+    div {
+      text-align: center;
+      margin-right: 4%;
+      margin-bottom: 5%;
+      position: relative;
+
+      img {
+        border: 1px solid black;
+        box-shadow: 12px -12px 0px -1px $purple;
+      }
+      h2 {
+        background-color: $purple;
+        color: black;
+        font-family: "caviarDreamsBold";
+        font-size: 2em;
+        box-shadow: -12px 12px 8px -8px black;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 2%;
+        span {
+          color: $gray;
+          font-size: 0.6em;
+        }
+      }
+      // hover mouse
+      .mouseSurvol {
+        opacity: 0;
+      }
+      .mouseSurvol:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .purple {
+    background-color: $purple;
+    margin-left: 50%;
+    margin-bottom: 2%;
+  }
+}

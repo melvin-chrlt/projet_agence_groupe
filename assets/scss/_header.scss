@@ -1,36 +1,36 @@
 header{
-    padding: 3em;
+    padding-bottom: 3em;
     background-image: url(../images/bakcHome.jpg);
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
     //NAV STYLE
-    nav{
+    #navBar{
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        gap: 10em;
-
-        //LOGO SIZE
-        img{
-            width: 20em;
-            height: auto;
-        }
+        background-color: #2196F3;
+        padding: 1.5em 0;
+        position: fixed;
+        z-index: 99;
 
         #menu{
 
-            ul{
+            #navText{
                 display: flex;
                 gap: 4em;
+                font-size: 24px;
 
                 li{
 
                     //MENU TEXT STYLE
                     a{
-                        color: black;
-                        font-size: 24px;
+                        color: white;
                         font-family: caviarDreamsBold;
                         padding: 0.3em 0;
                         position: relative;
@@ -57,11 +57,11 @@ header{
                         right: 0;
                     }
 
-                    a:hover, .current a{
+                    a:hover{
                         color: white;
                     }
 
-                    a:hover:before, .current a:before, a:hover:after, .current a:after {
+                    a:hover:before, a:hover:after{
                         width: 100%;
                     }
                 }
@@ -96,7 +96,7 @@ header{
         #menuBurger:hover{
 
             .bar{
-                background-color: #ad00ff;
+                background-color: black;
                 width: 40px;
             }
 
@@ -120,7 +120,7 @@ header{
     
         #close:hover{
             cursor: pointer;
-            color: #ad00ff;
+            color: #2196F3;
         }
 
         //CLOSING ANIMATION
@@ -142,29 +142,20 @@ header{
     //TITLE STYLE PART
     #headerTitle{
         text-align: center;
-        padding: 7em 0;
+        padding: 13em 0;
+
+        //LOGO SIZE
+        img{
+            width: 30em;
+            height: auto;
+        }
 
         h1{
             font-family: caviarDreamsBold;
-            font-size: 60px;
-
-            .cas{
-                font-family: binjay;
-                font-size: 64px;
-            }
-
-            .and{
-                font-family: caviarDreams;
-                font-size: 50px;
-                font-weight: 200;
-            }
-        }
-
-        h2{
-            font-family: caviarDreamsBold;
             font-size: 30px;
-            padding-top: 0.5em;
+            padding-top: 1em;
             letter-spacing: 2px;
+            color: white;
         }
     }
 }

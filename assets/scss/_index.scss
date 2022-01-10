@@ -1,0 +1,525 @@
+// HOMEPAGE
+
+// General homepage
+#homepage {
+  h2 {
+    text-align: left;
+    color: $purple;
+    font-family: "ralewayBold";
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-bottom: 30px;
+    span {
+      color: $gray;
+      font-family: "caviarDreamsBold";
+      font-size: 24px;
+      text-transform: initial;
+    }
+    strong {
+      color: black;
+      font-family: "caviarDreamsBold";
+      font-size: 24px;
+      text-transform: initial;
+    }
+  }
+
+  h3 {
+    color: $purple;
+    font-family: "caviarDreamsBold";
+    font-size: 20px;
+    padding-bottom: 30px;
+    text-shadow: 1px 1px black;
+  }
+}
+
+// history and team part
+#aboutCAS {
+  padding-top: 4%;
+  padding-bottom: 6%;
+  @include flex($align: baseline);
+  color: $gray;
+  background-color: black;
+  height: 418px;
+  position: relative;
+  .historyCAS {
+    padding-left: 2%;
+    width: 50%;
+    p {
+      text-align: justify;
+      width: 526px;
+      line-height: 25px;
+      margin-bottom: 15%;
+    }
+    .buttonCAS {
+      margin-left: 25%;
+      margin-top: 50px;
+      a {
+        border: 1px solid black;
+      }
+    }
+  }
+
+  .teamCAS {
+    //padding-left: 8%;
+    .teamAVATAR {
+      @include flex;
+      .avatar {
+        background-color: burlywood;
+        height: 150px;
+        width: 150px;
+        margin-top: 4%;
+        margin-right: 80px;
+        border: 5px solid $purple;
+        box-shadow: 3px 3px 8px -1px white;
+      }
+    }
+  }
+}
+#aboutCAS::before {
+  content: "";
+  height: 50px;
+  width: 575px;
+  background-color: $purple;
+  position: absolute;
+  top: -4%;
+  left: 0;
+}
+
+// know-how part
+#expertiseCAS {
+  padding-top: 4%;
+  padding-bottom: 6%;
+  position: relative;
+  h2 {
+    margin-bottom: 2%;
+    margin-left: 28px;
+  }
+  .serviceCAS {
+    @include flex($just: space-evenly);
+    .graphicCreation,
+    .internetSite,
+    .socialNetworks,
+    .consulting {
+      text-align: center;
+      background-color: $gray;
+      height: 300px;
+      width: 300px;
+      border: 3px solid black;
+      border-radius: 50%;
+      position: relative;
+      img {
+        padding: 2% 0;
+      }
+      p {
+        margin-top: -1em;
+        padding: 0 3em;
+      }
+      .buttonCAS {
+        a {
+          position: absolute;
+          top: 90%;
+          left: 12%;
+          border: 1px solid black;
+          box-shadow: 2px 2px 10px 0px black;
+        }
+      }
+    }
+  }
+}
+#expertiseCAS::before {
+  content: "";
+  height: 50px;
+  width: 575px;
+  background-color: $purple;
+  position: absolute;
+  top: -4%;
+  right: 0;
+}
+
+// project gallery part
+#gallery {
+  padding-top: 4%;
+  padding-bottom: 6%;
+  background-color: $gray;
+  text-align: center;
+  position: relative;
+  h2 {
+    margin-left: 28px;
+  }
+  p {
+    text-align: left;
+    margin-left: 28px;
+    margin-bottom: 5%;
+  }
+  .pictureGallery {
+    @include flex;
+    img {
+      height: 300px;
+      position: relative;
+      margin-right: 5em;
+      border: 1px solid black;
+    }
+    .purpleShadow {
+      box-shadow: 12px -12px 0px -1px $purple;
+    }
+    .blackShadow {
+      box-shadow: 12px -12px 0px -1px black;
+    }
+  }
+  .buttonCAS {
+    margin-top: 7%;
+    a {
+      border: 1px solid black;
+      box-shadow: 2px 2px 10px 0px black;
+    }
+  }
+}
+#gallery::before {
+  content: "";
+  height: 50px;
+  width: 575px;
+  background-color: $purple;
+  position: absolute;
+  top: -2%;
+  left: 0;
+}
+
+// ---------- RESPONSIVE ---------- //
+
+// ------ @MEDIA QUERY 1530px------ //
+@media screen and (max-width: 1530px) {
+  // images from the projects gallery
+  #gallery .pictureGallery img {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+// ------ @MEDIA QUERY 1325px------ //
+@media screen and (max-width: 1325px) {
+  // eyeVisual img
+  #aboutCAS .teamCAS {
+    .eyeVisual {
+      img {
+        width: 400px;
+      }
+    }
+    .purpleFrame {
+      right: 146px;
+      width: 400px;
+      height: 200px;
+    }
+  }
+  //  rounds of the services part
+  #expertiseCAS {
+    .serviceCAS {
+      .graphicCreation,
+      .internetSite,
+      .socialNetworks,
+      .consulting {
+        height: 250px;
+        width: 250px;
+        .buttonCAS a {
+          padding: 0.5em 3em;
+          left: 7%;
+        }
+        img {
+          height: 50px;
+        }
+        h3 {
+          font-size: 17px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  // images from the projects gallery
+  #gallery .pictureGallery img {
+    margin-right: 3em;
+  }
+}
+
+// ------ @MEDIA QUERY 1200px------ //
+@media screen and (max-width: 1200px) {
+  // pictures team avatar
+  #aboutCAS .teamCAS .teamAVATAR .avatar {
+    width: 110px;
+    height: 110px;
+  }
+  // images from the projects gallery
+  #gallery .pictureGallery img {
+    height: 180px;
+    width: 180px;
+  }
+}
+
+// ------ @MEDIA QUERY 1170px------ //
+@media screen and (max-width: 1170px) {
+  // part about CAS
+  #aboutCAS {
+    display: block;
+    padding-bottom: 24%;
+    .historyCAS {
+      margin: auto;
+    }
+    .teamCAS {
+      margin: auto;
+      h2 {
+        padding-top: 5%;
+        text-align: center;
+      }
+    }
+  }
+  #gallery {
+    padding-top: 10%;
+  }
+}
+
+// ------ @MEDIA QUERY 920px------ //
+// part about CAS
+@media screen and (max-width: 920px) {
+  #aboutCAS {
+    padding-bottom: 55%;
+    .historyCAS {
+      p {
+        width: 100%;
+      }
+      .buttonCAS a {
+        padding: 0.5em 1em;
+      }
+    }
+    .teamCAS {
+      h2 {
+        padding-top: 15%;
+      }
+    }
+  }
+  //  rounds of the services part
+  #expertiseCAS {
+    padding-top: 15%;
+    padding-bottom: 25%;
+    .serviceCAS {
+      .graphicCreation,
+      .internetSite,
+      .socialNetworks,
+      .consulting {
+        height: 150px;
+        width: 150px;
+        .buttonCAS a {
+          font-size: 14px;
+          padding: 0.5em 2em;
+          left: 7%;
+          top: 150%;
+        }
+        img {
+          height: 50px;
+        }
+        h3 {
+          font-size: 15px;
+        }
+        p {
+          margin-top: 1em;
+          padding: 0;
+          width: 150px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  // images from the projects gallery
+  #gallery .pictureGallery img {
+    height: 100px;
+    width: 100px;
+  }
+
+  #expertiseCAS::before,
+  #gallery::before, #aboutCAS::before {
+    width: 60%;
+    height: 2em;
+  }
+}
+
+// ------ @MEDIA QUERY 750px------ //
+@media screen and (max-width: 750px) {
+  #aboutCAS {
+    padding-bottom: 16%;
+    .teamCAS {
+      display: none;
+    }
+  }
+  .topPage {
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+  }
+  #gallery .buttonCAS a {
+    font-size: 16px;
+    padding: 0.5em 2em;
+  }
+}
+
+// ------ @MEDIA QUERY 650px------ //
+@media screen and (max-width: 650px) {
+  #aboutCAS {
+    padding-top: 10%;
+    padding-bottom: 20%;
+    .buttonCAS a {
+      font-size: 16px;
+    }
+  }
+  #homepage h2{
+    span, strong {
+      font-size: 22px;
+    }
+  } 
+  
+  #expertiseCAS{
+    padding-bottom: 6%;
+    .serviceCAS {
+      display: block;
+      .graphicCreation,
+      .internetSite,
+      .socialNetworks,
+      .consulting {
+        margin: 5% 25% 15% 25%;
+        height: 280px;
+        width: 280px;
+        padding: 2%;
+        .buttonCAS a {
+          font-size: 18px;
+          padding: 1em 3em;
+          left: 18%;
+          top: 93%;
+        }
+        img {
+          height: 80px;
+        }
+        h3 {
+          font-size: 18px;
+        }
+        p {
+          margin-top: 0.2em;
+          padding: 0;
+          font-size: 16px;
+          width: auto;
+        }
+      }
+    }
+  } 
+  #expertiseCAS::before{
+    top: -1%;
+  } 
+
+  #gallery{
+    .pictureGallery{
+      display: block;
+      img{
+        height: 250px;
+        width: 250px;
+        margin-top: 5%;
+        margin-bottom: 10%;
+      }
+    }
+  }
+  #gallery::before{
+    top: -1%;
+  }
+}
+
+// ------ @MEDIA QUERY 570px------ //
+@media screen and (max-width: 570px){
+  #aboutCAS{
+    padding-bottom: 30%;
+  }
+}
+
+// ------ @MEDIA QUERY 515px------ //
+@media screen and (max-width: 515px){
+  #aboutCAS{
+    padding-bottom: 45%;
+  }
+}
+
+// ------ @MEDIA QUERY 460px------ //
+@media screen and (max-width: 460px){
+  #expertiseCAS {
+    padding-top: 15%;
+    padding-bottom: 25%;
+    .serviceCAS {
+      .graphicCreation,
+      .internetSite,
+      .socialNetworks,
+      .consulting {
+        height: 150px;
+        width: 150px;
+        .buttonCAS a {
+          font-size: 14px;
+          padding: 0.5em 2em;
+          left: 7%;
+          top: 150%;
+        }
+        img {
+          height: 50px;
+        }
+        h3 {
+          font-size: 15px;
+        }
+        p {
+          margin-top: 1em;
+          padding: 0;
+          width: 150px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  // images from the projects gallery
+  #aboutCAS{
+    padding-bottom: 150%;
+    .buttonCAS a{
+      font-size: 14px;
+    }
+  }
+  #expertiseCAS {
+    .serviceCAS {
+      .graphicCreation,
+      .internetSite,
+      .socialNetworks,
+      .consulting{
+        margin: 5% 0 15% 12%;
+        height: 250px;
+        width: 250px;
+        img{
+          height: 80px;
+          width: 80px;
+        }
+        h3{
+          font-size: 20px;
+        }
+        p{
+          margin-top: -1em;
+          font-size: 16px;
+          width: auto;
+          padding: 0 8% 0 8%;
+        }
+        .buttonCAS a{
+          font-size: 16px;
+          top: 97%;
+          left: 22%;
+        }
+      }
+    }
+   
+  }
+  #gallery{
+    p{
+      padding-right: 4%;
+    }
+    .pictureGallery img {
+    height: 150px;
+    width: 150px;
+  }
+  } 
+}

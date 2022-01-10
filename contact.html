@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Une équipe de développeurs web vous accompagne dans votre stratégie de communication. Optez pour une immersion marketing, créative et humaine !">
+    <link rel="alternate" href="#" hreflang="fr-fr" />
+    <title>CAS & Compagnie | Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav id="navBar">
+            <div id="menu">
+                <ul id="navText">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="expertises.html">Expertises</a></li>
+                    <li><a href="nosProjets.html">Nos projets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div id="menuBurger" onclick="openBurger()">
+                <div class="bar"></div>
+                <div class="bar middle"></div>
+                <div class="bar"></div>
+            </div>
+            <i class="fas fa-times" id="close"></i>
+        </nav>
+        <div id="headerTitle">
+            <a href="index.html"><img src="assets/images/logoCAScie.png" alt="Logo de l'agence de communication CAS & Compagnie"></a>
+            <h1>FORMULAIRE DE CONTACT</h1>
+        </div>
+    </header>
+
+    <main id="contactMain">
+        <div class="blueSeparatorTop"></div>
+        <div id="contactContainer">
+            <section id="contactContainerLeft">
+                <h3><span id="contactez">CONTACTEZ</span> L<span id="apostrophe">'</span>AGENCE DE COMMUNICATION <span id="cas">CAS & COMPAGNIE</span></h3>
+                <p>Un projet de communication à réaliser, besoin d'un conseil ou juste curieux de découvrir cette agence de communication ?</p>
+                <form>
+                    <label for="name" class="anim">Nom<span>*</span> :</label>
+                    <input type="text" name="name" placeholder="Entrez votre nom..." class="anim">
+    
+                    <label for="email" class="anim">Email<span>*</span> :</label>
+                    <input type="text" name="email" placeholder="Entrez votre email..." class="anim">
+    
+                    <label for="phone" class="anim">Téléphone<span>*</span> :</label>
+                    <input type="text" name="phone" placeholder="Entrez votre numéro..." class="anim">
+    
+                    <label for="message" class="anim">Votre message<span>*</span> :</label>
+                    <textarea name="message" cols="30" rows="6" placeholder="Entrez votre message..." class="anim"></textarea>
+                </form>
+                <div class="anim"><a href="#">ENVOYER</a></div>
+            </section>
+            <section id="contactContainerRight">
+                <article id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1252.6960116095663!2d0.7158983986363605!3d45.18289803897704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ff70fe43b95555%3A0x91c035d4a5d650e3!2sH24!5e0!3m2!1sfr!2sfr!4v1641394050419!5m2!1sfr!2sfr" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </article>
+                <p>Notre équipe se tient à votre disposition pour échanger autour de tous vos besoins de communication : création graphique, impressions, site internet, gestion des réseaux sociaux... Soyez proactifs et prenez en main votre image et votre communication.</p>
+                <article id="address">
+                    <div>
+                        <p><span>Adresse :</span></p>
+                        <p>18 Rue Ernest Guillier, 24000 Périgueux</p>
+                    </div>
+                    <div>
+                        <p><span>Téléphone :</span></p>
+                        <p>05.53.45.53.77</p>
+                    </div>
+                    <div>
+                        <p><span>Email :</span></p>
+                        <p>contact@casetcompagnie.fr</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <div class="blueSeparatorBot"></div>
+    </main>
+
+    <footer>
+        <!-- logo and function info -->
+        <section id="sectionFooter">
+            <article class="infoCas">
+                <a href="index.html"><img src="assets/images/logoCAScieWhite.png" alt="Logo Cas & Compagnie" title="Logo Cas & Compagnie"></a>
+                <p class="functionCAS">Agence de communication spécialisée dans la création de sites internet, le
+                    référencement SEO, la communication visuelle et digitale, les réseaux sociaux, le graphisme, le
+                    design.</p>
+            </article>
+
+            <!-- contact details -->
+            <article class="contactCas">
+                <h2>nous contacter</h2>
+                <p><i class="fas fa-phone-alt"></i> 05 53 45 53 77</p>
+                <p><i class="far fa-envelope"></i> contact@casetcompagnie.fr</p>
+                <div class="buttonCAS"><a href="#">Contactez-nous</a></div>
+            </article>
+
+            <!-- address -->
+            <article class="locationCAS">
+                <h2>nous trouver</h2>
+                <p><i class="fas fa-map-marker-alt"></i> 18 rue Ernest Guillier</p>
+                <p>&emsp; &ensp;24 000 PÉRIGUEUX</p>
+            </article>
+
+            <!-- social media icons -->
+            <article class="iconNetworks">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </article>
+        </section>
+
+        <!-- copyright & notices -->
+        <p>© 2022 CAS & compagnie. Tous droits réservés. <span><a href="#">Mentions légales</a></span> - <span><a href="#">Contact</a></span></p>
+    </footer>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>
