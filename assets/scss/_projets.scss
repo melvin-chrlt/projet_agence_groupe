@@ -3,10 +3,11 @@
   .textGalerie {
     text-align: center;
     color: white;
-    margin-top: 4%;
+    margin: 1em auto;
+    width: 75%;
   }
   #projetsMain {
-    @include flex($just: flex-start);
+    @include flex($just: center);
     flex-wrap: wrap;
     margin: 4% 5% 4% 10%;
 

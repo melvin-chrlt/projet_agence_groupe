@@ -848,11 +848,12 @@ header #headerTitle h1 {
 #bodyGalerie .textGalerie {
   text-align: center;
   color: white;
-  margin-top: 4%;
+  margin: 1em auto;
+  width: 75%;
 }
 #bodyGalerie #projetsMain {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
