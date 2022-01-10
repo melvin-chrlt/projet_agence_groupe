@@ -977,24 +977,6 @@ header #headerTitle h1 {
   transform: translateX(0%);
   opacity: 1;
 }
-#contactMain .blueSeparatorTop {
-  width: 40%;
-  height: 3.5em;
-  position: absolute;
-  background-color: #2196f3;
-  transform: translateY(-50%);
-  top: 0;
-  left: 0;
-}
-#contactMain .blueSeparatorBot {
-  width: 40%;
-  height: 3.5em;
-  position: absolute;
-  background-color: #2196f3;
-  transform: translateY(50%);
-  bottom: 0;
-  right: 0;
-}
 
 @media screen and (max-width: 1120px) {
   #contactMain #contactContainer {
@@ -1103,15 +1085,6 @@ header #headerTitle h1 {
   transform: translateX(0%);
   opacity: 1;
 }
-#expertiseMain .blueSeparatorTop {
-  width: 40%;
-  height: 3.5em;
-  position: absolute;
-  background-color: #2196f3;
-  transform: translateY(-50%);
-  top: 0;
-  left: 0;
-}
 #expertiseMain .blueSeparatorRight {
   margin: 8em 0;
   width: 40%;
@@ -1125,15 +1098,6 @@ header #headerTitle h1 {
   height: 3.5em;
   background-color: #2196f3;
   align-self: flex-start;
-}
-#expertiseMain .blueSeparatorBot {
-  width: 40%;
-  height: 3.5em;
-  position: absolute;
-  background-color: #2196f3;
-  transform: translateY(50%);
-  bottom: 0;
-  right: 0;
 }
 
 @media screen and (max-width: 1250px) {
