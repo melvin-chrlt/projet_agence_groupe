@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* headline color */
 * {
   margin: 0;
@@ -189,104 +188,6 @@ header #headerTitle h1 {
   padding-top: 1em;
   letter-spacing: 2px;
   color: white;
-}
-
-#aproposmain #info h2 {
-  font-size: 36px;
-  text-align: center;
-  padding: 1em;
-  color: #2196F3;
-  font-family: ralewayBold;
-}
-#aproposmain #info p {
-  font-size: 18px;
-  text-align: center;
-  font-family: "roboto";
-}
-#aproposmain #info strong {
-  color: #2196F3;
-}
-#aproposmain #teams {
-  background-color: black;
-}
-#aproposmain #teams h2 {
-  color: #2196F3;
-  font-size: 36px;
-  text-align: center;
-  font-family: ralewayBold;
-}
-#aproposmain #teams .présentation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#aproposmain #teams .melvin {
-  padding: 60px;
-  border: 1px solid black;
-  width: 296px;
-  height: auto;
-}
-#aproposmain #teams .melvin p {
-  font-size: 18px;
-  color: white;
-  font-family: "roboto";
-}
-#aproposmain #teams .melvin h2 {
-  color: #2196F3;
-  font-size: 36px;
-  font-family: ralewayBold;
-}
-#aproposmain #teams .melvin h3 {
-  color: white;
-  font-size: 36px;
-  font-family: ralewayBold;
-}
-#aproposmain #teams .sofian {
-  padding: 25px;
-  border: 1px solid black;
-  height: auto;
-  width: 318px;
-}
-#aproposmain #teams .sofian p {
-  font-size: 18px;
-  color: white;
-  font-family: "roboto";
-}
-#aproposmain #teams .sofian h2 {
-  color: #2196F3;
-  font-size: 36px;
-  font-family: ralewayBold;
-}
-#aproposmain #teams .sofian h3 {
-  color: white;
-  font-size: 36px;
-  font-family: ralewayBold;
-}
-#aproposmain #teams .aurelie {
-  padding-bottom: 120px;
-  border: 1px solid black;
-  height: auto;
-  width: 324px;
-}
-#aproposmain #teams .aurelie p {
-  font-size: 18px;
-  color: white;
-  font-family: "roboto";
-}
-#aproposmain #teams .aurelie h2 {
-  color: #2196F3;
-  font-size: 36px;
-  font-family: ralewayBold;
-}
-#aproposmain #teams .aurelie h3 {
-  color: white;
-  font-size: 36px;
-  font-family: ralewayBold;
-}
-#aproposmain #teams .fit {
-  object-fit: cover;
-  height: auto;
-  width: 300px;
 }
 
 #homepage h2 {
@@ -892,14 +793,14 @@ header #headerTitle h1 {
 }
 
 .card {
-  width: 300px;
-  height: 150px;
-  background-color: indigo;
+  width: 305px;
+  height: 460px;
+  background-color: #2196F3;
   perspective: 1000px;
   margin: auto;
 }
 
-.card_interieure1 {
+.card_interieure {
   position: relative;
   width: 100%;
   height: 100%;
@@ -912,47 +813,87 @@ header #headerTitle h1 {
   transform: rotateY(180deg);
 }
 
-.front, .back {
+.front,
+.modal {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
 }
 
-.front {
-  background-color: #11c598;
-  color: #111111;
+img {
+  height: 460px;
+  border: 2px solid #2196F3;
+  margin-right: 5%;
 }
 
-.back {
-  background-color: #c7203c;
-  color: #eeeeee;
-  transform: rotateY(180deg);
-}
-
-.card_interieure2 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 2s;
-  transform-style: preserve-3d;
-}
-
-.none {
+.displayNone {
   display: none;
 }
 
-.back1 {
-  background-color: green;
+.modal {
+  background-color: white;
+  border: 2px solid #2196F3;
   height: 100%;
   width: 100%;
+  padding: 5% 4% 5% 4%;
+}
+.modal h2 {
+  color: #2196F3;
+  font-family: "caviarDreams";
+  padding: 5%;
+}
+.modal h3 {
+  padding: 5%;
+}
+.modal p {
+  font-size: 14px;
+  text-align: justify;
 }
 
-.back2 {
-  background-color: hotpink;
-  height: 100%;
-  width: 100%;
+.equipCAS {
+  padding: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.buttons {
+  padding-top: 40%;
+  text-align: center;
+  border: none;
+}
+.buttons .btnInfo {
+  margin-bottom: 4%;
+  color: #A6A6A6;
+  font-style: italic;
+  text-decoration: underline;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.front h2 {
+  font-family: "caviarDreams";
+  color: #2196F3;
+  padding: 15%;
+}
+
+.melvin {
+  margin-top: 10%;
+}
+
+.fermeture {
+  margin-top: 5%;
+  padding: 0.8em 2em;
+  background-color: #2196F3;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px black;
 }
 
 #contactMain {
