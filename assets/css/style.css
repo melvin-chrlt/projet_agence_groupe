@@ -217,7 +217,7 @@ header #headerTitle h1 {
   }
   header #navBar #menu #navText {
     flex-direction: column;
-    gap: 2em;
+    gap: 0.5em;
     width: 100%;
   }
   header #navBar #menu #navText li {
@@ -860,6 +860,7 @@ header #headerTitle h1 {
   margin: 4% 5% 4% 10%;
 }
 #bodyGalerie #projetsMain div {
+  cursor: pointer;
   text-align: center;
   margin-right: 4%;
   margin-bottom: 5%;
@@ -886,6 +887,7 @@ header #headerTitle h1 {
 }
 #bodyGalerie #projetsMain div .mouseSurvol {
   opacity: 0;
+  transition: all ease-in-out 0.3s;
 }
 #bodyGalerie #projetsMain div .mouseSurvol:hover {
   opacity: 1;

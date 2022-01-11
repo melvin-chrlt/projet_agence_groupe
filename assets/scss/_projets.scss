@@ -12,6 +12,7 @@
     margin: 4% 5% 4% 10%;
 
     div {
+      cursor: pointer;
       text-align: center;
       margin-right: 4%;
       margin-bottom: 5%;
@@ -39,6 +40,7 @@
       // hover mouse
       .mouseSurvol {
         opacity: 0;
+        transition: all ease-in-out 0.3s;
       }
       .mouseSurvol:hover {
         opacity: 1;
