@@ -217,7 +217,7 @@ header #headerTitle h1 {
   }
   header #navBar #menu #navText {
     flex-direction: column;
-    gap: 0.5em;
+    gap: 2.5em;
     width: 100%;
   }
   header #navBar #menu #navText li {
@@ -868,6 +868,9 @@ header #headerTitle h1 {
 }
 #bodyGalerie #projetsMain div img {
   border: 1px solid black;
+  transition: all ease-in-out 0.3s;
+}
+#bodyGalerie #projetsMain div img:hover {
   box-shadow: 12px -12px 0px -1px #2196F3;
 }
 #bodyGalerie #projetsMain div h2 {
