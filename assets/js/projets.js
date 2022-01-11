@@ -20,8 +20,7 @@ let projectCard = document.getElementById('projetsMain');
 for (i = 0; i < length; i++){
 
     let itemProject = document.createElement('div');
-    itemProject.innerHTML = 
-    projects[i].photo
+    itemProject.innerHTML = projects[i].photo
     + '<h2 ' + 'class="mouseSurvol">' + projects[i].name + '<br>'
     + '<span> ' + projects[i].description + '</span>'
     + '</h2>';

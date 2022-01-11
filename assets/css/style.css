@@ -749,7 +749,7 @@ header #headerTitle h1 {
 }
 #bodyGalerie #projetsMain {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -760,9 +760,13 @@ header #headerTitle h1 {
   margin-right: 4%;
   margin-bottom: 5%;
   position: relative;
+  cursor: pointer;
 }
 #bodyGalerie #projetsMain div img {
   border: 1px solid black;
+  transition: all ease-in-out 0.3s;
+}
+#bodyGalerie #projetsMain div img:hover {
   box-shadow: 12px -12px 0px -1px #2196F3;
 }
 #bodyGalerie #projetsMain div h2 {
@@ -775,6 +779,7 @@ header #headerTitle h1 {
   bottom: 0;
   left: 0;
   padding: 2%;
+  transition: all ease-in-out 0.3s;
 }
 #bodyGalerie #projetsMain div h2 span {
   color: #A6A6A6;
@@ -977,24 +982,6 @@ header #headerTitle h1 {
   transform: translateX(0%);
   opacity: 1;
 }
-#contactMain .blueSeparatorTop {
-  width: 40%;
-  height: 3.5em;
-  position: absolute;
-  background-color: #2196f3;
-  transform: translateY(-50%);
-  top: 0;
-  left: 0;
-}
-#contactMain .blueSeparatorBot {
-  width: 40%;
-  height: 3.5em;
-  position: absolute;
-  background-color: #2196f3;
-  transform: translateY(50%);
-  bottom: 0;
-  right: 0;
-}
 
 @media screen and (max-width: 1120px) {
   #contactMain #contactContainer {
@@ -1103,15 +1090,6 @@ header #headerTitle h1 {
   transform: translateX(0%);
   opacity: 1;
 }
-#expertiseMain .blueSeparatorTop {
-  width: 40%;
-  height: 3.5em;
-  position: absolute;
-  background-color: #2196f3;
-  transform: translateY(-50%);
-  top: 0;
-  left: 0;
-}
 #expertiseMain .blueSeparatorRight {
   margin: 8em 0;
   width: 40%;
@@ -1125,15 +1103,6 @@ header #headerTitle h1 {
   height: 3.5em;
   background-color: #2196f3;
   align-self: flex-start;
-}
-#expertiseMain .blueSeparatorBot {
-  width: 40%;
-  height: 3.5em;
-  position: absolute;
-  background-color: #2196f3;
-  transform: translateY(50%);
-  bottom: 0;
-  right: 0;
 }
 
 @media screen and (max-width: 1250px) {
