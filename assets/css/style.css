@@ -792,6 +792,13 @@ header #headerTitle h1 {
   margin-bottom: 2%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
 .card {
   width: 305px;
   height: 460px;
@@ -849,10 +856,12 @@ img {
 .modal p {
   font-size: 14px;
   text-align: justify;
+  font-family: "roboto";
 }
 
 .equipCAS {
   padding: 5%;
+  background-color: black;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -872,6 +881,7 @@ img {
   border: none;
   font-size: 18px;
   cursor: pointer;
+  background-color: black;
 }
 
 .front h2 {
@@ -896,6 +906,27 @@ img {
   box-shadow: 2px 2px 5px black;
 }
 
+#info {
+  padding: 2em;
+}
+#info h2 {
+  text-align: center;
+  color: #2196F3;
+  padding: 2em;
+}
+#info p {
+  text-align: center;
+  font-family: "roboto";
+}
+#info strong {
+  color: #2196F3;
+}
+
+@media screen and (max-width: 1000px) {
+  .equipCAS {
+    display: block;
+  }
+}
 #contactMain {
   background-color: black;
   color: white;
