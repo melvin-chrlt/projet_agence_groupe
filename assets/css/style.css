@@ -976,12 +976,7 @@ header #headerTitle h1 {
 }
 #bodyGalerie .purple {
   background-color: #2196F3;
-<<<<<<< HEAD
-  margin-left: 50%;
-  margin-bottom: 2%;
-=======
   margin: 2em auto;
->>>>>>> 2f53c967a2336bed15f1cfc972f963ba15d9552e
 }
 
 #contactMain {
@@ -1213,11 +1208,7 @@ header #headerTitle h1 {
   transform: translateX(0%);
   opacity: 1;
 }
-<<<<<<< HEAD
-#expertiseMain .blueSeparatorRight {
-=======
 .expertiseMain .blueSeparatorRight {
->>>>>>> 2f53c967a2336bed15f1cfc972f963ba15d9552e
   margin: 8em 0;
   width: 40%;
   height: 3.5em;
