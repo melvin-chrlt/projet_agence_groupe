@@ -57,3 +57,13 @@ function scrollFunction() {
     textNav.style.fontSize = "24px";
   }
 }
+
+
+//LOADER ANIMATION
+const loader = document.querySelector('#pageLoader');
+
+window.addEventListener("load", function(){
+  setTimeout(function(){
+    loader.style.display = "none";
+  }, 1000);
+});

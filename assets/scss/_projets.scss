@@ -3,14 +3,16 @@
   .textGalerie {
     text-align: center;
     color: white;
-    margin-top: 4%;
+    margin: 1em auto;
+    width: 75%;
   }
   #projetsMain {
-    @include flex($just: flex-start);
+    @include flex($just: center);
     flex-wrap: wrap;
     margin: 4% 5% 4% 10%;
 
     div {
+      cursor: pointer;
       text-align: center;
       margin-right: 4%;
       margin-bottom: 5%;
@@ -20,24 +22,27 @@
         border: 1px solid black;
         box-shadow: 12px -12px 0px -1px $purple;
       }
+
       h2 {
         background-color: $purple;
-        color: black;
+        color: white;
         font-family: "caviarDreamsBold";
-        font-size: 2em;
-        box-shadow: -12px 12px 8px -8px black;
+        font-size: 28px;
         position: absolute;
         bottom: 0;
         left: 0;
-        padding: 2%;
+        width: 92%;
+        padding: 0.5em;
+
         span {
-          color: $gray;
+          color: black;
           font-size: 0.6em;
         }
       }
       // hover mouse
       .mouseSurvol {
         opacity: 0;
+        transition: all ease-in-out 0.3s;
       }
       .mouseSurvol:hover {
         opacity: 1;
@@ -46,7 +51,6 @@
   }
   .purple {
     background-color: $purple;
-    margin-left: 50%;
-    margin-bottom: 2%;
+    margin: 2em auto;
   }
 }
