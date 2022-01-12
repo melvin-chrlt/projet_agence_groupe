@@ -1,4 +1,4 @@
-// projects table
+// projects table : database
 const projects = [
     {name: 'ARC LABS', photo: "<img src='assets/images/projets/projet1.jpg'>", description: 'Investissements de crédit spécialisés dans les entreprises technologiques.'},
     {name: 'GAMING CAMPUS', photo: "<img src='assets/images/projets/projet2.jpg'>", description: '1er campus étudiant dédié à l’industrie du jeu vidéo.'},
