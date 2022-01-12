@@ -5,11 +5,6 @@
     color: white;
     margin: 1em auto;
     width: 75%;
-    padding-top: 4%;
-    span{
-      color: $purple;
-      font-weight: bold;
-    }
   }
   #projetsMain {
     @include flex($just: center);
@@ -22,12 +17,9 @@
       margin-right: 4%;
       margin-bottom: 5%;
       position: relative;
-      box-shadow: 12px -12px 0px -1px $purple;
-      cursor: pointer;
 
       img {
         border: 1px solid black;
-        transition: all ease-in-out 0.3s;
         box-shadow: 12px -12px 0px -1px $purple;
       }
 
@@ -42,7 +34,6 @@
         padding: 0.5em;
         transition: all ease-in-out 0.3s;
         width: 92%;
-        
         span {
           color: black;
           font-size: 0.6em;
