@@ -5,11 +5,6 @@
     color: white;
     margin: 1em auto;
     width: 75%;
-    padding-top: 4%;
-    span{
-      color: $purple;
-      font-weight: bold;
-    }
   }
   #projetsMain {
     @include flex($just: center);
@@ -22,30 +17,26 @@
       margin-right: 4%;
       margin-bottom: 5%;
       position: relative;
-      box-shadow: 12px -12px 0px -1px $purple;
-      cursor: pointer;
 
       img {
         border: 1px solid black;
-        transition: all ease-in-out 0.3s;
         box-shadow: 12px -12px 0px -1px $purple;
       }
 
       h2 {
         background-color: $purple;
-        color: black;
+        color: white;
         font-family: "caviarDreamsBold";
-        font-size: 2em;
-        box-shadow: -12px 12px 8px -8px black;
+        font-size: 28px;
         position: absolute;
         bottom: 0;
         left: 0;
-        padding: 2%;
-        transition: all ease-in-out 0.3s;
+        width: 92%;
+        padding: 0.5em;
+
         span {
-          color: $gray;
+          color: black;
           font-size: 0.6em;
-          padding: 1em;
         }
       }
       // hover mouse
