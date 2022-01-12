@@ -1,11 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-}
-
-.card {
+#aproposMain{
+  .card {
     width: 305px;
     height: 460px;
     background-color: $purple;
@@ -100,32 +94,36 @@
       box-shadow: 2px 2px 5px black;
   }
 
-#info{
-      
-    padding: 2em;
-  
-      h2{
-        text-align: center;
-        color: #2196F3;
-        padding: 2em;
-      
-      }
-  
-      p{
-        text-align: center;
-        font-family: "roboto";
-      }
+  #info{
+        
+      padding: 2em;
+    
+        h2{
+          text-align: center;
+          color: #2196F3;
+          padding: 2em;
+        
+        }
+    
+        p{
+          text-align: center;
+          font-family: "roboto";
+        }
 
-      strong{
-        color: #2196F3;
-      }
+        strong{
+          color: #2196F3;
+        }
+
+  }
 
 }
 
 @media screen and (max-width: 1000px){
  
+  #aproposMain{
     .equipCAS{
-      display: block;
+   
+    }
   }
-  
+
 }
