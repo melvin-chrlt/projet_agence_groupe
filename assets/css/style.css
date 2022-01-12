@@ -38,6 +38,7 @@ body {
   position: relative;
   width: 5%;
   transform: translateX(-50%);
+  width: 10%;
 }
 #pageLoader #loader div {
   width: 20px;
@@ -717,6 +718,7 @@ header #headerTitle h1 {
     height: 40px;
     width: 40px;
     font-size: 25px;
+    margin-top: 6%;
   }
 
   #gallery .buttonCAS a {
@@ -929,6 +931,11 @@ header #headerTitle h1 {
   color: white;
   margin: 1em auto;
   width: 75%;
+  padding-top: 4%;
+}
+#bodyGalerie .textGalerie span {
+  color: #2196F3;
+  font-weight: bold;
 }
 #bodyGalerie #projetsMain {
   display: flex;
@@ -945,10 +952,12 @@ header #headerTitle h1 {
   margin-bottom: 5%;
   position: relative;
   box-shadow: 12px -12px 0px -1px #2196F3;
+  cursor: pointer;
 }
 #bodyGalerie #projetsMain div img {
   border: 1px solid black;
   transition: all ease-in-out 0.3s;
+  box-shadow: 12px -12px 0px -1px #2196F3;
 }
 #bodyGalerie #projetsMain div h2 {
   background-color: #2196F3;
@@ -960,10 +969,12 @@ header #headerTitle h1 {
   bottom: 0;
   left: 0;
   padding: 2%;
+  transition: all ease-in-out 0.3s;
 }
 #bodyGalerie #projetsMain div h2 span {
   color: #A6A6A6;
   font-size: 0.6em;
+  padding: 1em;
 }
 #bodyGalerie #projetsMain div .mouseSurvol {
   opacity: 0;

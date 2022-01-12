@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Card Animation</title>
+</head>
+
+<body>
+    <section class="equipCAS">
+        <article>
+            <div class="card">
+                <div class="card_interieure">
+
+                    <div class="front">
+                        <img src="assets/images/aurelie.jpg" alt="photo portrait de Aurélie">
+                        <h2>Aurélie Manneville</h2>
+                    </div>
+
+                    <div id="modal_1" class="modal displayNone">
+                        <h2>Maquettiste</h2>
+                        <h3>Qu'est-ce que c'est ?</h3>
+                        <p>Le maquettiste est un professionnel de la mise en pages de tous types de documents. Il travaille aussi bien sur des supports traditionnels papier (journaux, magazines, livres, plaquettes, brochures, affiches…) que sur des supports numériques (pages internet, bibliothèques numériques…).</p><br>
+
+                            <p>Quel que soit le support, le maquettiste a pour mission d'agencer des pages attractives pour le lecteur ou l'internaute. En aménageant textes et images, il doit créer un impact visuel au produit et donner envie de lire ou de s'attarder sur la page.</p>
+                        <button class="fermeture" onclick="openModal('modal_1')">Fermer</button>
+                    </div>
+
+                    <div id="modal_2" class="modal displayNone">
+                        <h2>Chef de projet</h2>
+                        <h3>Qu'est-ce que c'est ?</h3>
+                        <p>Le chef de projet est la personne chargée de mener un projet et de gérer son bon
+                            déroulement. De manière générale, il anime une équipe pendant la durée du ou des
+                            divers projets dont il a la charge.
+                            </p><br>
+
+                            <p>Il est garant de la qualité des livrables et est l’intermédiaire entre le client et l’équipe.
+                                Ce rôle fait appel à des compétences de gestion (budget, planning), de bonnes capacités
+                                relationnelles, ainsi que des connaissances techniques dans les domaines concernés.
+                                
+                                Il est un facilitateur et traduit en langage métier les différents besoins aux intervenants
+                                du projet.
+                                </p>
+                        <button class="fermeture" onclick="openModal('modal_2')">Fermer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btnInfo" onclick="openModal('modal_1')" title="Cliquez pour plus d'informations sur le métier">Maquettiste</button><br>
+                <button class="btnInfo" onclick="openModal('modal_2')"title="Cliquez pour plus d'informations sur le métier">Chef de projet</button>
+            </div>
+        </article>
+
+        <article class="melvin">
+            <div class="card">
+                <div class="card_interieure">
+
+                    <div class="front">
+                        <img src="assets/images/melvin.jpeg" alt="photo portrait de Melvin">
+                        <h2>Melvin Charlotte</h2>
+                    </div>
+                    <div id="modal_3" class="modal displayNone">
+                        <h2>Community Manager</h2>
+                        <h3>Qu'est-ce que c'est ?</h3>
+                        <p>Pour le compte d’une marque c'est lui qui fédère et anime les échanges entre internautes. Pour cela, il utilise principalement les réseaux sociaux (Youtube, Facebook, Twitter…) et professionnels (Viadeo, LinkedIn, Xing…). Il est en quelque sorte la “version 2.0” du webmaster ! 
+                            </p><br>
+
+                            <p>Le community manager communique le message de l’entreprise vers l’extérieur et fait part à l'entreprise des réactions de la communauté. Ce dialogue avec les internautes est primordial dans l'objectif de fidéliser les internautes et d'acquérir de nouveaux "habitués".
+                                </p>
+                        <button class="fermeture" onclick="openModal('modal_3')">Fermer</button>
+                    </div>
+
+                    <div id="modal_4" class="modal displayNone">
+                        <h2>Optimisation et sécurité</h2>
+                        <h3>Qu'est-ce que c'est ?</h3>
+                        <p>L'ingénieur sécurité web a pour rôle de mettre en œuvre la politique de sécurité d'un système d'information pour une entreprise. Il doit évaluer la vulnérabilité du système d'information de l'entreprise et proposer des solutions adaptées pour remédier aux problématiques et aux enjeux de sécurité. 
+                            </p><br>
+
+                            <p>Il est en charge de l'application des procédures de protection des réseaux informatiques contre toute intrusion extérieure et veiller à la sécurité des flux avec l'extérieur.
+                                </p>
+                        <button class="fermeture" onclick="openModal('modal_4')">Fermer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btnInfo" onclick="openModal('modal_3')" title="Cliquez pour plus d'informations sur le métier">Community Manager</button><br>
+                <button class="btnInfo"onclick="openModal('modal_4')"title="Cliquez pour plus d'informations sur le métier">Optimisation et sécurité</button>
+            </div>
+        </article>
+
+        <article>
+            <div class="card">
+                <div class="card_interieure">
+                    <div class="front">
+                        <img src="assets/images/sofian.jpg" alt="photo portrait de Sofian">
+                        <h2>Sofian Bouchama</h2>
+                    </div>
+
+                    <div id="modal_5" class="modal displayNone">
+                        <h2>SEO</h2>
+                        <h3>Qu'est-ce que c'est ?</h3>
+                        <p>L'expert SEO est polyvalent. Sa mission consiste à améliorer le référencement naturel (SEO, ou Search Engine Optimization) d'un site web, autrement dit sa visibilité. Il est donc chargé de positionner un site web dans les premiers résultats des moteurs de recherche afin de créer du trafic. 
+                            </p><br>
+
+                            <p>Pour ce faire, l'expert SEO utilise ses connaissances techniques mais aussi marketing et commerciales. Il réalise un audit du site web, et optimise sa structure lorsque c'est nécessaire. Il intervient également au niveau du contenu, et sélectionne des mots clés pertinents.
+                                </p>
+                        <button class="fermeture" onclick="openModal('modal_5')">Fermer</button>
+                    </div>
+
+                    <div id="modal_6" class="modal displayNone">
+                        <h2>Gestionnaire administratif</h2>
+                        <h3>Qu'est-ce que c'est ?</h3>
+                        <p>Le gestionnaire administratif prend en charge toutes les opérations d'ordre administratif concernées son domaine d'activité. Il fait appliquer les règles et procédures relatives à son domaine d'activité. Il assure la gestion (recherche, analyse, diffusion, classement…) des informations dont il a la charge.
+                            </p><br>
+
+                            <p>Sur un plan technique, le gestionnaire administratif doit avoir une bonne maîtrise des logiciels bureautique ainsi que du droit relatif à son secteur d’activité, doté d’un bon relationnel et d’un esprit d’analyse il est organisé et disponible.
+                                </p>
+                        <button class="fermeture" onclick="openModal('modal_6')">Fermer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btnInfo" onclick="openModal('modal_5')" title="Cliquez pour plus d'informations sur le métier">SEO</button><br>
+                <button class="btnInfo" onclick="openModal('modal_6')"title="Cliquez pour plus d'informations sur le métier">Gestionnaire administratif</button>
+            </div>
+        </article>
+    </section>
+
+
+    <script type="text/javascript" src="assets/js/apropos.js"></script>
+</body>
+
+</html>
