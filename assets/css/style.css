@@ -961,8 +961,9 @@ header #headerTitle h1 {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 92%;
   padding: 0.5em;
+  transition: all ease-in-out 0.3s;
+  width: 92%;
 }
 #bodyGalerie #projetsMain div h2 span {
   color: black;
