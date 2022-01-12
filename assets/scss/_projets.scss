@@ -5,6 +5,11 @@
     color: white;
     margin: 1em auto;
     width: 75%;
+    padding-top: 4%;
+    span{
+      color: $purple;
+      font-weight: bold;
+    }
   }
   #projetsMain {
     @include flex($just: center);
@@ -23,6 +28,7 @@
       img {
         border: 1px solid black;
         transition: all ease-in-out 0.3s;
+        box-shadow: 12px -12px 0px -1px $purple;
       }
 
       h2 {
@@ -39,6 +45,7 @@
         span {
           color: $gray;
           font-size: 0.6em;
+          padding: 1em;
         }
       }
       // hover mouse
