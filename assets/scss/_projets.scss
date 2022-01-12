@@ -17,15 +17,13 @@
       margin-right: 4%;
       margin-bottom: 5%;
       position: relative;
+      box-shadow: 12px -12px 0px -1px $purple;
 
       img {
         border: 1px solid black;
         transition: all ease-in-out 0.3s;
       }
 
-      img:hover{
-        box-shadow: 12px -12px 0px -1px $purple;
-      }
       h2 {
         background-color: $purple;
         color: black;
