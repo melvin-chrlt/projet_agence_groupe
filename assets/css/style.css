@@ -931,6 +931,9 @@ header #headerTitle h1 {
   margin: 1em auto;
   width: 75%;
 }
+#bodyGalerie .textGalerie span {
+  color: #2196F3;
+}
 #bodyGalerie #projetsMain {
   display: flex;
   justify-content: center;

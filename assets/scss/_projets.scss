@@ -5,6 +5,9 @@
     color: white;
     margin: 1em auto;
     width: 75%;
+    span{
+      color: $purple;
+    }
   }
   #projetsMain {
     @include flex($just: center);
