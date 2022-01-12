@@ -1,9 +1,4 @@
-function closeImg(){
-    document.querySelector('.modal').classList.toggle('displayNone');
-};
-
-
-
+// function to display the face of the cards according to the title
 function openModal(idModal){
     var modals = document.querySelectorAll(".displayNone");
     var modalsLenght = modals.length;
