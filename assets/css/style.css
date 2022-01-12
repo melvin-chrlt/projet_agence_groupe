@@ -894,6 +894,7 @@ header #headerTitle h1 {
   text-align: center;
   color: #2196F3;
   padding: 2em;
+  font-family: "caviarDreams";
 }
 #aproposMain #info p {
   text-align: center;
@@ -903,6 +904,15 @@ header #headerTitle h1 {
   color: #2196F3;
 }
 
+@media screen and (max-width: 1043px) {
+  #aproposMain .equipCAS {
+    display: block;
+  }
+
+  .buttons {
+    padding: 30%;
+  }
+}
 #contactMain {
   background-color: black;
   color: white;
