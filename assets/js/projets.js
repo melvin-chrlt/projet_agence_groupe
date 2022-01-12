@@ -1,6 +1,6 @@
 // projects table
 const projects = [
-    {name: 'Projet 1', photo: "<img src='assets/images/projets/projet1.PNG'>", description: 'Lorem, ipsum dolor sit amet elit.'},
+    {name: 'Projet 1', photo: "<img src='assets/images/projets/projet.jpg'>", description: 'Lorem, ipsum dolor sit amet elit.'},
     {name: 'Projet 2', photo: "<img src='assets/images/projets/projet.jpg'>", description: 'Lorem, ipsum dolor sit amet elit.'},
     {name: 'Projet 3', photo: "<img src='assets/images/projets/projet.jpg'>", description: 'Lorem, ipsum dolor sit amet elit.'},
     {name: 'Projet 4', photo: "<img src='assets/images/projets/projet.jpg'>", description: 'Lorem, ipsum dolor sit amet elit.'},
