@@ -39,10 +39,8 @@ body {
 
   #loader {
     position: relative;
-    width: 5%;
+    width: 3%;
     transform: translateX(-50%);
-
-    width: 10%;
   
     div {
       width: 20px;
@@ -80,11 +78,9 @@ body {
 }
 
 @media screen and (max-width: 560px){
-  main{
-    #pageloader{
-      #loader{
-        width: 15%;
-      }
-    }
-  }
+    #pageLoader{
+        #loader{
+          width: 20%;
+        }
+    }  
 }
