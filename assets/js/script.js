@@ -65,5 +65,5 @@ const loader = document.querySelector('#pageLoader');
 window.addEventListener("load", function(){
   setTimeout(function(){
     loader.style.display = "none";
-  }, 1500);
+  }, 1000);
 });
