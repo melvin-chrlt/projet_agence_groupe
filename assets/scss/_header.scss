@@ -159,3 +159,132 @@ header{
         }
     }
 }
+
+@media screen and (max-width: 1295px){
+    //HEADER RESPONSIVE
+    header{
+        padding: 0;
+
+        #navBar{
+            padding: 1em;
+            gap: 10em;
+            width: 10%;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+            //MENU STYLE WHEN MENU BURGER IS OPEN
+            #menu{
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0px;
+                flex-direction: column;
+                background-color: rgba(black, 0.7);
+                align-items: center;
+                justify-content: center;
+                width: 60%;
+                height: 100%;
+                z-index: 100;
+                animation: menu 1s;
+    
+                #navText{
+                    flex-direction: column;
+                    gap: 2.5em;
+                    width: 100%;
+    
+                    li{
+                        transition: all ease-in-out 0.2s;
+                        padding: 1.5em 0;
+                        cursor: pointer;
+    
+                        a{
+                            margin-left: 5em;
+                            transition: all ease-in-out 0.2s;
+                            color: white;
+                        }
+
+                        a:before, a:after{
+                            height: 0;
+                        }
+                    }
+
+                    li:hover{
+                        background-color: #2196F3;
+
+                        a{
+                            color: black;
+                        }
+                    }
+                }
+            }
+
+            //SLIDE ANIMATION LEFT TO MIDDLE OF THE PAGE
+            @keyframes menu{
+                from{
+                    left: -200%;
+                }
+    
+                to{
+                    right: 100%;
+                }
+            }
+            
+            //MENU BURGER VISIBLE
+            #menuBurger{
+                display: flex;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    header{
+        #navBar{
+            width: 20%;
+        }
+    }
+}
+
+@media screen and (max-width: 595px){
+    //HEADER RESPONSIVE
+    header{
+
+        #navBar{
+            flex-direction: column;
+            gap: 1em;
+            padding: 1.5em;
+
+            #menu{
+                #navText{
+                    li{
+                        a{
+                            margin-left: 1.5em;
+                        }
+                    }
+                }
+            }
+        }
+
+        #headerTitle{
+            padding-top: 4em;
+            
+            h1{
+                font-size: 40px;
+            }
+
+            img{
+                width: 25em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 440px){
+    header{
+        #headerTitle{
+            img{
+                width: 15em;
+            }
+        }
+    }
+}

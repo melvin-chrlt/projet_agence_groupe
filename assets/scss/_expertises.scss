@@ -1,4 +1,4 @@
-#expertiseMain{
+.expertiseMain{
     display: flex;
     justify-content: center;
     padding: 10em 0;
@@ -71,16 +71,6 @@
         }
     }
 
-    .blueSeparatorTop{
-        width: 40%;
-        height: 3.5em;
-        position: absolute;
-        background-color: #2196f3;
-        transform: translateY(-50%);
-        top: 0;
-        left: 0;
-    }
-
     .blueSeparatorRight{
         margin: 8em 0;
         width: 40%;
@@ -96,21 +86,11 @@
         background-color: #2196f3;
         align-self: flex-start;
     }
-
-    .blueSeparatorBot{
-        width: 40%;
-        height: 3.5em;
-        position: absolute;
-        background-color: #2196f3;
-        transform: translateY(50%);
-        bottom: 0;
-        right: 0;
-    }
 }
 
 //RESPONSIVE
 @media screen and (max-width: 1250px){
-    #expertiseMain{
+    .expertiseMain{
         section{
             article{
                 width: 90%;
@@ -120,7 +100,7 @@
 }
 
 @media screen and (max-width: 900px){
-    #expertiseMain{
+    .expertiseMain{
         section{
             article{
                 h3{

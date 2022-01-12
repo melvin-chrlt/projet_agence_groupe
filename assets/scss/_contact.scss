@@ -146,26 +146,6 @@
             opacity: 1;
         }
     }
-
-    .blueSeparatorTop{
-        width: 40%;
-        height: 3.5em;
-        position: absolute;
-        background-color: #2196f3;
-        transform: translateY(-50%);
-        top: 0;
-        left: 0;
-    }
-
-    .blueSeparatorBot{
-        width: 40%;
-        height: 3.5em;
-        position: absolute;
-        background-color: #2196f3;
-        transform: translateY(50%);
-        bottom: 0;
-        right: 0;
-    }
 }
 
 //RESPONSIVE
