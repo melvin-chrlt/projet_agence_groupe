@@ -9,20 +9,22 @@ footer {
   position: relative;
 
   #sectionFooter {
-    @include flex(space-around, baseline);
+    @include flex(space-around, center);
     margin-bottom: 40px;
 
     // logo and function info
     .infoCas {
-      width: 50%;
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       img {
         height: 125px;
         margin-bottom: 20px;
       }
       .functionCAS {
         text-align: justify;
-        width: 50%;
-        margin: auto;
+        width: 90%;
       }
     }
 
@@ -89,7 +91,7 @@ footer {
 footer::before {
   content: "";
   height: 50px;
-  width: 575px;
+  width: 50%;
   background-color: $purple;
   position: absolute;
   top: -5%;
@@ -138,6 +140,12 @@ footer::before {
       text-align: center;
       margin: auto;
     }
+  }
+
+  footer::before{
+    height: 25px;
+    width: 50%;
+    top: -2%;
   }
 }
 
