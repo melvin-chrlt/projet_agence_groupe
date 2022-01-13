@@ -392,21 +392,20 @@ header #headerTitle h1 {
   padding-bottom: 6%;
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   flex-direction: row;
   color: #A6A6A6;
   background-color: black;
-  height: 350px;
   position: relative;
 }
 #aboutCAS .historyCAS {
-  width: 70%;
+  width: 50%;
   padding-left: 2%;
   padding-top: 3em;
 }
 #aboutCAS .historyCAS p {
   text-align: justify;
-  width: 60%;
+  width: 80%;
   line-height: 25px;
 }
 #aboutCAS .historyCAS .buttonCAS {
@@ -620,15 +619,15 @@ header #headerTitle h1 {
   }
 }
 @media screen and (max-width: 1170px) {
-  #aboutCAS {
-    display: block;
-    padding-bottom: 24%;
-  }
   #aboutCAS .historyCAS {
-    margin: auto;
+    width: 80%;
+    padding: 2em 0;
+  }
+  #aboutCAS .historyCAS p {
+    width: 100%;
   }
   #aboutCAS .teamCAS {
-    margin: auto;
+    display: none;
   }
   #aboutCAS .teamCAS h2 {
     padding-top: 5%;
@@ -640,9 +639,6 @@ header #headerTitle h1 {
   }
 }
 @media screen and (max-width: 920px) {
-  #aboutCAS {
-    padding-bottom: 55%;
-  }
   #aboutCAS .historyCAS p {
     width: 100%;
   }
@@ -834,10 +830,11 @@ header #headerTitle h1 {
   }
 }
 @media screen and (max-width: 460px) {
-  #aboutCAS {
-    height: 0;
+  #expertiseCAS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
   #expertiseCAS .serviceCAS .graphicCreation,
 #expertiseCAS .serviceCAS .internetSite,
 #expertiseCAS .serviceCAS .socialNetworks,
@@ -874,13 +871,6 @@ header #headerTitle h1 {
     padding: 0;
     width: 150px;
     font-size: 12px;
-  }
-
-  #aboutCAS {
-    padding-bottom: 150%;
-  }
-  #aboutCAS .buttonCAS a {
-    font-size: 14px;
   }
 
   #expertiseCAS .serviceCAS .graphicCreation,
