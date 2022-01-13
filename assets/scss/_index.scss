@@ -39,14 +39,15 @@
   @include flex($align: baseline);
   color: $gray;
   background-color: black;
-  height: 418px;
+  height: 350px;
   position: relative;
   .historyCAS {
     width: 70%;
     padding-left: 2%;
+    padding-top: 3em;
     p {
       text-align: justify;
-      width: 80%;
+      width: 60%;
       line-height: 25px;
     }
     .buttonCAS {

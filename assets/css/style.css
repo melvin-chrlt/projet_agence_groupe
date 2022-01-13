@@ -396,16 +396,17 @@ header #headerTitle h1 {
   flex-direction: row;
   color: #A6A6A6;
   background-color: black;
-  height: 418px;
+  height: 350px;
   position: relative;
 }
 #aboutCAS .historyCAS {
   width: 70%;
   padding-left: 2%;
+  padding-top: 3em;
 }
 #aboutCAS .historyCAS p {
   text-align: justify;
-  width: 80%;
+  width: 60%;
   line-height: 25px;
 }
 #aboutCAS .historyCAS .buttonCAS {
