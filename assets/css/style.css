@@ -1043,7 +1043,7 @@ header #headerTitle h1 {
 }
 
 .buttons {
-  padding-top: 40%;
+  padding-top: 8em;
   text-align: center;
   border: none;
 }
@@ -1122,7 +1122,7 @@ header #headerTitle h1 {
   }
 
   .buttons {
-    padding-top: 12%;
+    padding-top: 11em;
   }
   .buttons .btnInfo {
     margin-bottom: 2em;
@@ -1130,10 +1130,6 @@ header #headerTitle h1 {
 
   .equipCAS {
     display: block;
-  }
-
-  .front h2 {
-    padding: 12%;
   }
 }
 @media screen and (max-width: 775px) {

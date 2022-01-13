@@ -58,7 +58,7 @@
   @include flex(space-evenly);
 }
 .buttons {
-  padding-top: 40%;
+  padding-top: 8em;
   text-align: center;
   border: none;
   .btnInfo {
@@ -138,16 +138,13 @@
     }
   }
 .buttons{
-  padding-top: 12%;
+  padding-top: 11em;
   .btnInfo{
     margin-bottom: 2em;
   }
 }
   .equipCAS {
     display: block;
-  }
-  .front h2 {
-    padding: 12%;
   }
 }
 
