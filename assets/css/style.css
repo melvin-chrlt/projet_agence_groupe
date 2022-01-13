@@ -1130,6 +1130,9 @@ header #headerTitle h1 {
   .equipCAS {
     display: block;
   }
+  .equipCAS .card {
+    margin-bottom: 20em;
+  }
 }
 @media screen and (max-width: 775px) {
   .buttons {
