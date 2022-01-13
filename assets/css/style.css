@@ -1034,7 +1034,8 @@ header #headerTitle h1 {
 }
 
 .equipCAS {
-  padding: 5%;
+  padding-top: 5em;
+  padding-bottom: 18em;
   background-color: black;
   display: flex;
   justify-content: space-evenly;
@@ -1042,31 +1043,29 @@ header #headerTitle h1 {
   flex-direction: row;
 }
 
-.buttons {
-  padding-top: 8em;
-  text-align: center;
-  border: none;
+.front h2 {
+  font-family: "caviarDreams";
+  color: #2196F3;
+  padding: 1em 0;
 }
-.buttons .btnInfo {
-  margin-bottom: 10%;
+.front .buttons {
+  padding-top: 2em;
+  text-align: center;
+}
+.front .buttons .btnInfo {
+  margin-bottom: 2.5em;
   color: white;
   font-style: italic;
   text-decoration: underline;
   font-family: "raleway";
   border: none;
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
   background-color: black;
   transition: all ease-in-out 0.2s;
 }
-.buttons .btnInfo:hover {
+.front .buttons .btnInfo:hover {
   color: #2196F3;
-}
-
-.front h2 {
-  font-family: "caviarDreams";
-  color: #2196F3;
-  padding: 15%;
 }
 
 .melvin {
